@@ -1,0 +1,17 @@
+---
+tags: [lecture/L2]
+---
+
+# L2 Arithmetic Expressions 逐字稿
+
+> [!info] 本機 whisper 轉錄，==未經人工逐字校對==；英文術語有辨識誤差，正確用詞以整理稿為準。
+
+- `(V1 63:00)` in this tutorial we're going to talk about arithmetic expressions in Java so in Java we have the same arithmetic operators that we have in math we have addition subtraction multiplication division and modulus which is the
+- `(V1 63:30)` remainder of a division let's look at a few examples so I'm gonna declare an integer called result and here we can type 10 plus 3 now when we print result it's gonna be 13 pretty straightforward there you go so this is addition we also have subtraction multiplication division is an interesting one let's take a look so here the result is a whole number because in Java the division of two
+- `(V1 64:00)` whole numbers is a whole number if you want to get a floating-point number here you need to convert these numbers to a float or a double let me show you so we prefix this number with parentheses and in parentheses we type double now we are casting or converting this number to a double similarly we should do that here and now we have a compilation error because on the left side we declared an integer but here the result of this expression is a double
+- `(V1 64:30)` and by the way an expression is a piece of code that produces a value so what we have here is an expression because it produces a value so to fix this problem we need to change this to double now when we run this program we get this floating point number beautiful so these are the arithmetic operators and these numbers that we have here are called operands we also have increment and decrement operators let me show you so I'm gonna declare a new variable int X
+- `(V1 65:00)` we set it to 1 now if you want to increase the value of x by 1 we use the increment operator now let's print this on a terminal so we get 2 there you go we can apply this operator as a postfix or as a prefix and we get the same result take a look too however if we use this on the right side of an assignment operator we get different results let me show you so I'm gonna declare another variable Y we set it to X plus plus in
+- `(V1 65:30)` this case because we have applied the increment operator as a postfix first the value of x will get copied to Y so Y would be 1 and then X will be incremented by 1 so if you print x and y x is gonna be 2 and Y is gonna be 1 take a look so X is 2 and Y is 1 beautiful however if you apply this as a prefix
+- `(V1 66:00)` first X will be incremented by 1 so it will be 2 and then it will be copied to Y so in this case both X&amp;Y will be to take a look so we get two and two now what if you want to increment X by more than one let's say by two well there are two ways to do this let's remove Y we don't really need it anymore we can write x equals x plus 2 so first we add 2 to X the result will
+- `(V1 66:30)` be three and then three will be copied into X the other way is to use the Augmented or compound assignment operator so we can write X plus equals two what we have on line eight is exactly identical to what we have on line seven well as you can see it's shorter so this is a better way to write the same code now this is one of the Augmented assignment operators we have the Augmented assignment operator for other arithmetic operators so we can
+- `(V1 67:00)` type X minus equals 2 and this would reduce the value of x by 2 we also have multiply and divide so these are the Augmented or compound assignment operators right now I've got a question for you here we have declared this

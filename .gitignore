@@ -1,0 +1,12 @@
+# Media files
+*.mp4
+*.webm
+*.mkv
+*.m4a
+*.mp3
+*.wav
+
+# Temp / Cache
+__pycache__/
+*.pyc
+.DS_Store

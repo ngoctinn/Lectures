@@ -1,0 +1,15 @@
+---
+tags: [lecture/L2]
+---
+
+# L2 Variables 逐字稿
+
+> [!info] 本機 whisper 轉錄，==未經人工逐字校對==；英文術語有辨識誤差，正確用詞以整理稿為準。
+
+- `(V1 26:00)` gonna talk about variables in Java we use variables to temporarily store data in computer's memory here is an example imagine in this program you want to store someone's age in the memory so we declare a variable like this ant age equals 30 so int or integer is the type of this variable so in this variable we can only store integers which are whole numbers like 1 2 3 4 numbers that don't have a decimal point now in Java we have several different types I'm gonna talk
+- `(V1 26:30)` about them in the next tutorial so first we specify the type of our variable then we give it a name or a label this is also called an identifier because we use it to identify our variable this equal sign is called the assignment operator and 30 is the initial value that we are assigning to this variable so we say on line 6 we're initializing this variable which means we're giving it an initial value you always have to initialize our variables before reading them so with
+- `(V1 27:00)` this line we're storing number 30 somewhere in computer's memory and we're assigning this label to that memory location now on line 7 instead of printing hello world we can print the value of the age variable take a look so I'm gonna run this program using ctrl + R there you go now we see 30 on the terminal beautiful we can also change the value of our variable so after we initialize it per house we can change it to 35 now when we run this program again
+- `(V1 27:30)` we see it 35 beautiful we can also initialize multiple variables on the same line but this is something that I don't recommend because it makes your code ugly and hard to read here is an example we can declare another variable like temperature and set it to 20 so using a comma we can declare multiple variables on the same line now even though this is technically possible it's not something that I recommend so it's always better to declare one variable on
+- `(V1 28:00)` each line like this we can also copy the value of one variable into another here is an example let me delete these variables and declare a new variable called my age we set it to 30 and then we declare another variable like her age and we set it to my age so now when we print her age we're gonna see 30 take a look so on line seven recapping the value of
+- `(V1 28:30)` this variable into this other variable now one thing I want you to pay attention to here is the convention I have used for naming our variables as I told you before this is called the camelcase notation so we should capitalize the first letter of every word except the first word so in this case the first word my it's all in lowercase but the second word starts with a capital letter so this is all about declaring and initializing
+- `(V1 29:00)` variables in the next tutorial we're going to talk about various types in Java in this tutorial we're going to talk about various types in Java

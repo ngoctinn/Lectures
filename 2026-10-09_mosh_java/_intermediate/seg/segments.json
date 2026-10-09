@@ -1,0 +1,750 @@
+[
+  {
+    "seg": 1,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "introduction",
+    "make_l3": true,
+    "title_zh": "Introduction",
+    "region": "Java Basics",
+    "display_order": 1,
+    "topic": "Introduction",
+    "type": "lecture",
+    "time": "00:00–01:46"
+  },
+  {
+    "seg": 2,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "installing-java",
+    "make_l3": true,
+    "title_zh": "Installing Java",
+    "region": "Java Basics",
+    "display_order": 2,
+    "topic": "Installing Java",
+    "type": "lecture",
+    "time": "01:46–03:59"
+  },
+  {
+    "seg": 3,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "anatomy-of-a-java-program",
+    "make_l3": true,
+    "title_zh": "Anatomy of a Java Program",
+    "region": "Java Basics",
+    "display_order": 3,
+    "topic": "Anatomy of a Java Program",
+    "type": "lecture",
+    "time": "03:59–08:41"
+  },
+  {
+    "seg": 4,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "your-first-java-program",
+    "make_l3": true,
+    "title_zh": "Your First Java Program",
+    "region": "Java Basics",
+    "display_order": 4,
+    "topic": "Your First Java Program",
+    "type": "lecture",
+    "time": "08:41–15:59"
+  },
+  {
+    "seg": 5,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "cheat-sheet",
+    "make_l3": true,
+    "title_zh": "Cheat Sheet",
+    "region": "Java Basics",
+    "display_order": 5,
+    "topic": "Cheat Sheet",
+    "type": "lecture",
+    "time": "15:59–16:29"
+  },
+  {
+    "seg": 6,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "how-java-code-gets-executed",
+    "make_l3": true,
+    "title_zh": "How Java Code Gets Executed",
+    "region": "Java Basics",
+    "display_order": 6,
+    "topic": "How Java Code Gets Executed",
+    "type": "lecture",
+    "time": "16:29–22:54"
+  },
+  {
+    "seg": 7,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "course-structure",
+    "make_l3": true,
+    "title_zh": "Course Structure",
+    "region": "Java Basics",
+    "display_order": 7,
+    "topic": "Course Structure",
+    "type": "lecture",
+    "time": "22:54–25:22"
+  },
+  {
+    "seg": 8,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "types",
+    "make_l3": true,
+    "title_zh": "Types",
+    "region": "Java Basics",
+    "display_order": 8,
+    "topic": "Types",
+    "type": "lecture",
+    "time": "25:22–25:57"
+  },
+  {
+    "seg": 9,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "variables",
+    "make_l3": true,
+    "title_zh": "Variables",
+    "region": "Java Basics",
+    "display_order": 9,
+    "topic": "Variables",
+    "type": "lecture",
+    "time": "25:57–29:07"
+  },
+  {
+    "seg": 10,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "primitive-types",
+    "make_l3": true,
+    "title_zh": "Primitive Types",
+    "region": "Java Basics",
+    "display_order": 10,
+    "topic": "Primitive Types",
+    "type": "lecture",
+    "time": "29:07–34:27"
+  },
+  {
+    "seg": 11,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "reference-types",
+    "make_l3": true,
+    "title_zh": "Reference Types",
+    "region": "Java Basics",
+    "display_order": 11,
+    "topic": "Reference Types",
+    "type": "lecture",
+    "time": "34:27–39:15"
+  },
+  {
+    "seg": 12,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "primitive-types-vs-reference-t",
+    "make_l3": true,
+    "title_zh": "Primitive Types vs Reference Types",
+    "region": "Java Basics",
+    "display_order": 12,
+    "topic": "Primitive Types vs Reference Types",
+    "type": "lecture",
+    "time": "39:15–43:39"
+  },
+  {
+    "seg": 13,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "strings",
+    "make_l3": true,
+    "title_zh": "Strings",
+    "region": "Java Basics",
+    "display_order": 13,
+    "topic": "Strings",
+    "type": "lecture",
+    "time": "43:39–50:42"
+  },
+  {
+    "seg": 14,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "escape-sequences",
+    "make_l3": true,
+    "title_zh": "Escape Sequences",
+    "region": "Java Basics",
+    "display_order": 14,
+    "topic": "Escape Sequences",
+    "type": "lecture",
+    "time": "50:42–53:22"
+  },
+  {
+    "seg": 15,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "arrays",
+    "make_l3": true,
+    "title_zh": "Arrays",
+    "region": "Java Basics",
+    "display_order": 15,
+    "topic": "Arrays",
+    "type": "lecture",
+    "time": "53:22–58:47"
+  },
+  {
+    "seg": 16,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "multi-dimensional-arrays",
+    "make_l3": true,
+    "title_zh": "Multi-Dimensional Arrays",
+    "region": "Java Basics",
+    "display_order": 16,
+    "topic": "Multi-Dimensional Arrays",
+    "type": "lecture",
+    "time": "58:47–61:23"
+  },
+  {
+    "seg": 17,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "constants",
+    "make_l3": true,
+    "title_zh": "Constants",
+    "region": "Java Basics",
+    "display_order": 17,
+    "topic": "Constants",
+    "type": "lecture",
+    "time": "61:23–63:15"
+  },
+  {
+    "seg": 18,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "arithmetic-expressions",
+    "make_l3": true,
+    "title_zh": "Arithmetic Expressions",
+    "region": "Java Basics",
+    "display_order": 18,
+    "topic": "Arithmetic Expressions",
+    "type": "lecture",
+    "time": "63:15–67:18"
+  },
+  {
+    "seg": 19,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "order-of-operations",
+    "make_l3": true,
+    "title_zh": "Order of Operations",
+    "region": "Java Basics",
+    "display_order": 19,
+    "topic": "Order of Operations",
+    "type": "lecture",
+    "time": "67:18–68:40"
+  },
+  {
+    "seg": 20,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "casting",
+    "make_l3": true,
+    "title_zh": "Casting",
+    "region": "Java Basics",
+    "display_order": 20,
+    "topic": "Casting",
+    "type": "lecture",
+    "time": "68:40–75:08"
+  },
+  {
+    "seg": 21,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "the-math-class",
+    "make_l3": true,
+    "title_zh": "The Math Class",
+    "region": "Java Basics",
+    "display_order": 21,
+    "topic": "The Math Class",
+    "type": "lecture",
+    "time": "75:08–79:50"
+  },
+  {
+    "seg": 22,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "formatting-numbers",
+    "make_l3": true,
+    "title_zh": "Formatting Numbers",
+    "region": "Java Basics",
+    "display_order": 22,
+    "topic": "Formatting Numbers",
+    "type": "lecture",
+    "time": "79:50–85:40"
+  },
+  {
+    "seg": 23,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "reading-input",
+    "make_l3": true,
+    "title_zh": "Reading Input",
+    "region": "Java Basics",
+    "display_order": 23,
+    "topic": "Reading Input",
+    "type": "lecture",
+    "time": "85:40–90:45"
+  },
+  {
+    "seg": 24,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "project-mortgage-calculator",
+    "make_l3": true,
+    "title_zh": "Project: Mortgage Calculator",
+    "region": "Java Basics",
+    "display_order": 24,
+    "topic": "Project: Mortgage Calculator",
+    "type": "lecture",
+    "time": "90:45–92:55"
+  },
+  {
+    "seg": 25,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "solution-mortgage-calculator",
+    "make_l3": true,
+    "title_zh": "Solution: Mortgage Calculator",
+    "region": "Java Basics",
+    "display_order": 25,
+    "topic": "Solution: Mortgage Calculator",
+    "type": "lecture",
+    "time": "92:55–97:14"
+  },
+  {
+    "seg": 26,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "types-summary",
+    "make_l3": true,
+    "title_zh": "Types Summary",
+    "region": "Java Basics",
+    "display_order": 26,
+    "topic": "Types Summary",
+    "type": "lecture",
+    "time": "97:14–98:43"
+  },
+  {
+    "seg": 27,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "control-flow",
+    "make_l3": true,
+    "title_zh": "Control Flow",
+    "region": "Java Basics",
+    "display_order": 27,
+    "topic": "Control Flow",
+    "type": "lecture",
+    "time": "98:43–99:30"
+  },
+  {
+    "seg": 28,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "comparison-operators",
+    "make_l3": true,
+    "title_zh": "Comparison Operators",
+    "region": "Java Basics",
+    "display_order": 28,
+    "topic": "Comparison Operators",
+    "type": "lecture",
+    "time": "99:30–101:16"
+  },
+  {
+    "seg": 29,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "logical-operators",
+    "make_l3": true,
+    "title_zh": "Logical Operators",
+    "region": "Java Basics",
+    "display_order": 29,
+    "topic": "Logical Operators",
+    "type": "lecture",
+    "time": "101:16–105:52"
+  },
+  {
+    "seg": 30,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "if-statements",
+    "make_l3": true,
+    "title_zh": "If Statements",
+    "region": "Java Basics",
+    "display_order": 30,
+    "topic": "If Statements",
+    "type": "lecture",
+    "time": "105:52–110:18"
+  },
+  {
+    "seg": 31,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "simplifying-if-statements",
+    "make_l3": true,
+    "title_zh": "Simplifying If Statements",
+    "region": "Java Basics",
+    "display_order": 31,
+    "topic": "Simplifying If Statements",
+    "type": "lecture",
+    "time": "110:18–113:47"
+  },
+  {
+    "seg": 32,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "the-ternary-operator",
+    "make_l3": true,
+    "title_zh": "The Ternary Operator",
+    "region": "Java Basics",
+    "display_order": 32,
+    "topic": "The Ternary Operator",
+    "type": "lecture",
+    "time": "113:47–116:16"
+  },
+  {
+    "seg": 33,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "switch-statements",
+    "make_l3": true,
+    "title_zh": "Switch Statements",
+    "region": "Java Basics",
+    "display_order": 33,
+    "topic": "Switch Statements",
+    "type": "lecture",
+    "time": "116:16–120:07"
+  },
+  {
+    "seg": 34,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "exercise-fizzbuzz",
+    "make_l3": true,
+    "title_zh": "Exercise: FizzBuzz",
+    "region": "Java Basics",
+    "display_order": 34,
+    "topic": "Exercise: FizzBuzz",
+    "type": "lecture",
+    "time": "120:07–126:05"
+  },
+  {
+    "seg": 35,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "for-loops",
+    "make_l3": true,
+    "title_zh": "For Loops",
+    "region": "Java Basics",
+    "display_order": 35,
+    "topic": "For Loops",
+    "type": "lecture",
+    "time": "126:05–129:53"
+  },
+  {
+    "seg": 36,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "while-loops",
+    "make_l3": true,
+    "title_zh": "While Loops",
+    "region": "Java Basics",
+    "display_order": 36,
+    "topic": "While Loops",
+    "type": "lecture",
+    "time": "129:53–134:19"
+  },
+  {
+    "seg": 37,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "do-while-loops",
+    "make_l3": true,
+    "title_zh": "Do...While Loops",
+    "region": "Java Basics",
+    "display_order": 37,
+    "topic": "Do...While Loops",
+    "type": "lecture",
+    "time": "134:19–135:36"
+  },
+  {
+    "seg": 38,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "break-and-continue",
+    "make_l3": true,
+    "title_zh": "Break and Continue",
+    "region": "Java Basics",
+    "display_order": 38,
+    "topic": "Break and Continue",
+    "type": "lecture",
+    "time": "135:36–138:52"
+  },
+  {
+    "seg": 39,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "for-each-loop",
+    "make_l3": true,
+    "title_zh": "For-Each Loop",
+    "region": "Java Basics",
+    "display_order": 39,
+    "topic": "For-Each Loop",
+    "type": "lecture",
+    "time": "138:52–141:59"
+  },
+  {
+    "seg": 40,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "project-mortgage-calculator-40",
+    "make_l3": true,
+    "title_zh": "Project: Mortgage Calculator",
+    "region": "Java Basics",
+    "display_order": 40,
+    "topic": "Project: Mortgage Calculator",
+    "type": "lecture",
+    "time": "141:59–143:27"
+  },
+  {
+    "seg": 41,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "solution-mortgage-calculator-41",
+    "make_l3": true,
+    "title_zh": "Solution: Mortgage Calculator",
+    "region": "Java Basics",
+    "display_order": 41,
+    "topic": "Solution: Mortgage Calculator",
+    "type": "lecture",
+    "time": "143:27–148:28"
+  },
+  {
+    "seg": 42,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "control-flow-summary",
+    "make_l3": true,
+    "title_zh": "Control Flow Summary",
+    "region": "Java Basics",
+    "display_order": 42,
+    "topic": "Control Flow Summary",
+    "type": "lecture",
+    "time": "148:28–149:25"
+  },
+  {
+    "seg": 43,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "clean-coding",
+    "make_l3": true,
+    "title_zh": "Clean Coding",
+    "region": "Java Basics",
+    "display_order": 43,
+    "topic": "Clean Coding",
+    "type": "lecture",
+    "time": "149:25–150:48"
+  },
+  {
+    "seg": 44,
+    "files": [
+      "video.mp4"
+    ],
+    "clips": [
+      1
+    ],
+    "slug": "overview",
+    "make_l3": true,
+    "title_zh": "全場總整理",
+    "region": "總覽",
+    "display_order": 0,
+    "topic": "全場總整理",
+    "type": "lecture",
+    "time": "00:00–150:49"
+  }
+]
