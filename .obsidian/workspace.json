@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "java_mosh/Java_Full_Course_Notes.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Java_Full_Course_Notes"
+              "title": "README"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 212.34687423706055
   },
   "right": {
     "id": "e724aa5ee39bd2b9",
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "java_mosh/Java_Full_Course_Notes.md",
+                "file": "yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026/yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "java_mosh/Java_Full_Course_Notes.md",
+                "file": "yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026/yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "java_mosh/Java_Full_Course_Notes.md",
+                "file": "yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026/yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -190,12 +190,30 @@
   },
   "active": "8c4954b5f53e5abc",
   "lastOpenFiles": [
-    "2026-10-09_mosh_java/README.md",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/yt-extract_2026-10-09_max-điểm-reading-part-5-video-1.md",
+    "README.md",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/slide4_cau_114.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/slide3_cau_110_111_115.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/slide2_cau_107_den_113.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/slide1_cau_101_den_106.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/008_1h00m39s.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/007_53m04s.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/006_45m29s.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/005_37m54s.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/004_30m19s.png",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots/003_22m44s.png",
+    "yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026/yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026.md",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1/screenshots",
+    "yt-extract_2026-10-09_max-điểm-reading-part-5-video-1",
+    "yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026/screenshots",
+    "yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026/raw_output.txt",
+    "yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026",
+    "java_mosh/Java_Full_Course_Notes.md",
     "2026-10-09_mosh_java/Java_Full_Course_Notes.md",
+    "2026-10-09_mosh_java/README.md",
     "2026-10-09_mosh_java/build_full_markdown_note.py",
     "2026-10-09_mosh_java/video.mp4",
     "2026-10-09_mosh_java/_HUB_index.md",
-    "2026-10-09_mosh_java/影片筆記整合/媒體/圖片/02_Introduction_01.jpg",
     "2026-10-09_mosh_java/影片筆記整合/markdown/21 Casting 整理稿.md",
     "2026-10-09_mosh_java/影片筆記整合/markdown/21 Casting 逐字稿.md",
     "2026-10-09_mosh_java/影片筆記整合/markdown/04 Anatomy of a Java Program 整理稿.md",
@@ -214,27 +232,9 @@
     "2026-10-09_mosh_java/viewer_tieng_viet.html",
     "2026-10-09_mosh_java/generate_vietnamese_viewer.py",
     "2026-10-09_mosh_java/lecture_merged.mp4",
-    "2026-10-09_mosh_java/audio.temp.m4a",
-    "2026-10-09_mosh_java/audio.m4a",
-    "2026-10-09_mosh_java/audio.m4a.part",
-    "2026-10-09_mosh_java/index.html",
-    "2026-10-09_mosh_java/分享說明.txt",
     "2026-10-09_mosh_java/影片筆記整合/markdown/44 Clean Coding 整理稿.md",
     "2026-10-09_mosh_java/影片筆記整合/markdown/44 Clean Coding 逐字稿.md",
     "2026-10-09_mosh_java/影片筆記整合/markdown/43 Control Flow Summary 整理稿.md",
-    "2026-10-09_mosh_java/影片筆記整合/markdown/43 Control Flow Summary 逐字稿.md",
-    "2026-10-09_mosh_java/影片筆記整合/markdown/42 Solution： Mortgage Calculator 整理稿.md",
-    "2026-10-09_mosh_java/影片筆記整合/markdown/42 Solution： Mortgage Calculator 逐字稿.md",
-    "2026-10-09_mosh_java/影片筆記整合/markdown/41 Project： Mortgage Calculator 整理稿.md",
-    "2026-10-09_mosh_java/影片筆記整合/markdown/41 Project： Mortgage Calculator 逐字稿.md",
-    "2026-10-09_mosh_java/slides/frame_0268.jpg",
-    "2026-10-09_mosh_java/figures/frame_0302.jpg",
-    "2026-10-09_mosh_java/figures/frame_0301.jpg",
-    "2026-10-09_mosh_java/figures/frame_0300.jpg",
-    "2026-10-09_mosh_java/figures/frame_0299.jpg",
-    "2026-10-09_mosh_java/figures/frame_0298.jpg",
-    "2026-10-09_mosh_java/figures/frame_0297.jpg",
-    "2026-10-09_mosh_java/figures/frame_0296.jpg",
-    "2026-10-09_mosh_java/figures/frame_0295.jpg"
+    "2026-10-09_mosh_java/影片筆記整合/markdown/43 Control Flow Summary 逐字稿.md"
   ]
 }
