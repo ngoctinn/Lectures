@@ -1,0 +1,6979 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.030 --> 00:00:03.990
+Hi! My name is Mosh and I'm gonna be your
+instructor in this Java course. In this
+
+00:00:03.990 --> 00:00:07.410
+course, you're gonna learn everything you
+need to get started programming in Java.
+
+00:00:07.410 --> 00:00:11.070
+We'll start off by installing all the
+necessary tools to build Java
+
+00:00:11.070 --> 00:00:14.700
+applications then you're gonna learn
+about the basics of Java you'll learn
+
+00:00:14.700 --> 00:00:19.410
+how Java code gets executed you'll learn
+how to build simple algorithms and
+
+00:00:19.410 --> 00:00:23.100
+throughout this course I'm gonna share
+with you lots of tips and shortcuts from
+
+00:00:23.100 --> 00:00:26.640
+my years of experience I'll teach you
+how to write good code like a
+
+00:00:26.640 --> 00:00:30.390
+professional developer so we'll end up
+watching this course you will have a
+
+00:00:30.390 --> 00:00:35.250
+solid foundation in Java and be ready to
+learn about advanced Java features I've
+
+00:00:35.250 --> 00:00:38.460
+designed this course for anyone who
+wants to learn Java if you're a beginner
+
+00:00:38.460 --> 00:00:42.300
+don't worry I'll make Java super simple
+and hold your hands through this entire
+
+00:00:42.300 --> 00:00:46.260
+course you're not too old or too young
+you'll write your first Java program in
+
+00:00:46.260 --> 00:00:48.719
+minutes
+my name is mosh I'm a software engineer
+
+00:00:48.719 --> 00:00:53.370
+with two decades of experience and I've
+taught over 3 million people how to code
+
+00:00:53.370 --> 00:00:58.109
+and how to become professional software
+engineers I have a coding school at code
+
+00:00:58.109 --> 00:01:02.430
+with mass comm where you can find plenty
+of courses that help you take her coding
+
+00:01:02.430 --> 00:01:05.820
+skills to the next level I hope you'll
+stick around and learn this beautiful
+
+00:01:05.820 --> 00:01:10.140
+and powerful programming language and
+now award from this video sponsor as
+
+00:01:10.140 --> 00:01:14.310
+someone who runs an online business I
+cannot stress enough the importance of
+
+00:01:14.310 --> 00:01:18.210
+staying safe online which is why I was
+so excited when dashlane reached out to
+
+00:01:18.210 --> 00:01:23.189
+me if you don't know - Lane is the
+password manager and VPN recommended by
+
+00:01:23.189 --> 00:01:27.270
+Apple and Google and it's a fantastic
+safeguard for keeping your information
+
+00:01:27.270 --> 00:01:31.590
+secure it's completely free to use for
+your first device so head over to - Ling
+
+00:01:31.590 --> 00:01:36.210
+comm / marché - give it a go if you want
+to upgrade to the premium to get VPN or
+
+00:01:36.210 --> 00:01:41.280
+dark web monitoring you can use the
+promo code mosh to get 10% off sign up
+
+00:01:41.280 --> 00:01:46.909
+for - 9 today and keep yourself safe
+online now back to the course
+
+00:01:48.750 --> 00:01:53.890
+in this java tutorial we're going to
+download and install the necessary tools
+
+00:01:53.890 --> 00:02:01.140
+to build java applications so open up
+your browser and search for jdk download
+
+00:02:01.140 --> 00:02:05.860
+jdk is short for Java development kit
+and it's basically a software
+
+00:02:05.860 --> 00:02:10.510
+development environment for building
+Java applications it has a compiler it
+
+00:02:10.510 --> 00:02:15.010
+has a bunch of code that we can reuse it
+has a Java Runtime environment at a
+
+00:02:15.010 --> 00:02:21.520
+bunch of other stuff so over here you
+can see this page on Oracle com Java se
+
+00:02:21.520 --> 00:02:27.640
+which is short for Java standard edition
+click on this now over here click on
+
+00:02:27.640 --> 00:02:33.310
+this icon now on this page we can see
+Java development kit for various
+
+00:02:33.310 --> 00:02:38.470
+platforms like Linux Mac OS and Windows
+here I'm on a Mac so I'm gonna download
+
+00:02:38.470 --> 00:02:44.440
+this dmg file over here now before we do
+this first we need to accept the license
+
+00:02:44.440 --> 00:02:49.870
+agreement all right now let's download
+the dmg let me open this we're gonna say
+
+00:02:49.870 --> 00:02:54.550
+this package let's double click this and
+here we see this installation wizard
+
+00:02:54.550 --> 00:02:59.620
+it's super easy just click continue and
+install you have to enter your
+
+00:02:59.620 --> 00:03:07.360
+computer's password and then alright
+done beautiful so we can move this to
+
+00:03:07.360 --> 00:03:11.920
+trash now the next piece of software we
+need is a code editor there are so many
+
+00:03:11.920 --> 00:03:15.310
+cool editors for building Java
+applications the popular ones are
+
+00:03:15.310 --> 00:03:20.980
+NetBeans Eclipse and IntelliJ in this
+Java course I'm gonna use IntelliJ but
+
+00:03:20.980 --> 00:03:24.430
+if you have a favorite editor feel free
+to use that to take this course that's
+
+00:03:24.430 --> 00:03:32.470
+perfectly fine so let's search for
+IntelliJ download all right you can see
+
+00:03:32.470 --> 00:03:38.020
+download IntelliJ IDEA click on this
+link over here download the community
+
+00:03:38.020 --> 00:03:42.220
+edition which is absolutely free and
+it's more than enough for this course so
+
+00:03:42.220 --> 00:03:48.870
+download all right now let's drag and
+drop this onto the Applications folder
+
+00:03:49.050 --> 00:03:53.350
+beautiful alright we've installed all
+the necessary tools to build Java
+
+00:03:53.350 --> 00:03:59.490
+applications so next we're gonna look at
+the anatomy of a Java program
+
+00:04:02.200 --> 00:04:07.550
+in this java tutorial we're gonna look
+at the anatomy of java programs the
+
+00:04:07.550 --> 00:04:10.730
+smallest building block in java programs
+are functions
+
+00:04:10.730 --> 00:04:15.380
+if function is a block of code that
+performs a task as a metaphor think of
+
+00:04:15.380 --> 00:04:19.450
+the buttons on the remote control of
+your TV each button performs a task
+
+00:04:19.450 --> 00:04:23.480
+functions in programming languages are
+exactly the same for example we can have
+
+00:04:23.480 --> 00:04:27.980
+a function for sending emails to people
+we can have a function for converting
+
+00:04:27.980 --> 00:04:31.970
+someone's weight in pounds to kilograms
+we can have a function for validating
+
+00:04:31.970 --> 00:04:37.250
+users input and so on now let's see how
+we can code a function in Java we start
+
+00:04:37.250 --> 00:04:41.120
+by specifying the return type of that
+function some functions return a value
+
+00:04:41.120 --> 00:04:45.920
+like a number at day time and so on
+other functions don't return anything so
+
+00:04:45.920 --> 00:04:50.090
+the return type of this functions is
+void void is a reserved keyword in Java
+
+00:04:50.090 --> 00:04:55.100
+and that's why I've coded that in blue
+here now after the return type we have
+
+00:04:55.100 --> 00:04:58.820
+the name of our function so here we
+should give our function a proper
+
+00:04:58.820 --> 00:05:04.820
+descriptive name like send email this
+name clearly identifies the purpose of
+
+00:05:04.820 --> 00:05:10.310
+this function okay now after the name we
+have a pair of parentheses and inside
+
+00:05:10.310 --> 00:05:14.300
+these parentheses we add the parameters
+for this function we use these
+
+00:05:14.300 --> 00:05:18.770
+parameters to pass values to our
+function for example our send email
+
+00:05:18.770 --> 00:05:22.460
+function should have parameters like who
+is the receiver what is the subject of
+
+00:05:22.460 --> 00:05:26.150
+this email what is the content of this
+email and so on now in this tutorial
+
+00:05:26.150 --> 00:05:29.180
+we're not gonna worry about parameters
+we'll look at them in the future
+
+00:05:29.180 --> 00:05:34.700
+now after the parentheses we had a pair
+of curly braces and inside these braces
+
+00:05:34.700 --> 00:05:39.169
+we write the actual Java code now one
+thing I want you to pay attention to
+
+00:05:39.169 --> 00:05:44.330
+here is that in Java we put the left
+brace on the same line where we define
+
+00:05:44.330 --> 00:05:48.740
+our function in other programming
+languages like C sharp it's more
+
+00:05:48.740 --> 00:05:53.330
+conventional to put the left brace on a
+new line but we don't do that in Java so
+
+00:05:53.330 --> 00:05:58.610
+we put the left brace on the same line
+where we define our function now every
+
+00:05:58.610 --> 00:06:02.330
+Java program should have at least one
+function and that function is called
+
+00:06:02.330 --> 00:06:08.030
+main so main is the entry point to our
+programs whenever we execute a Java
+
+00:06:08.030 --> 00:06:12.060
+program the main function gets called
+and the code inside this
+
+00:06:12.060 --> 00:06:16.680
+function gets executed okay now these
+functions don't exist on their own they
+
+00:06:16.680 --> 00:06:22.260
+should always belong to a class so a
+class is a container for one or more
+
+00:06:22.260 --> 00:06:26.639
+related functions basically we use these
+classes to organize our code just like
+
+00:06:26.639 --> 00:06:30.540
+how products are organized in a
+supermarket in a supermarket we have
+
+00:06:30.540 --> 00:06:35.669
+various sections like vegetables fruits
+cleaning products and so on each section
+
+00:06:35.669 --> 00:06:41.490
+contains related products by the same
+token a class in java contains related
+
+00:06:41.490 --> 00:06:46.530
+functions now every Java program should
+have at least one class that contains
+
+00:06:46.530 --> 00:06:52.110
+the main function can you guess the name
+of that class its main so this is how we
+
+00:06:52.110 --> 00:06:57.060
+define a class in Java we start with a
+class keyword then we give our class a
+
+00:06:57.060 --> 00:07:02.490
+proper descriptive name and then we add
+a pair of curly braces now the functions
+
+00:07:02.490 --> 00:07:07.290
+that we define in between these curly
+braces belong to this class and more
+
+00:07:07.290 --> 00:07:12.240
+accurately we refer to them as methods
+so a method is a function that is part
+
+00:07:12.240 --> 00:07:16.890
+of a class in some programming languages
+like Python we can have a function that
+
+00:07:16.890 --> 00:07:21.660
+exists outside of a class so we call it
+a function but when a function belongs
+
+00:07:21.660 --> 00:07:27.630
+to a class we refer to it as a method of
+that class okay now in Java all these
+
+00:07:27.630 --> 00:07:33.060
+classes and methods should have an
+access modifier an access modifier is a
+
+00:07:33.060 --> 00:07:38.190
+special keyword that determines if other
+classes and methods in this program can
+
+00:07:38.190 --> 00:07:43.229
+access these classes and methods we have
+various access modifiers like public
+
+00:07:43.229 --> 00:07:48.360
+private and so on now most of the time
+we use the public access modifier so we
+
+00:07:48.360 --> 00:07:53.490
+put that in front of our class and
+Method declarations so this is the basic
+
+00:07:53.490 --> 00:07:58.860
+structure of a Java program at a minimum
+we have a main class and inside this
+
+00:07:58.860 --> 00:08:03.000
+main class we have the main method now
+you might be curious why we have a
+
+00:08:03.000 --> 00:08:07.139
+capital m in the name of this class
+because in Java we use different
+
+00:08:07.139 --> 00:08:11.760
+conventions for naming our classes and
+our methods to name our classes we use
+
+00:08:11.760 --> 00:08:16.320
+the Pascal naming convention and that
+basically means the first letter of
+
+00:08:16.320 --> 00:08:21.150
+every word should be uppercase in
+contrast to name our methods we use the
+
+00:08:21.150 --> 00:08:25.440
+camel naming convention and that means
+the first letter of every word should be
+
+00:08:25.440 --> 00:08:28.700
+operate
+case except the first wart so that is
+
+00:08:28.700 --> 00:08:32.600
+why we have a capital m in the name of
+this class alright now that you
+
+00:08:32.600 --> 00:08:37.430
+understand the anatomy of a Java program
+let's create a new Java project and see
+
+00:08:37.430 --> 00:08:46.670
+all these building blocks in action in
+this Java tutorial you're gonna learn
+
+00:08:46.670 --> 00:08:53.300
+how to write and execute your first Java
+program so let's open IntelliJ IDEA here
+
+00:08:53.300 --> 00:08:58.880
+on the home screen let's create a new
+project alright on the left side select
+
+00:08:58.880 --> 00:09:04.580
+java and make sure project sdk is not
+black so earlier we downloaded jdk or
+
+00:09:04.580 --> 00:09:10.700
+Java development kit version 12 that is
+why JDK version 12 is selected here if
+
+00:09:10.700 --> 00:09:14.840
+you don't see that make sure to select
+it from this drop-down list alright now
+
+00:09:14.840 --> 00:09:20.510
+let's click on next on this page select
+create project from template so we're
+
+00:09:20.510 --> 00:09:24.110
+gonna create a command line application
+which is an application that we can run
+
+00:09:24.110 --> 00:09:28.820
+from the command line it doesn't have a
+graphical user interface or a GUI
+
+00:09:28.820 --> 00:09:33.140
+now I know command line application is
+not as exciting as an application with a
+
+00:09:33.140 --> 00:09:37.700
+graphical user interface like a mobile
+app or a desktop app but trust me
+
+00:09:37.700 --> 00:09:41.480
+building an application with a graphical
+user interface is very complicated so
+
+00:09:41.480 --> 00:09:45.800
+for now we're just gonna build command
+line applications to learn Java properly
+
+00:09:45.800 --> 00:09:49.850
+once you learn Java properly then you
+can learn about building desktop or
+
+00:09:49.850 --> 00:09:55.850
+mobile applications with Java all right
+now let's click on next on this page we
+
+00:09:55.850 --> 00:10:01.100
+have to give our project a name let's
+call it hello world now over here you
+
+00:10:01.100 --> 00:10:06.560
+can see the location of this project so
+it's inside the idea projects folder now
+
+00:10:06.560 --> 00:10:10.940
+right below that you can see the base
+package which is set to comm that code
+
+00:10:10.940 --> 00:10:15.110
+with Marsh on my machine and your
+mission is probably gonna be comm dot
+
+00:10:15.110 --> 00:10:20.630
+package what is this well here we talked
+about classes and methods I told you
+
+00:10:20.630 --> 00:10:25.310
+that a class is a container for related
+methods so we use classes to organize
+
+00:10:25.310 --> 00:10:30.170
+our code by the same token we have a
+concept called package and we use a
+
+00:10:30.170 --> 00:10:34.910
+package to group related classes so as
+our applications grow we're gonna end up
+
+00:10:34.910 --> 00:10:38.810
+with hundreds or even thousands of
+classes so we should properly organize
+
+00:10:38.810 --> 00:10:42.350
+this class
+us into packages now by convention the
+
+00:10:42.350 --> 00:10:46.310
+base package for a Java project is the
+domain name of your company in Reverse
+
+00:10:46.310 --> 00:10:51.020
+so my website is code with mass comm
+that is why I'm gonna set the base
+
+00:10:51.020 --> 00:10:55.700
+package for this project to come that
+code with Marsh now it doesn't mean that
+
+00:10:55.700 --> 00:10:59.180
+you should have an actual domain
+registered on an Internet this is just a
+
+00:10:59.180 --> 00:11:03.290
+way to create a namespace for our
+classes so now every class that we
+
+00:11:03.290 --> 00:11:07.250
+create in this project will belong to
+this package we're gonna talk about
+
+00:11:07.250 --> 00:11:12.020
+packages in more detail in the future so
+for now just type a base package for
+
+00:11:12.020 --> 00:11:15.560
+your project it can become that your
+name or whatever it doesn't really
+
+00:11:15.560 --> 00:11:22.040
+matter all right now let's go forward
+alright here's our first Java project
+
+00:11:22.040 --> 00:11:26.210
+now this code editor might look a little
+bit intimidating at first but trust me
+
+00:11:26.210 --> 00:11:29.570
+it's really easy and you're gonna learn
+about it throughout this course on the
+
+00:11:29.570 --> 00:11:33.380
+left side we have the project panel
+where we can see all the folders and
+
+00:11:33.380 --> 00:11:39.340
+files in a project for example on the
+top we have the hello word project
+
+00:11:39.340 --> 00:11:44.030
+inside this project we have the source
+folder where we have the source code of
+
+00:11:44.030 --> 00:11:49.460
+a project now in this folder we have
+another folder that is calm that code
+
+00:11:49.460 --> 00:11:54.260
+with Marsh that is the name of our base
+package and in this package we have this
+
+00:11:54.260 --> 00:12:00.320
+class main so you can see this main file
+opened on the right side here now look
+
+00:12:00.320 --> 00:12:05.030
+at the name of this file its main the
+Java so all Java files should have the
+
+00:12:05.030 --> 00:12:10.880
+Java extension okay now let's collapse
+the project panel by clicking on this
+
+00:12:10.880 --> 00:12:16.430
+icon that is better so see what we have
+here on top of this file we have the
+
+00:12:16.430 --> 00:12:21.890
+package statement and this is used to
+specify what package this class belongs
+
+00:12:21.890 --> 00:12:27.890
+to so the main class that we have here
+belongs to this package now this package
+
+00:12:27.890 --> 00:12:32.930
+statement is terminated by semicolon so
+in Java wherever we have a statement we
+
+00:12:32.930 --> 00:12:36.830
+should terminate that statement with a
+semicolon this is exactly like c-sharp
+
+00:12:36.830 --> 00:12:42.710
+or C++ now below this package statement
+we have our main class exactly like what
+
+00:12:42.710 --> 00:12:47.840
+you saw in the previous tutorial so we
+have public class main with a pair of
+
+00:12:47.840 --> 00:12:52.940
+curly braces inside this class we have
+our main method so it's a public method
+
+00:12:52.940 --> 00:12:55.580
+which may
+it's accessible from other parts of this
+
+00:12:55.580 --> 00:13:00.170
+program it's static we haven't talked
+about static metals yet we'll talk about
+
+00:13:00.170 --> 00:13:03.769
+them in the future for now just remember
+that the main method in your program
+
+00:13:03.769 --> 00:13:08.360
+should always be static the return top
+of this method is void which means this
+
+00:13:08.360 --> 00:13:12.440
+method is not gonna return a value and
+here in parentheses we have one
+
+00:13:12.440 --> 00:13:16.730
+parameter for this function we can use
+these parameters to pass values to our
+
+00:13:16.730 --> 00:13:20.899
+program again we'll look at this in the
+future now right after this parameters
+
+00:13:20.899 --> 00:13:25.790
+as you can see the left brace and this
+is where we write the code in this
+
+00:13:25.790 --> 00:13:31.610
+method now by default we have this line
+prefix with two slashes this indicates a
+
+00:13:31.610 --> 00:13:36.019
+comment we use these comments to explain
+our code to other people so these
+
+00:13:36.019 --> 00:13:40.760
+comments don't get executed now let's
+remove this comment and write a bit of
+
+00:13:40.760 --> 00:13:45.709
+code to print something on the terminal
+so here we're gonna use the system class
+
+00:13:45.709 --> 00:13:51.890
+in Java so capital S system here in this
+tooltip you can see the system class is
+
+00:13:51.890 --> 00:13:58.130
+defined in this package Java dot Lang or
+language also look at this icon on the
+
+00:13:58.130 --> 00:14:02.959
+left side this indicates a class now
+inside this class we have various
+
+00:14:02.959 --> 00:14:08.060
+members we can use the dot operator to
+see the members defined in the system
+
+00:14:08.060 --> 00:14:13.520
+class now the member that we're gonna
+access is out look at the icon of this
+
+00:14:13.520 --> 00:14:17.750
+member it's F which is short for field
+you're gonna talk about fields in the
+
+00:14:17.750 --> 00:14:22.130
+future when we talk about classes and
+object-oriented programming now what is
+
+00:14:22.130 --> 00:14:25.190
+interesting here is the type of this
+field and you can see that on the right
+
+00:14:25.190 --> 00:14:30.500
+side that is print string so print
+string is another class that is defined
+
+00:14:30.500 --> 00:14:35.630
+in Java so once again we use the dot
+operator to look at the methods or
+
+00:14:35.630 --> 00:14:40.490
+members defined in the print stream
+class the method we're gonna use is
+
+00:14:40.490 --> 00:14:45.800
+print Ln which is short for line look at
+the icon for this method so M indicates
+
+00:14:45.800 --> 00:14:52.430
+a method now you press ENTER and
+IntelliJ automatically adds these
+
+00:14:52.430 --> 00:14:57.320
+parentheses as well as a semicolon so
+now with the code on line six we're
+
+00:14:57.320 --> 00:15:01.910
+calling or executing the print line
+method earlier I told you that inside
+
+00:15:01.910 --> 00:15:06.350
+this parenthesis we can pass values to
+our methods here we want to print the
+
+00:15:06.350 --> 00:15:09.709
+hello word
+on the terminal so let's type double
+
+00:15:09.709 --> 00:15:15.709
+quotes and inside these quotes right
+hello world so hello word is textual
+
+00:15:15.709 --> 00:15:20.389
+data in Java whenever we deal with
+textual data we should always surround
+
+00:15:20.389 --> 00:15:25.279
+them with double quotes now we say we
+have his string so a string is a
+
+00:15:25.279 --> 00:15:30.230
+sequence of characters all right so
+we're done with our first program now to
+
+00:15:30.230 --> 00:15:35.120
+execute this we can click on this icon
+on the toolbar look at the shortcut on
+
+00:15:35.120 --> 00:15:40.639
+Mac it's ctrl + R I always prefer to use
+shortcuts because they're faster so ctrl
+
+00:15:40.639 --> 00:15:46.970
++ R now IntelliJ is building our
+application and we can see the result in
+
+00:15:46.970 --> 00:15:52.459
+this little terminal window so here's
+our hello work message so that was our
+
+00:15:52.459 --> 00:15:56.720
+first Java program next I'm going to
+explain how Java code gets executed
+
+00:15:56.720 --> 00:16:01.760
+under the hood
+hey Marsh here I just wanted to let you
+
+00:16:01.760 --> 00:16:04.790
+know that you really don't have to
+memorize anything in this course I've
+
+00:16:04.790 --> 00:16:08.269
+put together a comprehensive cheat sheet
+with summary notes that you can download
+
+00:16:08.269 --> 00:16:13.670
+below this video so I've done my best to
+create the best possible Java course and
+
+00:16:13.670 --> 00:16:17.540
+I would really appreciate it if you
+support me by liking and sharing this
+
+00:16:17.540 --> 00:16:21.709
+video on the social networks that you
+use often also be sure to subscribe and
+
+00:16:21.709 --> 00:16:26.060
+enable the notifications so next time I
+upload a video you'll get notified thank
+
+00:16:26.060 --> 00:16:29.860
+you so much and let's continue watching
+
+00:16:29.920 --> 00:16:34.760
+all right now let's see what exactly
+happens under the hood the moment we run
+
+00:16:34.760 --> 00:16:38.660
+a Java program in IntelliJ
+there are basically two steps involved
+
+00:16:38.660 --> 00:16:44.540
+here compilation and execution in the
+compilation step IntelliJ uses the Java
+
+00:16:44.540 --> 00:16:49.100
+compiler to compile our code into a
+different format called Java bytecode
+
+00:16:49.100 --> 00:16:54.140
+this Java compiler comes with the Java
+development kit that we downloaded at
+
+00:16:54.140 --> 00:16:58.070
+the beginning of the course let me show
+you so here we can right click on this
+
+00:16:58.070 --> 00:17:04.309
+main the Java and in this context menu
+we have an item called open in terminal
+
+00:17:04.309 --> 00:17:08.540
+it's down below unfortunately it's not
+visible in my recording window it's
+
+00:17:08.540 --> 00:17:12.770
+called open in terminal on Mac and
+probably open in command prompt on
+
+00:17:12.770 --> 00:17:18.770
+Windows so let's open that we get this
+terminal window or command prompt on
+
+00:17:18.770 --> 00:17:23.689
+windows here we're currently inside of
+this folder code with Maj that is where
+
+00:17:23.689 --> 00:17:28.610
+we have our main the Java file now we
+can invoke the Java compiler like this
+
+00:17:28.610 --> 00:17:35.510
+Java C and pass the name or Java file as
+an argument so main the Java if you're
+
+00:17:35.510 --> 00:17:39.470
+on Mac or Linux make sure to spell this
+with a capital M because these operating
+
+00:17:39.470 --> 00:17:45.290
+systems are case-sensitive so enter now
+let's look at the content of this folder
+
+00:17:45.290 --> 00:17:52.400
+on Mac or Linux we can type LS on
+windows we type dir so let's take a look
+
+00:17:52.400 --> 00:17:57.250
+in this folder now we have a new file
+main class this is the bytecode
+
+00:17:57.250 --> 00:18:02.750
+representation of this Java file now let
+me use IntelliJ to run our Java program
+
+00:18:02.750 --> 00:18:07.700
+this class file gets stored somewhere
+else let me show you so back to the
+
+00:18:07.700 --> 00:18:12.890
+project panel here in our project we
+have this source folder where we
+
+00:18:12.890 --> 00:18:17.390
+our source code and we have this out
+folder where we have the result of the
+
+00:18:17.390 --> 00:18:22.430
+compilation so inside this folder we
+have production inside this we have
+
+00:18:22.430 --> 00:18:27.080
+hello world the same name as our project
+inside hello world we have comm which is
+
+00:18:27.080 --> 00:18:32.360
+the name of our top level package inside
+this package we have a sub package that
+
+00:18:32.360 --> 00:18:37.280
+is code with Marsh and here we have our
+main dat class file so this was the
+
+00:18:37.280 --> 00:18:42.130
+compilation step now this Java bytecode
+that we have in this file is platform
+
+00:18:42.130 --> 00:18:47.630
+independent and that means it can run on
+Windows Mac Linux or any operating
+
+00:18:47.630 --> 00:18:53.480
+systems that has a Java runtime
+environment if you go to java.com slash
+
+00:18:53.480 --> 00:18:58.670
+download we can download java or more
+accurately java runtime environment for
+
+00:18:58.670 --> 00:19:02.960
+various operating systems this Java
+Runtime environment has a software
+
+00:19:02.960 --> 00:19:09.790
+component called Java Virtual Machine or
+JVM this JVM takes our Java bytecode and
+
+00:19:09.790 --> 00:19:15.020
+translates it to the native code for the
+underlying operating system so if you're
+
+00:19:15.020 --> 00:19:19.850
+on Windows machine this Java Virtual
+Machine converts or Java bytecode into
+
+00:19:19.850 --> 00:19:23.630
+the native code that windows can
+understand this architecture is the
+
+00:19:23.630 --> 00:19:28.670
+reason why Java applications are
+portable or platform independent we can
+
+00:19:28.670 --> 00:19:33.260
+write a Java program on a Windows
+machine and execute it on Linux Mac or
+
+00:19:33.260 --> 00:19:36.740
+any other operating systems that have a
+Java runtime environment
+
+00:19:36.740 --> 00:19:40.910
+c-sharp and python also have the same
+architecture that's why they are
+
+00:19:40.910 --> 00:19:45.740
+platform independent as well now let me
+show you how to invoke this java virtual
+
+00:19:45.740 --> 00:19:51.880
+machine to run a Java program so back to
+this terminal window let me expand this
+
+00:19:51.880 --> 00:19:56.120
+currently we are inside of this folder
+code with Marsh and in this folder we
+
+00:19:56.120 --> 00:20:03.730
+have this class file now let's go one
+level up so CD dot dot and one more time
+
+00:20:03.730 --> 00:20:09.080
+so now we are inside the source folder
+we can invoke Java Virtual Machine like
+
+00:20:09.080 --> 00:20:14.720
+this they type Java and then we type the
+full pass to our main class file what do
+
+00:20:14.720 --> 00:20:20.240
+I mean by that well earlier we defined
+this package comm that code with Marsh
+
+00:20:20.240 --> 00:20:26.390
+and this class the main class is part of
+this package so the full path
+
+00:20:26.390 --> 00:20:34.820
+this class is calm dot code with Marsh
+dot main make sure to use a capital M
+
+00:20:34.820 --> 00:20:40.190
+here because this is case sensitive now
+when we press ENTER Java will look at
+
+00:20:40.190 --> 00:20:44.420
+this folder calm inside this folder it
+will look at this other folder code with
+
+00:20:44.420 --> 00:20:49.280
+Marsh and then it will find main that
+class in that folder it will load the
+
+00:20:49.280 --> 00:20:53.210
+bytecode and convert it to the native
+code for the operating system we are
+
+00:20:53.210 --> 00:20:59.270
+using so take a look so it executed our
+program hello world beautiful let me run
+
+00:20:59.270 --> 00:21:03.440
+a program using IntelliJ all these steps
+are hidden from us we don't see the
+
+00:21:03.440 --> 00:21:07.210
+compilation or execution steps
+
+00:21:08.160 --> 00:21:13.330
+so you have seen Java in action now let
+me tell you five interesting facts about
+
+00:21:13.330 --> 00:21:20.080
+Java Java was developed by James Gosling
+in 1995 at Sun Microsystems which was
+
+00:21:20.080 --> 00:21:25.570
+later acquired by Oracle in 2010 it was
+originally called oke after an oak tree
+
+00:21:25.570 --> 00:21:29.920
+that stood outside Gosling's office
+later it was renamed to green and was
+
+00:21:29.920 --> 00:21:34.900
+finally renamed to Java inspired by Java
+coffee that's why its logo looks like
+
+00:21:34.900 --> 00:21:39.550
+this we have four editions of Java for
+building different kinds of applications
+
+00:21:39.550 --> 00:21:44.020
+we have Java standard edition this is
+the core Java platform which is what
+
+00:21:44.020 --> 00:21:48.010
+we're using in this course it contains
+all of the libraries that every Java
+
+00:21:48.010 --> 00:21:51.910
+developer must learn
+we have Java Enterprise Edition which is
+
+00:21:51.910 --> 00:21:56.980
+used for building very large-scale and
+distributed systems it's built on top of
+
+00:21:56.980 --> 00:22:01.990
+java standard edition and provides
+additional libraries for building fault
+
+00:22:01.990 --> 00:22:07.030
+tolerant distributed multi-tiered
+software we have java micro Edition
+
+00:22:07.030 --> 00:22:12.040
+which is a subset of Java standard
+edition designed for mobile devices so
+
+00:22:12.040 --> 00:22:16.600
+it has libraries specific to mobile
+devices and finally we have Java card
+
+00:22:16.600 --> 00:22:22.480
+which is used in smart cards the latest
+version of Java is Java standard edition
+
+00:22:22.480 --> 00:22:28.180
+12 which was released just a few months
+ago in March 2019 Java has close to 9
+
+00:22:28.180 --> 00:22:32.890
+million developers worldwide currently
+about 3 billion mobile phones run Java
+
+00:22:32.890 --> 00:22:38.950
+as well as 120 million TV sets and every
+blu-ray player according to indeed.com
+
+00:22:38.950 --> 00:22:45.280
+the average salary of a Java developer
+is just over $100,000 per year in the US
+
+00:22:45.280 --> 00:22:49.420
+so as we can see Java is everywhere
+which means more opportunities for you
+
+00:22:49.420 --> 00:22:56.110
+to get hired as a professional
+programmer now let me give you a quick
+
+00:22:56.110 --> 00:23:00.040
+overview of how I've structured this
+course so you can get the most out of it
+
+00:23:00.040 --> 00:23:05.350
+this course is the first part of my
+complete four-part Java series each part
+
+00:23:05.350 --> 00:23:09.340
+is about three to four hours long so it
+can easily complete it in a day or two
+
+00:23:09.340 --> 00:23:12.940
+in the first part which is what you're
+watching you're gonna learn the
+
+00:23:12.940 --> 00:23:17.050
+fundamentals of programming with Java in
+the next section you'll learn about the
+
+00:23:17.050 --> 00:23:21.240
+type system in Java you will learn how
+to work with various types such as
+
+00:23:21.240 --> 00:23:25.830
+purrs strings boolean's and arrays by
+the end of this section you will build a
+
+00:23:25.830 --> 00:23:30.480
+mortgage calculator as your first Java
+project will be improving this
+
+00:23:30.480 --> 00:23:35.130
+calculator bit by bit routers course
+next you will learn about control flow
+
+00:23:35.130 --> 00:23:38.880
+statements that are used to build
+algorithms we'll be talking about
+
+00:23:38.880 --> 00:23:43.290
+various types of conditional statements
+and loops later in this section we'll
+
+00:23:43.290 --> 00:23:47.700
+add data validation to our mortgage
+calculator to force the user to enter
+
+00:23:47.700 --> 00:23:52.380
+valid values at this point you'll be
+able to build basic algorithms and
+
+00:23:52.380 --> 00:23:54.900
+that's great
+but being a good programmer requires
+
+00:23:54.900 --> 00:24:00.030
+knowing how to write good code code that
+is clean and expressive that's what
+
+00:24:00.030 --> 00:24:03.960
+separates an outstanding programmer from
+an average programmer so in the
+
+00:24:03.960 --> 00:24:07.350
+following section we'll talk about clean
+coding I will show you various
+
+00:24:07.350 --> 00:24:11.250
+techniques that professional programmers
+use to make their code clean and
+
+00:24:11.250 --> 00:24:15.720
+maintainable and finally in the last
+section you will learn how to find and
+
+00:24:15.720 --> 00:24:20.760
+fix errors in your java programs as well
+as how to package them for deployment so
+
+00:24:20.760 --> 00:24:25.110
+others can use them so the materials in
+the first part will give you a solid
+
+00:24:25.110 --> 00:24:30.330
+foundation on how to start programming
+in Java in the second part we'll talk
+
+00:24:30.330 --> 00:24:34.860
+about object oriented programming which
+is a style of programming use in most if
+
+00:24:34.860 --> 00:24:39.930
+not all Java applications whether you
+want to use Java to build web mobile or
+
+00:24:39.930 --> 00:24:43.500
+desktop applications you need to
+understand object-oriented programming
+
+00:24:43.500 --> 00:24:47.790
+well because otherwise you're going to
+constantly hit obstacles in the third
+
+00:24:47.790 --> 00:24:52.140
+part we're going to talk about core Java
+API is or application programming
+
+00:24:52.140 --> 00:24:56.670
+interfaces you'll learn about many of
+the useful classes in the standard Java
+
+00:24:56.670 --> 00:25:00.450
+library and finally in the last part
+we'll be looking at the advanced
+
+00:25:00.450 --> 00:25:06.330
+features in Java such as streams threads
+database programming and so on so I hope
+
+00:25:06.330 --> 00:25:10.800
+you're gonna join me on this journey and
+master Java the most popular programming
+
+00:25:10.800 --> 00:25:15.730
+language behind millions of apps and
+websites
+
+00:25:15.730 --> 00:25:21.770
+you
+
+00:25:24.290 --> 00:25:28.170
+intersection we're gonna look at the
+fundamentals of programming in Java
+
+00:25:28.170 --> 00:25:32.760
+you're gonna learn about variables and
+constants primitive and reference types
+
+00:25:32.760 --> 00:25:37.110
+you're gonna learn about casting or type
+conversion you will learn how to work
+
+00:25:37.110 --> 00:25:41.310
+with numbers strings and arrays and how
+to read input from the user
+
+00:25:41.310 --> 00:25:44.730
+once you learn all this I'm gonna give
+you a project you're gonna build a
+
+00:25:44.730 --> 00:25:48.750
+mortgage calculator on your own so make
+sure to pay great attention to all the
+
+00:25:48.750 --> 00:25:51.660
+materials you're gonna learn because
+you're gonna use most of them in this
+
+00:25:51.660 --> 00:26:02.130
+project are you ready now let's jump in
+and get started in this tutorial we're
+
+00:26:02.130 --> 00:26:06.840
+gonna talk about variables in Java we
+use variables to temporarily store data
+
+00:26:06.840 --> 00:26:11.280
+in computer's memory here is an example
+imagine in this program you want to
+
+00:26:11.280 --> 00:26:16.850
+store someone's age in the memory so we
+declare a variable like this ant age
+
+00:26:16.850 --> 00:26:23.580
+equals 30 so int or integer is the type
+of this variable so in this variable we
+
+00:26:23.580 --> 00:26:28.590
+can only store integers which are whole
+numbers like 1 2 3 4 numbers that don't
+
+00:26:28.590 --> 00:26:32.520
+have a decimal point now in Java we have
+several different types I'm gonna talk
+
+00:26:32.520 --> 00:26:37.440
+about them in the next tutorial so first
+we specify the type of our variable then
+
+00:26:37.440 --> 00:26:42.180
+we give it a name or a label this is
+also called an identifier because we use
+
+00:26:42.180 --> 00:26:46.980
+it to identify our variable this equal
+sign is called the assignment operator
+
+00:26:46.980 --> 00:26:52.590
+and 30 is the initial value that we are
+assigning to this variable so we say on
+
+00:26:52.590 --> 00:26:57.180
+line 6 we're initializing this variable
+which means we're giving it an initial
+
+00:26:57.180 --> 00:27:02.340
+value you always have to initialize our
+variables before reading them so with
+
+00:27:02.340 --> 00:27:06.330
+this line we're storing number 30
+somewhere in computer's memory and we're
+
+00:27:06.330 --> 00:27:10.920
+assigning this label to that memory
+location now on line 7 instead of
+
+00:27:10.920 --> 00:27:16.650
+printing hello world we can print the
+value of the age variable take a look so
+
+00:27:16.650 --> 00:27:23.550
+I'm gonna run this program using ctrl +
+R there you go now we see 30 on the
+
+00:27:23.550 --> 00:27:28.770
+terminal beautiful we can also change
+the value of our variable so after we
+
+00:27:28.770 --> 00:27:35.720
+initialize it per house we can change it
+to 35 now when we run this program again
+
+00:27:35.740 --> 00:27:41.380
+we see it 35 beautiful we can also
+initialize multiple variables on the
+
+00:27:41.380 --> 00:27:44.950
+same line but this is something that I
+don't recommend because it makes your
+
+00:27:44.950 --> 00:27:49.530
+code ugly and hard to read here is an
+example we can declare another variable
+
+00:27:49.530 --> 00:27:55.810
+like temperature and set it to 20 so
+using a comma we can declare multiple
+
+00:27:55.810 --> 00:27:59.950
+variables on the same line now even
+though this is technically possible it's
+
+00:27:59.950 --> 00:28:05.470
+not something that I recommend so it's
+always better to declare one variable on
+
+00:28:05.470 --> 00:28:10.990
+each line like this we can also copy the
+value of one variable into another here
+
+00:28:10.990 --> 00:28:15.070
+is an example let me delete these
+variables and declare a new variable
+
+00:28:15.070 --> 00:28:21.100
+called my age we set it to 30 and then
+we declare another variable like her age
+
+00:28:21.100 --> 00:28:29.620
+and we set it to my age so now when we
+print her age we're gonna see 30 take a
+
+00:28:29.620 --> 00:28:34.970
+look
+so on line seven recapping the value of
+
+00:28:34.970 --> 00:28:38.780
+this variable into this other variable
+now one thing I want you to pay
+
+00:28:38.780 --> 00:28:43.550
+attention to here is the convention I
+have used for naming our variables as I
+
+00:28:43.550 --> 00:28:47.510
+told you before this is called the
+camelcase notation so we should
+
+00:28:47.510 --> 00:28:52.670
+capitalize the first letter of every
+word except the first word so in this
+
+00:28:52.670 --> 00:28:57.350
+case the first word my it's all in
+lowercase but the second word starts
+
+00:28:57.350 --> 00:29:00.920
+with a capital letter so this is all
+about declaring and initializing
+
+00:29:00.920 --> 00:29:04.820
+variables in the next tutorial we're
+going to talk about various types in
+
+00:29:04.820 --> 00:29:14.620
+Java in this tutorial we're going to
+talk about various types in Java
+
+00:29:14.620 --> 00:29:19.070
+basically we have two categories of
+types we have primitive types for
+
+00:29:19.070 --> 00:29:23.810
+storing simple values and non primitive
+types or reference types for storing
+
+00:29:23.810 --> 00:29:28.460
+complex objects so in the category of
+primitive types we have white which
+
+00:29:28.460 --> 00:29:36.260
+takes one byte of memory and in one bite
+we can store values from 128 to 127 now
+
+00:29:36.260 --> 00:29:40.190
+the more bytes we have the larger
+numbers we can store so next we have
+
+00:29:40.190 --> 00:29:45.080
+short which takes two bytes and with
+this we can store values up to 32,000
+
+00:29:45.080 --> 00:29:49.280
+next we have integer which we have seen
+before integers take four bytes of
+
+00:29:49.280 --> 00:29:54.290
+memory and allow us to store values up
+to two billion then we have long which
+
+00:29:54.290 --> 00:29:58.670
+takes eight bytes and with this we can
+store even larger numbers now all these
+
+00:29:58.670 --> 00:30:03.290
+types are for storing whole numbers that
+don't have a decimal point if you want
+
+00:30:03.290 --> 00:30:07.000
+to store a number that has a decimal
+point you have to use float or double
+
+00:30:07.000 --> 00:30:11.270
+float takes four bytes double takes
+eight bytes so obviously we double we
+
+00:30:11.270 --> 00:30:16.040
+can store larger numbers next we have
+char for storing a single character like
+
+00:30:16.040 --> 00:30:21.530
+ABC and this chart I've take two bytes
+so they support international letters
+
+00:30:21.530 --> 00:30:25.880
+and finally we have boolean for storing
+boolean values which can be true or
+
+00:30:25.880 --> 00:30:30.530
+false just like yes or no in English now
+let's take a look at a few examples
+
+00:30:30.530 --> 00:30:35.660
+earlier we use an integer for storing
+someone's age but as you learned
+
+00:30:35.660 --> 00:30:40.670
+integers take four bytes and allow us to
+store values up to two billion we don't
+
+00:30:40.670 --> 00:30:44.870
+need four bytes of memory to store
+someone's age all we need is one byte
+
+00:30:44.870 --> 00:30:50.120
+because with one bite we can store
+values up to 127 so I'm gonna change
+
+00:30:50.120 --> 00:30:55.130
+this to byte that is better now let's
+look at another example let's say we
+
+00:30:55.130 --> 00:30:59.150
+want to store the number of times a
+YouTube video has been watched so we
+
+00:30:59.150 --> 00:31:04.070
+define an integer called views count
+note that I'm always using meaningful
+
+00:31:04.070 --> 00:31:07.940
+names for my variables because these
+names help us understand what this code
+
+00:31:07.940 --> 00:31:14.000
+does I've seen some people use variable
+names like V or V 1 or n nobody knows
+
+00:31:14.000 --> 00:31:18.230
+what these variables do so as a best
+practice always use meaningful and
+
+00:31:18.230 --> 00:31:23.330
+descriptive names for your variables so
+views count we set this to a large
+
+00:31:23.330 --> 00:31:30.080
+number like 1 2 3 4 5 6 7 8 9 now in
+Java whenever you deal with a large
+
+00:31:30.080 --> 00:31:34.789
+number like this you can use an
+underscore to separate every three
+
+00:31:34.789 --> 00:31:40.100
+digits just like how we use a comma in
+our documents to make our numbers more
+
+00:31:40.100 --> 00:31:46.549
+readable we can use an underscore in
+Java so with integers we can store
+
+00:31:46.549 --> 00:31:50.600
+values up to two billion but let's say
+the number of times this video has been
+
+00:31:50.600 --> 00:31:55.580
+watched is three billion so I had a
+three here now we have a red on the line
+
+00:31:55.580 --> 00:31:59.149
+that indicates an error
+let me hover our mouse over it we see
+
+00:31:59.149 --> 00:32:03.980
+this tooltip integer number too large so
+we need to change the type of this
+
+00:32:03.980 --> 00:32:09.740
+variable to long however the error is
+still there what's going on here the
+
+00:32:09.740 --> 00:32:13.159
+reason we're getting this error is that
+by default Java sees these numbers as
+
+00:32:13.159 --> 00:32:17.779
+integers so even though we have defined
+the type of this variable as long Java
+
+00:32:17.779 --> 00:32:22.220
+compiler sees this value as an integer
+and he thinks this value is too large
+
+00:32:22.220 --> 00:32:27.230
+for an integer to solve this problem we
+need to add an L as a suffix or this
+
+00:32:27.230 --> 00:32:31.850
+number we can use an uppercase or a
+lowercase L but as you can see a
+
+00:32:31.850 --> 00:32:37.760
+lowercase L kind of looks like a 1 so
+it's better to use a capital L so these
+
+00:32:37.760 --> 00:32:41.720
+are examples of whole numbers now let's
+declare a variable for storing a number
+
+00:32:41.720 --> 00:32:49.010
+with a decimal point so double price we
+set this to 1099 obviously the double
+
+00:32:49.010 --> 00:32:53.000
+variable is too large for storing the
+price of a product so we can change this
+
+00:32:53.000 --> 00:32:58.470
+to float that is better but you have a
+compilation error here take a look
+
+00:32:58.470 --> 00:33:04.419
+incompatible types required float but
+found double the reason we're seeing
+
+00:33:04.419 --> 00:33:08.409
+this error is that by default Java sees
+these numbers with a decimal point as
+
+00:33:08.409 --> 00:33:13.690
+double so even though we set the type of
+this variable to float Java sees this
+
+00:33:13.690 --> 00:33:19.299
+number as a double so just like how we
+added a suffix to this number to
+
+00:33:19.299 --> 00:33:23.740
+represent it as a long we need to add a
+suffix here to represent this number as
+
+00:33:23.740 --> 00:33:30.059
+a float and that suffix is F once again
+we can use an upper case or lower case F
+
+00:33:30.059 --> 00:33:36.759
+so these are examples of numbers now
+let's store a character so char we call
+
+00:33:36.759 --> 00:33:42.190
+it letter and we set it to a note that
+we should always surround single
+
+00:33:42.190 --> 00:33:46.870
+characters with single quotes and
+multiple characters or strings with
+
+00:33:46.870 --> 00:33:50.440
+double quotes
+okay so char represents only one
+
+00:33:50.440 --> 00:33:55.299
+character string represents a series of
+characters and finally let's see an
+
+00:33:55.299 --> 00:34:01.240
+example of a boolean so we define a
+boolean variable called is eligible is
+
+00:34:01.240 --> 00:34:08.530
+this person eligible for loan or not we
+said this to true or false these are the
+
+00:34:08.530 --> 00:34:13.359
+boolean values now note that all these
+words coded in orange are reserved
+
+00:34:13.359 --> 00:34:18.010
+keywords in Java
+just like public static void class
+
+00:34:18.010 --> 00:34:22.540
+package these are all reserved keywords
+so we cannot use these reserved keywords
+
+00:34:22.540 --> 00:34:32.649
+the name our variables classes and
+methods in the last tutorial you learned
+
+00:34:32.649 --> 00:34:37.149
+that we use primitive types to store
+simple values like numbers boolean
+
+00:34:37.149 --> 00:34:42.970
+values or single characters in contrast
+use reference types to store complex
+
+00:34:42.970 --> 00:34:48.849
+objects like data objects or mail
+messages these are complex objects now
+
+00:34:48.849 --> 00:34:52.810
+in Java we have eight primitive types
+that you have seen before all the other
+
+00:34:52.810 --> 00:34:58.329
+types are reference types let me show
+you an example so here in this program
+
+00:34:58.329 --> 00:35:05.560
+first I'm gonna declare a primitive type
+let's say white age equals 30 now
+
+00:35:05.560 --> 00:35:09.730
+declaring and initializing a reference
+type is slightly different from
+
+00:35:09.730 --> 00:35:14.730
+primitive type let me show you
+so let's type date now here in this
+
+00:35:14.730 --> 00:35:19.290
+tooltip box which is called intellisense
+we can see various classes that have
+
+00:35:19.290 --> 00:35:23.640
+date in their name so IntelliJ is
+helping us complete our code by
+
+00:35:23.640 --> 00:35:28.800
+suggesting these class names now here we
+have a date class in this package Java
+
+00:35:28.800 --> 00:35:33.750
+the util so this package contains a lot
+of utility classes that are useful in a
+
+00:35:33.750 --> 00:35:39.300
+lot of programs you also have a date
+class in a different package Java SQL or
+
+00:35:39.300 --> 00:35:43.710
+sequel which is used for programming
+databases so this is the benefit of
+
+00:35:43.710 --> 00:35:47.940
+packages we can have the same class but
+in different packages they don't
+
+00:35:47.940 --> 00:35:54.000
+conflict so packages create a namespace
+for our classes okay now in this case if
+
+00:35:54.000 --> 00:36:00.540
+we select the first date class and press
+enter or tab IntelliJ automatically adds
+
+00:36:00.540 --> 00:36:07.170
+this line for us import Java that you
+till the date so because currently we
+
+00:36:07.170 --> 00:36:12.090
+are in this package in order to use a
+class from a different package we need
+
+00:36:12.090 --> 00:36:16.950
+to import it so here we're importing the
+date class in this package will talk
+
+00:36:16.950 --> 00:36:21.350
+about packages in more detail in the
+future so back to our date variable
+
+00:36:21.350 --> 00:36:27.840
+let's give this variable a name collect
+now now we set this here we need to use
+
+00:36:27.840 --> 00:36:32.220
+the new operator to allocate memory for
+this variable and this is one of the
+
+00:36:32.220 --> 00:36:36.090
+differences between the primitive and
+reference types when declaring primitive
+
+00:36:36.090 --> 00:36:40.440
+types we don't need to allocate memory
+memory is allocated and released by Java
+
+00:36:40.440 --> 00:36:44.340
+Runtime environment but when dealing
+with reference types we should always
+
+00:36:44.340 --> 00:36:48.060
+allocate memory now we don't have to
+release this memory Java Runtime
+
+00:36:48.060 --> 00:36:52.590
+environment will automatically take care
+of that so we use the new operator and
+
+00:36:52.590 --> 00:36:56.700
+then repeat the name of our class in
+this case date and then we add
+
+00:36:56.700 --> 00:37:02.430
+parentheses followed by a semicolon in
+this example this variable we have
+
+00:37:02.430 --> 00:37:07.859
+defined here is an instance of the date
+class so this class is defined template
+
+00:37:07.859 --> 00:37:13.680
+or blueprints for creating new objects
+new instances as another example we can
+
+00:37:13.680 --> 00:37:18.810
+have a class called human and we can
+have objects like John Bob Mary and so
+
+00:37:18.810 --> 00:37:24.760
+on so an object is an instance of a
+class now this object or this class
+
+00:37:24.760 --> 00:37:30.070
+have members that we can access using
+the dot operator so we can type now dot
+
+00:37:30.070 --> 00:37:34.870
+and these are all the members defined in
+this class or in this object for example
+
+00:37:34.870 --> 00:37:39.760
+we have a method called get time and
+this returns the time component of this
+
+00:37:39.760 --> 00:37:43.300
+object this is another difference
+between primitive types and reference
+
+00:37:43.300 --> 00:37:48.880
+types these primitive types don't have
+members so if you type age dot we don't
+
+00:37:48.880 --> 00:37:52.930
+see anything these items you see here
+are not members of age their code
+
+00:37:52.930 --> 00:37:56.950
+snippets which allow us to quickly
+generate code for example we can select
+
+00:37:56.950 --> 00:38:01.210
+for I and this automatically generates
+this block of code for us we'll talk
+
+00:38:01.210 --> 00:38:06.490
+about this in the future so this age
+variable is a primitive type it's not an
+
+00:38:06.490 --> 00:38:10.990
+object it doesn't have any members and
+that's why when we use the dot operator
+
+00:38:10.990 --> 00:38:15.280
+we don't see anything here now let's
+delete this line and instead print the
+
+00:38:15.280 --> 00:38:21.190
+value of this data object so once again
+we can type system this is a class so we
+
+00:38:21.190 --> 00:38:25.030
+can use the dot operator to access its
+members here we have out which is a
+
+00:38:25.030 --> 00:38:29.710
+field and the type of this field is
+print string which is another class in
+
+00:38:29.710 --> 00:38:34.570
+Java so once again we can use a dot
+operator and call the print line
+
+00:38:34.570 --> 00:38:39.220
+function now let me show you a very cool
+shortcut instead of typing all this we
+
+00:38:39.220 --> 00:38:45.850
+can use one of these code snippets so we
+type s oh you see and press tab and this
+
+00:38:45.850 --> 00:38:49.750
+generates this piece of code for us all
+right now let's pass our data object
+
+00:38:49.750 --> 00:38:54.550
+here note that I have not surrounded
+this variable with double quotes because
+
+00:38:54.550 --> 00:38:58.750
+this is a string and if you run this
+program we'll see now on the terminal
+
+00:38:58.750 --> 00:39:02.170
+there you go
+we don't want this you want the value of
+
+00:39:02.170 --> 00:39:09.100
+our data object not a label so let's
+remove the quotes I run the program
+
+00:39:09.100 --> 00:39:19.990
+again so here's the current date I'm on
+my machine I've learned a little bit
+
+00:39:19.990 --> 00:39:23.740
+about the differences between the
+primitive and reference types so you
+
+00:39:23.740 --> 00:39:27.880
+know that we use primitive types for
+storing simple values and reference
+
+00:39:27.880 --> 00:39:31.630
+types for storing complex objects but
+there's a very important difference
+
+00:39:31.630 --> 00:39:36.550
+between these two categories of types in
+terms of memory management and that's
+
+00:39:36.550 --> 00:39:38.500
+what we're going to talk about in this
+tutorial
+
+00:39:38.500 --> 00:39:44.080
+so I'm going to declare a primitive
+variable X and set it to 1 and then I'm
+
+00:39:44.080 --> 00:39:50.290
+going to declare another variable like Y
+and set it to X so in this example we
+
+00:39:50.290 --> 00:39:54.490
+have two different variables x and y and
+these two variables are at different
+
+00:39:54.490 --> 00:39:59.890
+memory locations so they're completely
+independent of each other in other words
+
+00:39:59.890 --> 00:40:05.230
+if I change the value of X Y is not
+going to get affected let me show you so
+
+00:40:05.230 --> 00:40:13.480
+I'm gonna update X to 2 and then print Y
+so syu t tab y let's take a look
+
+00:40:13.480 --> 00:40:19.630
+so run as you can see Y is not affected
+because x and y are completely
+
+00:40:19.630 --> 00:40:24.849
+independent of each other however when
+we use a reference time this behavior is
+
+00:40:24.849 --> 00:40:27.670
+different
+let's take a look so I'm gonna delete
+
+00:40:27.670 --> 00:40:34.990
+all the code here in Java we have a
+point class that is defined in this
+
+00:40:34.990 --> 00:40:42.280
+package Java that awt so we press ENTER
+and now we have this import statement on
+
+00:40:42.280 --> 00:40:47.440
+the top beautiful let's declare a
+variable like point 1 and set it to new
+
+00:40:47.440 --> 00:40:54.490
+point here we can pass the initial
+values for x and y so I'm gonna pass 1
+
+00:40:54.490 --> 00:41:02.230
+and 1 so intelligent automatically adds
+these labels x and y now just like
+
+00:41:02.230 --> 00:41:07.980
+before I'm gonna declare another
+variable point 2 and set it to point 1
+
+00:41:07.980 --> 00:41:12.880
+and this is where things get interesting
+when Java Runtime environment executes
+
+00:41:12.880 --> 00:41:19.119
+line 8 first it's going to allocate some
+memory to store this point object let's
+
+00:41:19.119 --> 00:41:23.290
+see if the address of that memory
+location is 100 then it's going to
+
+00:41:23.290 --> 00:41:28.240
+allocate a separate part of the memory
+and it's going to attach this label to
+
+00:41:28.240 --> 00:41:33.400
+that memory location point 1 in that
+memory location it's going to store the
+
+00:41:33.400 --> 00:41:38.080
+address of our point object so this is
+the critical difference between
+
+00:41:38.080 --> 00:41:42.339
+primitive and reference types when we
+declare a primitive variable like a byte
+
+00:41:42.339 --> 00:41:46.030
+the value that we assigned to that
+variable will be stored in that memory
+
+00:41:46.030 --> 00:41:50.740
+location but when we use a reference
+type like this point class our variable
+
+00:41:50.740 --> 00:41:54.700
+is going to hold the ax
+of that point object in memory not the
+
+00:41:54.700 --> 00:42:00.070
+actual pointer object now look at line 9
+here we're copying the value that we
+
+00:42:00.070 --> 00:42:04.660
+have in this variable into this other
+variable so that value as you learn is
+
+00:42:04.660 --> 00:42:09.520
+not the point object is the address or
+the reference to the point object in
+
+00:42:09.520 --> 00:42:13.960
+memory that is why we refer to these
+tiles as reference types because they
+
+00:42:13.960 --> 00:42:18.640
+don't store the actual values they store
+a reference to an object somewhere in
+
+00:42:18.640 --> 00:42:24.910
+the memory so in this example point one
+and point two are referencing the exact
+
+00:42:24.910 --> 00:42:30.490
+same point object in memory we only have
+one point object so these two variables
+
+00:42:30.490 --> 00:42:34.630
+are not independent of each other
+they're referencing the same object and
+
+00:42:34.630 --> 00:42:38.890
+that means if I update this point object
+through either of these variables the
+
+00:42:38.890 --> 00:42:43.960
+changes will be visible to the other
+variable I'm gonna show you so using the
+
+00:42:43.960 --> 00:42:49.360
+first variable point one we're going to
+update the value of x so we use the dot
+
+00:42:49.360 --> 00:42:54.970
+operator and here we can see the members
+of this object X on Y are both fields
+
+00:42:54.970 --> 00:43:00.160
+which are variables that exist inside of
+a class so we said X just like a regular
+
+00:43:00.160 --> 00:43:06.070
+variable to a different value let's say
+two now because point one and point two
+
+00:43:06.070 --> 00:43:11.140
+are referencing the exact same object if
+we print point two we're going to see
+
+00:43:11.140 --> 00:43:17.950
+the change that we just made
+take a look so S or ut tab let's print
+
+00:43:17.950 --> 00:43:27.670
+point to run the program there you go
+so the change was visible so remember
+
+00:43:27.670 --> 00:43:32.680
+this reference types are copied by the
+references whereas primitive types are
+
+00:43:32.680 --> 00:43:38.970
+copied by their value and these values
+are completely independent of each other
+
+00:43:42.060 --> 00:43:47.200
+in this tutorial we're gonna look at
+strings in Java so earlier in the course
+
+00:43:47.200 --> 00:43:51.010
+we printed the hello world message on a
+terminal this hello word that we have
+
+00:43:51.010 --> 00:43:54.970
+here is a string or more accurately it's
+a string literal
+
+00:43:54.970 --> 00:43:59.380
+that means a string value now let's
+extract this from here and store it in a
+
+00:43:59.380 --> 00:44:07.300
+string variable so cut just before this
+line we type string now look this string
+
+00:44:07.300 --> 00:44:12.580
+class is defined in Java that Lang
+package what is interesting is that we
+
+00:44:12.580 --> 00:44:16.450
+don't have an import statement to import
+this package or import this class
+
+00:44:16.450 --> 00:44:20.770
+because this package is automatically
+imported so we can use any classes that
+
+00:44:20.770 --> 00:44:27.420
+are defined in this package now let's
+declare a variable called message and
+
+00:44:27.420 --> 00:44:31.900
+because this is a reference type we
+should instantiate this variable using
+
+00:44:31.900 --> 00:44:39.220
+the new operator so Neal string and here
+in parenthesis we type our message hello
+
+00:44:39.220 --> 00:44:45.100
+world however here we have this little
+warning take a look new string is
+
+00:44:45.100 --> 00:44:49.780
+redundant because in Java there is a
+shorter way to initialize string
+
+00:44:49.780 --> 00:44:54.160
+variables let me show you so instead of
+using the new operator we simply set
+
+00:44:54.160 --> 00:45:00.580
+this to our string literal now on the
+surface this looks like a primitive type
+
+00:45:00.580 --> 00:45:04.870
+because we are not using the new
+operator but this is just a shorthand to
+
+00:45:04.870 --> 00:45:09.850
+initialize a string variable strings are
+reference types in Java but because we
+
+00:45:09.850 --> 00:45:12.430
+use them often there is a short way to
+create them
+
+00:45:12.430 --> 00:45:19.750
+so now let's pass message to the print
+line method and run our program you get
+
+00:45:19.750 --> 00:45:23.620
+the exact same result as before
+beautiful now let's look at a few
+
+00:45:23.620 --> 00:45:27.940
+interesting things that you can do with
+strings we can concatenate or joining a
+
+00:45:27.940 --> 00:45:32.770
+string with another one using the plus
+operator so here we can combine this
+
+00:45:32.770 --> 00:45:42.520
+with another string with two exclamation
+marks and here's the result now because
+
+00:45:42.520 --> 00:45:47.350
+string is a class it has members that we
+can access using the dot operator so we
+
+00:45:47.350 --> 00:45:51.880
+can type message dot and these are all
+the methods or functions do
+
+00:45:51.880 --> 00:45:57.160
+find in the string class for example we
+have this method here ends with and with
+
+00:45:57.160 --> 00:46:01.240
+this we can check to see if our string
+ends with a character or sequence of
+
+00:46:01.240 --> 00:46:05.950
+characters for example here we can pass
+their string to see if our message ends
+
+00:46:05.950 --> 00:46:10.329
+with two exclamation marks
+now instead of printing the message
+
+00:46:10.329 --> 00:46:19.839
+let's print this expression here so
+let's run the program we get true so
+
+00:46:19.839 --> 00:46:23.980
+this method that we have called here
+returns a boolean value which can be
+
+00:46:23.980 --> 00:46:30.089
+true or false we also have another
+method starts with let's take a look now
+
+00:46:30.089 --> 00:46:34.390
+in this case we get false because our
+message doesn't start with two
+
+00:46:34.390 --> 00:46:40.839
+exclamation marks another useful method
+is length so we can call that to get the
+
+00:46:40.839 --> 00:46:46.599
+length of a string which is the number
+of characters so message dot length take
+
+00:46:46.599 --> 00:46:51.220
+a look
+so in this string we have 13 characters
+
+00:46:51.220 --> 00:46:55.000
+and this is useful in situations where
+you want to check the length of the
+
+00:46:55.000 --> 00:46:58.750
+input by the user for example you might
+have a sign-up form with a username
+
+00:46:58.750 --> 00:47:02.500
+field you can check the length of
+someone's username and give them an
+
+00:47:02.500 --> 00:47:07.960
+error if the username is longer than
+let's say 20 characters pretty useful we
+
+00:47:07.960 --> 00:47:14.619
+also have another method that is index
+of and this returns the index of the
+
+00:47:14.619 --> 00:47:19.299
+first occurrence of the character or the
+string that we pass here for example if
+
+00:47:19.299 --> 00:47:27.250
+you pass H the index of H is 0 so let's
+run the program there you go we get 0 if
+
+00:47:27.250 --> 00:47:35.289
+you pass e we get 1 because the index of
+the first II in this message is 1 now
+
+00:47:35.289 --> 00:47:39.490
+what if you pass a character or a string
+that doesn't exist in this message let's
+
+00:47:39.490 --> 00:47:47.829
+say Skye we get negative 1 so with this
+method we can check to see if a string
+
+00:47:47.829 --> 00:47:53.140
+contains certain characters or words or
+sentences and so on another useful
+
+00:47:53.140 --> 00:47:58.720
+method is replace and with this we can
+replace one or more characters with
+
+00:47:58.720 --> 00:48:05.339
+something else for example we can
+replace any exclamation marks with
+
+00:48:05.500 --> 00:48:12.050
+let's say a store so this replace metal
+has two parameters one is target the
+
+00:48:12.050 --> 00:48:16.730
+other is replacement and here we're
+passing two values for these parameters
+
+00:48:16.730 --> 00:48:20.569
+here's the first value here is the
+second value and we have separated these
+
+00:48:20.569 --> 00:48:26.050
+values using a comma now in programming
+terms we refer to this values as
+
+00:48:26.050 --> 00:48:30.230
+arguments a lot of programmers don't
+know the difference between parameters
+
+00:48:30.230 --> 00:48:35.540
+and arguments parameters are the holes
+that we define in our methods arguments
+
+00:48:35.540 --> 00:48:40.670
+are the actual values that we pass to
+these methods so in this case target and
+
+00:48:40.670 --> 00:48:45.079
+replacement or parameters but
+exclamation mark and asterisk are
+
+00:48:45.079 --> 00:48:53.450
+arguments now let's run this program and
+see what happens so our explanation
+
+00:48:53.450 --> 00:48:58.280
+marks are replaced with stars now what
+is important here is that this method
+
+00:48:58.280 --> 00:49:05.750
+does not modify our original string it
+returns a new string so if we print our
+
+00:49:05.750 --> 00:49:15.230
+original string right after SRU T tab
+message you can see the original string
+
+00:49:15.230 --> 00:49:19.130
+is not changed because in Java strings
+are immutable
+
+00:49:19.130 --> 00:49:23.839
+we cannot mutate them we cannot change
+them so any methods that modify a string
+
+00:49:23.839 --> 00:49:30.410
+will always return a new string object
+okay we also have another useful method
+
+00:49:30.410 --> 00:49:35.410
+to lowercase
+let's take a look
+
+00:49:35.480 --> 00:49:41.030
+so to lowercase converts all characters
+to lowercase and once again you can see
+
+00:49:41.030 --> 00:49:46.220
+that the original string is not affected
+because this method returns a new string
+
+00:49:46.220 --> 00:49:54.460
+okay we also have two uppercase and
+another useful method is trim trim and
+
+00:49:54.460 --> 00:49:58.940
+with this we can get rid of extra white
+spaces that can be at the beginning or
+
+00:49:58.940 --> 00:50:03.710
+the end of a string sometimes our users
+type unnecessary spaces in form fields
+
+00:50:03.710 --> 00:50:08.300
+so using the trim method we can get rid
+of these white spaces let me show you so
+
+00:50:08.300 --> 00:50:15.500
+I'm gonna add a couple of spaces before
+and after our message now when we trim
+
+00:50:15.500 --> 00:50:21.859
+it these white spaces are gonna get
+removed take a look so here's the
+
+00:50:21.859 --> 00:50:26.480
+original string you can see two white
+spaces at the beginning and here's our
+
+00:50:26.480 --> 00:50:31.640
+string after trimming so these are some
+useful methods in the string class but
+
+00:50:31.640 --> 00:50:35.390
+this glass has more methods than we
+don't have time to cover in this lecture
+
+00:50:35.390 --> 00:50:38.450
+but as we go through the course you're
+gonna learn more about the string class
+
+00:50:38.450 --> 00:50:49.100
+and other useful classes in Java third
+times will include special characters in
+
+00:50:49.100 --> 00:50:54.500
+our strings like a tab or a new line or
+a backslash or double quotes so in this
+
+00:50:54.500 --> 00:50:57.710
+tutorial I'm gonna show you how to
+include these special characters in your
+
+00:50:57.710 --> 00:51:01.940
+strings so here we have the string hello
+Marsh let's say we want to surround
+
+00:51:01.940 --> 00:51:07.160
+Marsh with double quotes now here's the
+problem if we add a double quote here
+
+00:51:07.160 --> 00:51:11.840
+Java compiler thinks this is the
+termination of our string so it doesn't
+
+00:51:11.840 --> 00:51:15.800
+stand what we have after that's why we
+have a compilation error the fixes
+
+00:51:15.800 --> 00:51:20.000
+problem we need to prefix this double
+code with a backslash
+
+00:51:20.000 --> 00:51:26.359
+so using this backslash we have escaped
+the double quote now one more time let's
+
+00:51:26.359 --> 00:51:32.570
+add backslash double code here now let's
+run the program and see what we get so
+
+00:51:32.570 --> 00:51:37.670
+we get hello Marsh in double quote
+beautiful so double quote is one of
+
+00:51:37.670 --> 00:51:41.210
+those special characters that you need
+to be aware of another special character
+
+00:51:41.210 --> 00:51:45.560
+is backslash let's say we want to store
+the pass to a directory on a Windows
+
+00:51:45.560 --> 00:51:49.190
+machine so that will look like this C
+Drive
+
+00:51:49.190 --> 00:51:55.760
+backslash windows backslash whatever now
+if you want to store this in a string we
+
+00:51:55.760 --> 00:52:02.750
+need to escape each backslash let me
+show you so C Drive backslash now we
+
+00:52:02.750 --> 00:52:05.900
+have a problem
+Java compiler thinks we're escaping the
+
+00:52:05.900 --> 00:52:10.220
+double code here so it thinks our string
+is not terminated with another double
+
+00:52:10.220 --> 00:52:14.839
+code but that's not what we want you
+want to add a backslash here so we need
+
+00:52:14.839 --> 00:52:20.960
+to prefix our backslash with another
+backslash now we type windows one more
+
+00:52:20.960 --> 00:52:28.730
+time something let's run the program so
+even though we have two backslashes in
+
+00:52:28.730 --> 00:52:33.920
+our code we actually see one backslash
+in a terminal window in other escape
+
+00:52:33.920 --> 00:52:39.680
+sequences backslash N and we use that to
+add a new line to our strings so let's
+
+00:52:39.680 --> 00:52:45.410
+change this to backslash N and run the
+program to see what happens now our
+
+00:52:45.410 --> 00:52:50.030
+string is broken down onto multiple
+lines by the first line we have C Drive
+
+00:52:50.030 --> 00:52:55.490
+then we have Windows so wherever we had
+a backslash n Java will insert a new
+
+00:52:55.490 --> 00:52:58.280
+line we can also add a tab in our
+strings
+
+00:52:58.280 --> 00:53:03.710
+so if you add backslash T here there
+will be a tab which means C Drive and
+
+00:53:03.710 --> 00:53:11.210
+windows let's take a look so C Drive
+here we have a tab and then windows now
+
+00:53:11.210 --> 00:53:14.780
+in Java we have a few more escape
+sequences but quite honestly they're
+
+00:53:14.780 --> 00:53:19.430
+hardly used so remember these four
+escape sequences that we cover in this
+
+00:53:19.430 --> 00:53:21.490
+tutorial
+
+00:53:25.140 --> 00:53:29.799
+in this tutorial we're going to talk
+about arrays in Java we use arrays to
+
+00:53:29.799 --> 00:53:34.660
+store a list of items like a list of
+numbers or a list of people or a list of
+
+00:53:34.660 --> 00:53:39.130
+messages let me show you so here we have
+an integer variable you want to convert
+
+00:53:39.130 --> 00:53:46.029
+this to an integer array so right after
+int we add square brackets now we have a
+
+00:53:46.029 --> 00:53:50.950
+compilation error because we're storing
+a single number in this array so to fix
+
+00:53:50.950 --> 00:53:55.539
+this we need to remove one because
+arrays are reference types we need to
+
+00:53:55.539 --> 00:54:01.119
+use the new operator here then we repeat
+the type one more time enter a and here
+
+00:54:01.119 --> 00:54:05.619
+in square brackets we specify the size
+or the length of this array how many
+
+00:54:05.619 --> 00:54:09.970
+items do we want to include in this
+array let's say five also we should
+
+00:54:09.970 --> 00:54:14.260
+change the name of this variable from
+number two numbers because we're dealing
+
+00:54:14.260 --> 00:54:18.539
+with a list of items so always pay
+attention to the name of your variables
+
+00:54:18.539 --> 00:54:24.069
+now you can access individual items in
+this array using an index so we type
+
+00:54:24.069 --> 00:54:30.309
+numbers square brackets to reference the
+first element or first item we use zero
+
+00:54:30.309 --> 00:54:37.809
+now we can set this to a value like 1
+similarly we can set the second item to
+
+00:54:37.809 --> 00:54:43.119
+2 now what if we use an invalid index
+let's say 10 this array doesn't have 10
+
+00:54:43.119 --> 00:54:50.260
+items so let's see what happens numbers
+of 10 we said this to 3 when we run this
+
+00:54:50.260 --> 00:54:57.339
+program we get an exception exceptions
+are Javas way to report errors so in
+
+00:54:57.339 --> 00:55:01.270
+this case an exception was raised and
+our program crashed we'll talk about
+
+00:55:01.270 --> 00:55:06.779
+exceptions in detail later in the course
+so now let's remove the last line and
+
+00:55:06.779 --> 00:55:12.400
+treinta sorry
+so sou t tab numbers let's see what we
+
+00:55:12.400 --> 00:55:16.730
+get
+we get this weird string in sort of the
+
+00:55:16.730 --> 00:55:21.560
+items in our array here's the reason
+by default when we print an array Java
+
+00:55:21.560 --> 00:55:25.970
+returns the string which is calculated
+based on the address of this object in
+
+00:55:25.970 --> 00:55:29.870
+memory so if you have another array and
+we print that we're gonna see something
+
+00:55:29.870 --> 00:55:34.940
+different because each object is gonna
+be in a different memory space okay now
+
+00:55:34.940 --> 00:55:39.620
+how can we see the actual items in this
+array well we have a class in Java
+
+00:55:39.620 --> 00:55:44.660
+called arrays let me show you
+arrays so this class is defined in Java
+
+00:55:44.660 --> 00:55:50.780
+that util package let's press ENTER now
+this is important on the top beautiful
+
+00:55:50.780 --> 00:55:55.940
+so we can use the dot operator to access
+the members of this class here we have a
+
+00:55:55.940 --> 00:56:01.430
+method called two string now as you see
+it this method is implemented multiple
+
+00:56:01.430 --> 00:56:06.650
+times so in the first implementation
+this method gets a float array in the
+
+00:56:06.650 --> 00:56:10.520
+second implementation it takes an
+integer array and so on so for all
+
+00:56:10.520 --> 00:56:13.850
+primitive types as well as reference
+types this method is implemented
+
+00:56:13.850 --> 00:56:19.490
+multiple times this is what we call
+method overloading now we can call this
+
+00:56:19.490 --> 00:56:26.150
+method and pass our integer array and
+this will return the string
+
+00:56:26.150 --> 00:56:30.710
+representation of this array so we can
+cut this from here and pass it to our
+
+00:56:30.710 --> 00:56:37.430
+print method like this now let's run the
+program one more time and here's our
+
+00:56:37.430 --> 00:56:41.960
+array beautiful so the first two items
+are initialized the others are set to 0
+
+00:56:41.960 --> 00:56:45.530
+by default because here we're dealing
+with an integer array if you had a
+
+00:56:45.530 --> 00:56:50.270
+boolean array all items why default get
+initialized to false if you have a
+
+00:56:50.270 --> 00:56:53.780
+string array all items get initialized
+to an empty string
+
+00:56:53.780 --> 00:57:00.290
+okay now this syntax for creating and
+initializing an array is a little bit
+
+00:57:00.290 --> 00:57:05.240
+tedious and it's an older syntax there
+is a newer way to initialize an array if
+
+00:57:05.240 --> 00:57:09.410
+we know the items ahead of time like in
+this case so I'm going to remove these
+
+00:57:09.410 --> 00:57:15.760
+two lines I'm also gonna remove the new
+operator here we use curly braces and
+
+00:57:15.760 --> 00:57:22.790
+inside these braces we add all the items
+in this array let's say 2 3 5 1 &amp; 4 now
+
+00:57:22.790 --> 00:57:27.500
+we have 5 items so the length of this
+array is gonna be 5 we can read that
+
+00:57:27.500 --> 00:57:31.670
+using the lengths
+so if we type numbers dot look here we
+
+00:57:31.670 --> 00:57:36.049
+have is filled look at the icon it's an
+F so this is a field which is like a
+
+00:57:36.049 --> 00:57:41.089
+variable in a class and the type of this
+field is an integer so this returns the
+
+00:57:41.089 --> 00:57:47.229
+number of items in this array let's get
+that and printed using our print method
+
+00:57:47.229 --> 00:57:56.930
+like this take a look so we get five now
+in Java arrays have a fixed size so once
+
+00:57:56.930 --> 00:58:00.799
+we create them we cannot add or remove
+additional items to them they have a
+
+00:58:00.799 --> 00:58:04.849
+fixed length if you want to be able to
+add or remove additional items from an
+
+00:58:04.849 --> 00:58:07.849
+array you should use one of the
+collection classes that we'll talk about
+
+00:58:07.849 --> 00:58:12.349
+later in the course for now all I want
+you to remember is that arrays have a
+
+00:58:12.349 --> 00:58:17.359
+fixed length now currently our array is
+not sorted these numbers are in some
+
+00:58:17.359 --> 00:58:22.130
+kind of random order we can easily sort
+this array using the sort method of the
+
+00:58:22.130 --> 00:58:27.799
+arrays class let me show you so I'm
+gonna remove this line and call arrays
+
+00:58:27.799 --> 00:58:33.319
+dot sort once again you can see this
+method is overloaded because it's
+
+00:58:33.319 --> 00:58:37.999
+implemented with different parameter
+types so we call this method and pass
+
+00:58:37.999 --> 00:58:43.470
+our numbers array
+now when we run this program we can see
+
+00:58:43.470 --> 00:58:47.329
+our array is sorted beautiful
+
+00:58:50.710 --> 00:58:55.730
+so yeah I've learned that we use arrays
+to store a list of objects in Java we
+
+00:58:55.730 --> 00:58:59.690
+can also create multi-dimensional arrays
+for example we can create a
+
+00:58:59.690 --> 00:59:04.099
+two-dimensional array to store a matrix
+or we can create a three-dimensional
+
+00:59:04.099 --> 00:59:09.559
+array to store data for cube these are
+useful in scientific computations let me
+
+00:59:09.559 --> 00:59:13.520
+show you so here we have a single
+dimensional array to convert this to a
+
+00:59:13.520 --> 00:59:18.680
+two-dimensional array we need to add
+another pair of square brackets now we
+
+00:59:18.680 --> 00:59:21.950
+have a compilation error because we need
+to repeat these brackets on the other
+
+00:59:21.950 --> 00:59:29.180
+side so let's say we want to create a 2
+by 3 matrix so 2 rows and 3 columns we
+
+00:59:29.180 --> 00:59:35.569
+add in other brackets here and change
+these lengths to 2 and 3 so now we have
+
+00:59:35.569 --> 00:59:41.000
+2 rows and 3 columns now to access
+individual items in this array we need
+
+00:59:41.000 --> 00:59:46.369
+to supply two indexes first the index of
+the row so we can go to the first row
+
+00:59:46.369 --> 00:59:53.779
+and then the first column and initialize
+that to 1 now let us print this so and
+
+00:59:53.779 --> 01:00:00.920
+so you t-tap once again we use our
+arrays class dot to string and pass this
+
+01:00:00.920 --> 01:00:05.869
+object
+take a look once again we get this weird
+
+01:00:05.869 --> 01:00:09.920
+string because here we're dealing with a
+multi-dimensional array to solve this
+
+01:00:09.920 --> 01:00:16.670
+problem we need to use another method in
+this class called deep to string use
+
+01:00:16.670 --> 01:00:22.069
+this for printing multi-dimensional
+arrays take a look now we have this
+
+01:00:22.069 --> 01:00:28.490
+matrix which has two rows and in each
+row we have three columns we can also
+
+01:00:28.490 --> 01:00:33.020
+create a three dimensional array all we
+have to do is to add another pair of
+
+01:00:33.020 --> 01:00:39.380
+brackets and specify the length of that
+dimension pretty easy now what about the
+
+01:00:39.380 --> 01:00:44.869
+curly brace syntax let me show you so
+let's revert this back to a two
+
+01:00:44.869 --> 01:00:50.260
+dimensional array we're gonna get rid of
+the new operator and use curly braces
+
+01:00:50.260 --> 01:00:55.670
+now let's say in this matrix we're gonna
+have two rows and three columns so each
+
+01:00:55.670 --> 01:00:59.119
+row is an array itself because it's a
+list of items right
+
+01:00:59.119 --> 01:01:07.579
+so we add another array here let's say 1
+2 3 then comma now we add the second row
+
+01:01:07.579 --> 01:01:13.640
+which is another array in this row we're
+gonna have 3 numbers 4 5 &amp; 6
+
+01:01:13.640 --> 01:01:20.150
+now let's remove this line we don't need
+it anymore and print this array so
+
+01:01:20.150 --> 01:01:30.259
+here's the end result you have learned a
+lot about variables ya learned that when
+
+01:01:30.259 --> 01:01:33.529
+declaring them we need to initialize
+them and we can always change their
+
+01:01:33.529 --> 01:01:38.239
+value later on throughout the lifetime
+of our programs however there are times
+
+01:01:38.239 --> 01:01:41.749
+that we don't want the value of a
+variable to change for example let's
+
+01:01:41.749 --> 01:01:49.039
+declare a variable called pi and set it
+to 3.14 now here we need to add an F to
+
+01:01:49.039 --> 01:01:53.509
+represent this as a float because by
+default Java compiler sees this number
+
+01:01:53.509 --> 01:01:58.839
+as a decimal okay now you know that we
+use pi to calculate the area of a circle
+
+01:01:58.839 --> 01:02:04.130
+what if before we calculate the area of
+a circle I come here and type pi equals
+
+01:02:04.130 --> 01:02:08.150
+1 then all our calculations are gonna
+get messed up we don't want this to
+
+01:02:08.150 --> 01:02:15.140
+happen that's when we use constants so
+if we type final here Java compiler will
+
+01:02:15.140 --> 01:02:19.969
+treat this as a constant so once we
+initialize this we cannot change its
+
+01:02:19.969 --> 01:02:25.069
+value later on you can see here we have
+a compilation error and it says cannot
+
+01:02:25.069 --> 01:02:31.819
+assign a value to final variable pi so
+pi is a final variable or a constant now
+
+01:02:31.819 --> 01:02:38.200
+by convention we use all capital letters
+to name constants so this should be PI
+
+01:02:38.200 --> 01:02:42.769
+beautiful now I tell you a little side
+story in one of my early courses that I
+
+01:02:42.769 --> 01:02:47.269
+created years ago that was c-sharp
+basics for beginners there I used the
+
+01:02:47.269 --> 01:02:51.619
+same example to teach the concept of
+constants but I pronounce this word as P
+
+01:02:51.619 --> 01:02:56.180
+instead of Pi and believe it or not to
+this day people make fun of me for
+
+01:02:56.180 --> 01:03:02.239
+saying P instead of Pi but that's how we
+learned this back in Iran we pronounce
+
+01:03:02.239 --> 01:03:06.589
+it as P and I think Greek people also
+say P but anyway I just thought to share
+
+01:03:06.589 --> 01:03:11.150
+this video to change the mood now you're
+done with constants next we're gonna
+
+01:03:11.150 --> 01:03:15.180
+talk about arithmetic
+expressions
+
+01:03:18.829 --> 01:03:23.670
+in this tutorial we're going to talk
+about arithmetic expressions in Java so
+
+01:03:23.670 --> 01:03:27.479
+in Java we have the same arithmetic
+operators that we have in math we have
+
+01:03:27.479 --> 01:03:33.359
+addition subtraction multiplication
+division and modulus which is the
+
+01:03:33.359 --> 01:03:37.799
+remainder of a division let's look at a
+few examples so I'm gonna declare an
+
+01:03:37.799 --> 01:03:44.430
+integer called result and here we can
+type 10 plus 3 now when we print result
+
+01:03:44.430 --> 01:03:49.589
+it's gonna be 13 pretty straightforward
+there you go so this is addition we also
+
+01:03:49.589 --> 01:03:56.940
+have subtraction multiplication division
+is an interesting one let's take a look
+
+01:03:56.940 --> 01:04:01.440
+so here the result is a whole number
+because in Java the division of two
+
+01:04:01.440 --> 01:04:05.340
+whole numbers is a whole number if you
+want to get a floating-point number here
+
+01:04:05.340 --> 01:04:10.050
+you need to convert these numbers to a
+float or a double let me show you
+
+01:04:10.050 --> 01:04:16.230
+so we prefix this number with
+parentheses and in parentheses we type
+
+01:04:16.230 --> 01:04:22.830
+double now we are casting or converting
+this number to a double similarly we
+
+01:04:22.830 --> 01:04:27.570
+should do that here and now we have a
+compilation error because on the left
+
+01:04:27.570 --> 01:04:33.180
+side we declared an integer but here the
+result of this expression is a double
+
+01:04:33.180 --> 01:04:38.070
+and by the way an expression is a piece
+of code that produces a value so what we
+
+01:04:38.070 --> 01:04:42.780
+have here is an expression because it
+produces a value so to fix this problem
+
+01:04:42.780 --> 01:04:47.130
+we need to change this to double now
+when we run this program we get this
+
+01:04:47.130 --> 01:04:52.560
+floating point number beautiful so these
+are the arithmetic operators and these
+
+01:04:52.560 --> 01:04:56.790
+numbers that we have here are called
+operands we also have increment and
+
+01:04:56.790 --> 01:05:03.000
+decrement operators let me show you so
+I'm gonna declare a new variable int X
+
+01:05:03.000 --> 01:05:07.710
+we set it to 1 now if you want to
+increase the value of x by 1 we use the
+
+01:05:07.710 --> 01:05:14.520
+increment operator now let's print this
+on a terminal so we get 2 there you go
+
+01:05:14.520 --> 01:05:20.670
+we can apply this operator as a postfix
+or as a prefix and we get the same
+
+01:05:20.670 --> 01:05:24.660
+result
+take a look too however if we use this
+
+01:05:24.660 --> 01:05:28.770
+on the right side of an assignment
+operator we get different results let me
+
+01:05:28.770 --> 01:05:35.100
+show you so I'm gonna declare another
+variable Y we set it to X plus plus in
+
+01:05:35.100 --> 01:05:39.930
+this case because we have applied the
+increment operator as a postfix first
+
+01:05:39.930 --> 01:05:45.570
+the value of x will get copied to Y so Y
+would be 1 and then X will be
+
+01:05:45.570 --> 01:05:54.210
+incremented by 1 so if you print x and y
+x is gonna be 2 and Y is gonna be 1 take
+
+01:05:54.210 --> 01:06:03.080
+a look so X is 2 and Y is 1 beautiful
+however if you apply this as a prefix
+
+01:06:03.080 --> 01:06:08.940
+first X will be incremented by 1 so it
+will be 2 and then it will be copied to
+
+01:06:08.940 --> 01:06:16.050
+Y so in this case both
+X&amp;Y will be to take a look so we get two
+
+01:06:16.050 --> 01:06:21.240
+and two now what if you want to
+increment X by more than one let's say
+
+01:06:21.240 --> 01:06:26.070
+by two well there are two ways to do
+this let's remove Y we don't really need
+
+01:06:26.070 --> 01:06:34.470
+it anymore we can write x equals x plus
+2 so first we add 2 to X the result will
+
+01:06:34.470 --> 01:06:38.790
+be three and then three will be copied
+into X the other way is to use the
+
+01:06:38.790 --> 01:06:45.870
+Augmented or compound assignment
+operator so we can write X plus equals
+
+01:06:45.870 --> 01:06:50.190
+two what we have on line eight is
+exactly identical to what we have on
+
+01:06:50.190 --> 01:06:54.600
+line seven well as you can see it's
+shorter so this is a better way to write
+
+01:06:54.600 --> 01:06:59.430
+the same code now this is one of the
+Augmented assignment operators we have
+
+01:06:59.430 --> 01:07:04.080
+the Augmented assignment operator for
+other arithmetic operators so we can
+
+01:07:04.080 --> 01:07:09.720
+type X minus equals 2 and this would
+reduce the value of x by 2 we also have
+
+01:07:09.720 --> 01:07:15.990
+multiply and divide so these are the
+Augmented or compound assignment
+
+01:07:15.990 --> 01:07:25.470
+operators right now I've got a question
+for you here we have declared this
+
+01:07:25.470 --> 01:07:30.840
+variable X it goes to 10 plus 3 times 2
+what do you think is the result of this
+
+01:07:30.840 --> 01:07:37.920
+expression the result is 16 let's run
+this program and find out so run there
+
+01:07:37.920 --> 01:07:42.870
+you go we got 16 but why well this is a
+very basic math concept that
+
+01:07:42.870 --> 01:07:48.180
+unfortunately a lot of people don't know
+in math the multiplication and division
+
+01:07:48.180 --> 01:07:53.940
+operators have a higher priority so they
+get applied first in this example this
+
+01:07:53.940 --> 01:08:00.180
+expression 3 times 2 is evaluated first
+the result is 6 and then 6 is added to
+
+01:08:00.180 --> 01:08:04.560
+10 that's why we get 16 now if you want
+to change the order of these operators
+
+01:08:04.560 --> 01:08:08.730
+you can always use parentheses for
+example if you want this expression to
+
+01:08:08.730 --> 01:08:15.810
+be evaluated first we wrap it in
+parentheses so like this now Java
+
+01:08:15.810 --> 01:08:19.830
+compiler will first evaluate this
+expression the result will be 13 and
+
+01:08:19.830 --> 01:08:24.949
+then 13 is multiplied by 2 so we get 26
+take a look
+
+01:08:24.949 --> 01:08:31.289
+there you go so be aware of the order of
+these operations parentheses always have
+
+01:08:31.289 --> 01:08:36.149
+the highest priority then we have
+multiplication and division and finally
+
+01:08:36.149 --> 01:08:45.959
+we have addition and subtraction in this
+tutorial we're going to talk about
+
+01:08:45.959 --> 01:08:52.559
+casting and type conversion so I'm gonna
+declare a short variable call X and set
+
+01:08:52.559 --> 01:08:58.559
+it to 1 and then I'm gonna declare an
+integer called Y and set it to X plus 2
+
+01:08:58.559 --> 01:09:04.289
+in this example we're adding a short to
+an integer what do you think the result
+
+01:09:04.289 --> 01:09:12.630
+is gonna be well let's take a look
+so sou t let's print Y we get 3 that is
+
+01:09:12.630 --> 01:09:17.069
+what you were expecting but let me
+explain what happens under the hood for
+
+01:09:17.069 --> 01:09:21.179
+this expression to get executed because
+we're dealing with two different types
+
+01:09:21.179 --> 01:09:25.829
+of values one is a short the other is an
+integer one of these values should be
+
+01:09:25.829 --> 01:09:29.849
+converted to the other type so they are
+equal now I got a question for you how
+
+01:09:29.849 --> 01:09:34.169
+many bytes do we have in a short
+variable we have 2 bytes how many bytes
+
+01:09:34.169 --> 01:09:39.149
+do we have in an integer 4 bytes so any
+values that we store in a short variable
+
+01:09:39.149 --> 01:09:44.009
+can also be stored in an integer
+variable right so when this piece of
+
+01:09:44.009 --> 01:09:48.479
+code is gonna get executed this is
+what's gonna happen first Java looks at
+
+01:09:48.479 --> 01:09:54.570
+the value in this variable it's 1 right
+it's going to allocate another variable
+
+01:09:54.570 --> 01:09:58.289
+an anonymous variable somewhere in
+memory we don't know where that is we
+
+01:09:58.289 --> 01:10:02.309
+don't know the name of that variable it
+doesn't have a name it's anonymous that
+
+01:10:02.309 --> 01:10:07.229
+variable is gonna be an integer then
+Java is gonna copy the value of x into
+
+01:10:07.229 --> 01:10:11.369
+that memory space and then it will add
+these two numbers together this is what
+
+01:10:11.369 --> 01:10:17.669
+we call implicit casting let me type it
+here implicit casting that means
+
+01:10:17.669 --> 01:10:21.149
+automatic casting or automatic
+conversion we don't have to worry about
+
+01:10:21.149 --> 01:10:24.989
+it whenever we have a value and that
+value can be converted to a data type
+
+01:10:24.989 --> 01:10:30.929
+that is bigger casting or conversion
+happens implicitly or automatically so
+
+01:10:30.929 --> 01:10:35.399
+byte can be automatically converted to
+short and this can be converted to int
+
+01:10:35.399 --> 01:10:39.730
+and long okay
+now what about floating-point numbers
+
+01:10:39.730 --> 01:10:45.250
+let's look at an example I'm gonna
+change this to a double one point one
+
+01:10:45.250 --> 01:10:48.640
+now here we have a compilation error
+because on the right side of the
+
+01:10:48.640 --> 01:10:52.780
+assignment operator we have a
+floating-point number a double on the
+
+01:10:52.780 --> 01:10:57.730
+left side we have an integer so we need
+to change this to double now when we
+
+01:10:57.730 --> 01:11:04.570
+execute this code we're gonna get 3.1
+let's verify this there you go now let's
+
+01:11:04.570 --> 01:11:10.660
+see how casting happens here in this
+case we're dealing with a double and an
+
+01:11:10.660 --> 01:11:16.750
+integer an integer is less precise than
+a double because in a double we can have
+
+01:11:16.750 --> 01:11:22.090
+digits after the decimal point so in
+this example Java is going to
+
+01:11:22.090 --> 01:11:27.430
+automatically cast this integer to a
+double so that will be two point zero
+
+01:11:27.430 --> 01:11:33.610
+and then two point zero will be added to
+one point one okay so back to this chain
+
+01:11:33.610 --> 01:11:40.060
+here we're gonna have float and then
+double so as a general rule of thumb
+
+01:11:40.060 --> 01:11:45.190
+implicit casting happens whenever you're
+not gonna lose data there is no chance
+
+01:11:45.190 --> 01:11:51.220
+for data loss now what if you want Y to
+be an integer so in this example we
+
+01:11:51.220 --> 01:11:54.850
+don't care about the digits after the
+decimal point you want to see three on
+
+01:11:54.850 --> 01:11:59.560
+the terminal how should we do this this
+is where we should explicitly cast the
+
+01:11:59.560 --> 01:12:07.180
+result so we should cast X to an integer
+like this parentheses int this is
+
+01:12:07.180 --> 01:12:11.890
+explicit casting we convert X to an
+integer so the result would be one
+
+01:12:11.890 --> 01:12:17.230
+without a decimal point one will be
+added to 2 and Y would be three take a
+
+01:12:17.230 --> 01:12:25.180
+look there you go so this is all about
+implicit and explicit casting now this
+
+01:12:25.180 --> 01:12:30.280
+explicit casting can only happen between
+compatible types so all these types are
+
+01:12:30.280 --> 01:12:34.440
+compatible because they're all numbers
+but we cannot cast a string to a number
+
+01:12:34.440 --> 01:12:43.090
+in other words if X was a string like
+this let's say 1
+
+01:12:43.090 --> 01:12:47.740
+we cannot cast eggs to an integer
+because they are not compatible so how
+
+01:12:47.740 --> 01:12:50.800
+do we do this
+well for all these primitive types you
+
+01:12:50.800 --> 01:12:55.630
+have learned you have wrapper classes so
+in Java we have a class which is a
+
+01:12:55.630 --> 01:13:02.340
+reference type called integer this class
+is defined in Java the Lang package and
+
+01:13:02.340 --> 01:13:08.230
+in this class we have a method called
+parse int so this method takes a string
+
+01:13:08.230 --> 01:13:14.650
+and returns an integer so integer is the
+wrapper class for the int primitive type
+
+01:13:14.650 --> 01:13:20.890
+we also have short and in this class we
+have parse short so it takes a string
+
+01:13:20.890 --> 01:13:27.190
+and returns a short similarly we have
+float and double and obviously the name
+
+01:13:27.190 --> 01:13:33.960
+of these metas are different so here we
+have parse float so back to this example
+
+01:13:33.960 --> 01:13:38.740
+let's say we get X as a string and we
+want to convert it to an integer this is
+
+01:13:38.740 --> 01:13:44.080
+how we do it
+integer dot parse int we pass X here and
+
+01:13:44.080 --> 01:13:51.460
+then add it to take a look so we get 3
+you might be curious why this matters
+
+01:13:51.460 --> 01:13:55.660
+why should we parse or convert a string
+to a number to add it to something else
+
+01:13:55.660 --> 01:14:00.820
+well pretty much in most frameworks for
+building user interfaces whether you're
+
+01:14:00.820 --> 01:14:04.930
+building a desktop or a mobile
+application or web application we always
+
+01:14:04.930 --> 01:14:09.040
+receive input from the user as a string
+so if you have a form with a bunch of
+
+01:14:09.040 --> 01:14:14.770
+text boxes or drop-down lists almost
+always we get values as a strings so
+
+01:14:14.770 --> 01:14:18.850
+that's why we need to convert these
+strings to their numeric representation
+
+01:14:18.850 --> 01:14:25.930
+ok now what if X is a floating-point
+number here what will happen when we try
+
+01:14:25.930 --> 01:14:32.200
+to parse this as an integer
+let's take a look once again we get an
+
+01:14:32.200 --> 01:14:37.300
+exception which is how Java reports
+errors to our programs we're going to
+
+01:14:37.300 --> 01:14:39.520
+talk about exceptions in detail in the
+future
+
+01:14:39.520 --> 01:14:45.520
+so if the user enters one point one we
+cannot use this method instead we should
+
+01:14:45.520 --> 01:14:50.820
+use float or double let's say double
+because that's easier double parse
+
+01:14:50.820 --> 01:14:56.560
+double so we parse this number as a
+double add two to it and then store the
+
+01:14:56.560 --> 01:15:00.880
+result
+in a double and then we will get 3.1
+
+01:15:00.880 --> 01:15:04.840
+beautiful next we're gonna look at the
+math class for performing mathematical
+
+01:15:04.840 --> 01:15:14.739
+operations in this tutorial we're going
+to look at the math class for performing
+
+01:15:14.739 --> 01:15:19.420
+mathematical operations so in Java we
+have this math class that is defined in
+
+01:15:19.420 --> 01:15:23.739
+Java that Lang package so it's always
+there we don't need to explicitly import
+
+01:15:23.739 --> 01:15:27.790
+it now this class has a number of useful
+methods the first method I'm gonna show
+
+01:15:27.790 --> 01:15:32.380
+you is the round method and with this we
+can round a floating-point number to a
+
+01:15:32.380 --> 01:15:36.250
+whole number so as you can see this
+method is overloaded which means it's
+
+01:15:36.250 --> 01:15:39.850
+implemented twice in the first
+implementation it takes a float and
+
+01:15:39.850 --> 01:15:44.170
+returns an int and a second
+implementation it takes a double and
+
+01:15:44.170 --> 01:15:51.190
+returns a log so let's pass 1.1 as a
+float to this method and store the
+
+01:15:51.190 --> 01:16:00.070
+result in an integer like this now we
+print the result and we get one
+
+01:16:00.070 --> 01:16:06.610
+beautiful another useful method is seal
+or sealing which returns the smallest
+
+01:16:06.610 --> 01:16:12.610
+integer that is greater than or equal to
+this number so the ceiling of 1.1 is 2
+
+01:16:12.610 --> 01:16:17.620
+now here we have a compilation error
+because this method returns a double but
+
+01:16:17.620 --> 01:16:22.840
+we're storing the result in an integer
+so here we need to explicitly cast this
+
+01:16:22.840 --> 01:16:28.840
+to an integer and now you can see the
+ceiling of this number is 2 we have
+
+01:16:28.840 --> 01:16:34.480
+another useful method that is floor so
+the floor of a number is the largest
+
+01:16:34.480 --> 01:16:38.950
+integer that is smaller or equal to this
+number in this case it's gonna be 1
+
+01:16:38.950 --> 01:16:46.930
+let's take a look there you go another
+useful method is max which returns the
+
+01:16:46.930 --> 01:16:51.220
+greater of two values and once again
+this method is overloaded so in the
+
+01:16:51.220 --> 01:16:55.090
+first implementation we get two integers
+we have other implementations for longs
+
+01:16:55.090 --> 01:17:01.810
+floats and doubles so let's pass two
+integers here one and two this will
+
+01:17:01.810 --> 01:17:08.530
+return the greater number which is 2
+there you go similar to this we have min
+
+01:17:08.530 --> 01:17:13.460
+is pretty straightforward in
+the useful method is random for
+
+01:17:13.460 --> 01:17:18.380
+generating a random value between 0 and
+1 once again we get a compilation error
+
+01:17:18.380 --> 01:17:24.530
+because this method returns a double so
+let's change that to double now every
+
+01:17:24.530 --> 01:17:29.870
+time we run this program we get a
+different number and this number is a
+
+01:17:29.870 --> 01:17:34.670
+floating-point number between 0 to 1 now
+what if you want a number between 0 to
+
+01:17:34.670 --> 01:17:42.700
+let's say 100 instead of 0 to 1 well we
+simply multiply this by 100 take a look
+
+01:17:42.700 --> 01:17:48.620
+so every time we run this we get a
+different number between 0 to 100 now if
+
+01:17:48.620 --> 01:17:52.220
+we don't want these digits after the
+decimal point we can either round this
+
+01:17:52.220 --> 01:17:58.340
+number or cast it to an integer let me
+show you so we can call math that round
+
+01:17:58.340 --> 01:18:04.430
+and pass the result of this expression
+so I'm gonna cut this add parenthesis to
+
+01:18:04.430 --> 01:18:10.270
+call the round method and then paste
+that expression now let's run this code
+
+01:18:10.270 --> 01:18:17.450
+so every time we get a double we still
+have the fraction here so we can change
+
+01:18:17.450 --> 01:18:21.800
+the type to an INT now we have a
+compilation error because the round
+
+01:18:21.800 --> 01:18:25.820
+method returns a long but here we have
+declared an integer this is one of those
+
+01:18:25.820 --> 01:18:30.500
+cases where implicit casting cannot
+happen because we have a value that is
+
+01:18:30.500 --> 01:18:34.340
+represented in 8 bytes of memory and you
+want to store that in a variable that
+
+01:18:34.340 --> 01:18:39.050
+has only 4 bytes of memory so implicit
+casting doesn't work but we can use
+
+01:18:39.050 --> 01:18:43.100
+explicit casting because we know the
+result of this expression is a number
+
+01:18:43.100 --> 01:18:48.260
+between 0 to 100 so we can definitely
+store it in an integer so let's add int
+
+01:18:48.260 --> 01:18:56.390
+here now let's run this again there you
+go now what if we don't use the round
+
+01:18:56.390 --> 01:19:01.220
+method here let's see what happens so
+I'm gonna remove the call to the round
+
+01:19:01.220 --> 01:19:08.330
+method and simply I apply this casting
+over here let's see what we get now
+
+01:19:08.330 --> 01:19:12.680
+every time we run this program we get 0
+do you know why because here we're
+
+01:19:12.680 --> 01:19:18.140
+applying this casting to the result of
+this method call not this entire
+
+01:19:18.140 --> 01:19:23.390
+expression as you saw earlier every time
+we call the random method it generates a
+
+01:19:23.390 --> 01:19:27.679
+number between 0
+to one so when we cast that number to an
+
+01:19:27.679 --> 01:19:32.780
+integer we'll lose the fraction we
+always get zero and zero times 100 is
+
+01:19:32.780 --> 01:19:37.520
+zero to solve this problem we need to
+wrap this entire expression in
+
+01:19:37.520 --> 01:19:45.469
+parenthesis so we add parentheses around
+this and now let me run this we get an
+
+01:19:45.469 --> 01:19:56.420
+integer between 0 and 100 quite often
+when we worked with numbers we need to
+
+01:19:56.420 --> 01:19:59.900
+format them as currency values for
+example we might have a number like this
+
+01:19:59.900 --> 01:20:04.219
+imagine this is the price of a product
+to display this to the user you want to
+
+01:20:04.219 --> 01:20:09.770
+add a dollar sign here and separate
+every three digits with a comma or if
+
+01:20:09.770 --> 01:20:14.270
+you might have a number like 0.1 and we
+want to represent this as a percentage
+
+01:20:14.270 --> 01:20:19.730
+value so instead of 0.1 you want to
+display 10% so in this tutorial I'm
+
+01:20:19.730 --> 01:20:25.250
+gonna show you how to format numbers in
+Java we have this class number format
+
+01:20:25.250 --> 01:20:30.140
+that is defined in Java the text package
+in this package we have a lot of classes
+
+01:20:30.140 --> 01:20:35.510
+for handling text dates numbers and so
+on so let's press ENTER here it's
+
+01:20:35.510 --> 01:20:39.949
+important on the top beautiful now I
+want to declare a variable so let's give
+
+01:20:39.949 --> 01:20:45.460
+this variable a name currency now we
+need to instantiate this new number
+
+01:20:45.460 --> 01:20:50.750
+format however we get a compilation
+error here let's take a look number
+
+01:20:50.750 --> 01:20:55.250
+format is abstract it cannot be
+instantiated so in Java we have this
+
+01:20:55.250 --> 01:20:59.239
+concept of abstract classes so some
+classes are abstract and they're
+
+01:20:59.239 --> 01:21:03.110
+basically like a half-baked cake we
+cannot use the new operator to create an
+
+01:21:03.110 --> 01:21:06.590
+instance of them we're going to talk
+about abstract classes and why they
+
+01:21:06.590 --> 01:21:09.949
+exist later in the course for now
+remember that we cannot create an
+
+01:21:09.949 --> 01:21:14.900
+instance of the number format class
+because it's abstract so there is
+
+01:21:14.900 --> 01:21:20.390
+another way let me show you this class
+has a bunch of methods that start with
+
+01:21:20.390 --> 01:21:25.610
+get so we have get currency instance and
+when we call this method this will
+
+01:21:25.610 --> 01:21:30.380
+create an instance of the number format
+class and return it so instead of using
+
+01:21:30.380 --> 01:21:34.370
+the new operator we're gonna use this
+method here this is what we call a
+
+01:21:34.370 --> 01:21:38.270
+factory method because it's like a
+factory it creates new are
+
+01:21:38.270 --> 01:21:42.440
+jects now look at the return type of
+this method it's a number format object
+
+01:21:42.440 --> 01:21:48.350
+okay so we call this method now we get
+the return value and store it in a
+
+01:21:48.350 --> 01:21:55.430
+variable of type number format called
+currency okay let me say improperly zoom
+
+01:21:55.430 --> 01:21:59.240
+out so you can see all the code there
+you go so on the right side of the
+
+01:21:59.240 --> 01:22:03.470
+assignment operator we're calling the
+get currency instance method we get the
+
+01:22:03.470 --> 01:22:08.810
+result which is a number from an object
+and store it in this variable okay now
+
+01:22:08.810 --> 01:22:12.760
+I'm gonna zoom in so you can see clear a
+name
+
+01:22:12.760 --> 01:22:21.050
+alright that's better now this object
+has a method for formatting values once
+
+01:22:21.050 --> 01:22:23.930
+again you can see this method is
+overloaded we have multiple
+
+01:22:23.930 --> 01:22:28.730
+implementations we can give it a long or
+a double or whatever so I'm gonna call
+
+01:22:28.730 --> 01:22:34.400
+this method and pass a value like one
+two three four five six seven point
+
+01:22:34.400 --> 01:22:39.890
+eight nine one so we have three digits
+after decimal and a few other digits
+
+01:22:39.890 --> 01:22:43.960
+here now this method will return a
+string representation of this number
+
+01:22:43.960 --> 01:22:49.610
+formatted as a currency so let's get
+that and store it in a string variable
+
+01:22:49.610 --> 01:22:58.240
+like result and then we're gonna print
+result on a terminal see what we get
+
+01:22:58.240 --> 01:23:03.740
+so we get this dollar sign every three
+digits are separated using a comma and
+
+01:23:03.740 --> 01:23:08.420
+we only have two digits after the
+decimal point so this class is very
+
+01:23:08.420 --> 01:23:12.290
+handy in formatting numbers as
+currencies we have another method for
+
+01:23:12.290 --> 01:23:19.550
+formatting a number as a percent and
+that is get percent instance right now
+
+01:23:19.550 --> 01:23:24.530
+it returns an instance of the number
+format class specialized for formatting
+
+01:23:24.530 --> 01:23:28.670
+numbers as a percent so we need to
+rename this variable from currency to
+
+01:23:28.670 --> 01:23:31.820
+percent now we don't want to manually
+change this because there are multiple
+
+01:23:31.820 --> 01:23:36.080
+references to this variable this other
+reference was not updated so let me show
+
+01:23:36.080 --> 01:23:41.060
+you the proper way to rename objects in
+intellij if you right click here you can
+
+01:23:41.060 --> 01:23:46.130
+see this refactor menu and here we have
+rename now look at this shortcut on the
+
+01:23:46.130 --> 01:23:49.790
+right side unfortunately it's not
+visible in my recording window but on
+
+01:23:49.790 --> 01:23:54.140
+Mac is Shift + F
+I always use shortcuts because they're
+
+01:23:54.140 --> 01:24:01.220
+faster so let's press shift and f6 now
+we get this red box and below this we
+
+01:24:01.220 --> 01:24:05.660
+can see a few suggestions for a better
+name we can choose one of these or pick
+
+01:24:05.660 --> 01:24:12.020
+our own name I'm gonna change this to
+percent and note that as I'm typing this
+
+01:24:12.020 --> 01:24:15.380
+the other reference gets updated
+automatically so this is very helpful
+
+01:24:15.380 --> 01:24:21.020
+now let's press Enter
+okay we're done with renaming now let's
+
+01:24:21.020 --> 01:24:27.350
+pass a different value here so let's say
+we have a number like 0.1 we want to
+
+01:24:27.350 --> 01:24:32.210
+format this as a percent let's run the
+program there you go you get 10%
+
+01:24:32.210 --> 01:24:37.280
+beautiful now let me show you a cool
+technique in this program we don't
+
+01:24:37.280 --> 01:24:41.780
+really need this percent object because
+we have used it in a single place it
+
+01:24:41.780 --> 01:24:45.020
+would make sense to have this as a
+separate variable if you have multiple
+
+01:24:45.020 --> 01:24:49.370
+references to it so what can we do here
+we can completely get rid of this object
+
+01:24:49.370 --> 01:24:54.470
+so let's delete this piece of code we're
+basically calling this method of the
+
+01:24:54.470 --> 01:24:59.840
+number format class as you know this
+method returns a number format object so
+
+01:24:59.840 --> 01:25:03.860
+right after calling this method and
+before the semicolon we can use the dot
+
+01:25:03.860 --> 01:25:08.900
+operator to access the methods or
+members of the number format object so
+
+01:25:08.900 --> 01:25:14.240
+here we call the format method straight
+away and pass our value this is what we
+
+01:25:14.240 --> 01:25:18.800
+call method chaining we're chaining
+multiple methods together so here's one
+
+01:25:18.800 --> 01:25:24.170
+method and here's another method now
+this returns a string so we can store it
+
+01:25:24.170 --> 01:25:29.990
+in this result variable let me cut this
+expression from here and put it over
+
+01:25:29.990 --> 01:25:35.720
+here now we have double semicolons I'm
+going to delete one of them
+
+01:25:35.720 --> 01:25:46.220
+all right beautiful in this tutorial I'm
+gonna show you how to read input from
+
+01:25:46.220 --> 01:25:51.530
+the user in Java we have this scanner
+class that is defined in Java did util
+
+01:25:51.530 --> 01:25:59.570
+package let's import this and create a
+scanner object so new scanner now here
+
+01:25:59.570 --> 01:26:03.140
+inside this parenthesis we need to
+specify where we're gonna read data from
+
+01:26:03.140 --> 01:26:06.650
+we're gonna read it from the terminal
+window are we gonna read it from a file
+
+01:26:06.650 --> 01:26:12.890
+or what to work with the terminal window
+we type system dot in this is one of the
+
+01:26:12.890 --> 01:26:17.390
+fields in the system class a fill as I
+told you before is like a variable that
+
+01:26:17.390 --> 01:26:22.190
+we define in a class so we have system
+that in we also have system that out
+
+01:26:22.190 --> 01:26:27.470
+which we used to print something on the
+terminal right now let's use system that
+
+01:26:27.470 --> 01:26:32.840
+in and terminate this statement with a
+semicolon now this object has a bunch of
+
+01:26:32.840 --> 01:26:38.450
+methods for reading data and all these
+methods start with next so we have next
+
+01:26:38.450 --> 01:26:43.220
+byte for reading a byte we have next
+line for reading a line we have next
+
+01:26:43.220 --> 01:26:47.570
+boolean for ending a boolean and so on
+so let's call the next byte method and
+
+01:26:47.570 --> 01:26:51.050
+see what we get
+this returns a byte value so we can
+
+01:26:51.050 --> 01:26:57.050
+store it in a byte variable let's say
+someone's age and then we print it on a
+
+01:26:57.050 --> 01:27:05.420
+terminal saying you are plus h so here
+we're concatenating a string with a byte
+
+01:27:05.420 --> 01:27:09.590
+and in this scenario we're gonna have
+implicit casting or implicit type
+
+01:27:09.590 --> 01:27:14.870
+conversion so Java will automatically
+convert this byte variable here tray
+
+01:27:14.870 --> 01:27:19.550
+string so they can be added together
+okay now let's run this program and see
+
+01:27:19.550 --> 01:27:25.580
+what happens so here in the terminal
+window we can type 20 enter and it says
+
+01:27:25.580 --> 01:27:29.630
+your 20 beautiful but this is pretty
+boring let's add a label here and ask
+
+01:27:29.630 --> 01:27:35.390
+the user to type something for example
+before reading data we're gonna call the
+
+01:27:35.390 --> 01:27:41.630
+print line method and say age : now
+let's run the program so we get this
+
+01:27:41.630 --> 01:27:47.360
+label here however whatever we type will
+appear on the next line this is because
+
+01:27:47.360 --> 01:27:52.869
+the print line method adds a new
+line after this label the Soviets issue
+
+01:27:52.869 --> 01:27:58.519
+recall the print method now let's run
+the program one more time we get this
+
+01:27:58.519 --> 01:28:02.479
+popup box because our program hasn't
+finished execution so we need to tell
+
+01:28:02.479 --> 01:28:09.469
+IntelliJ that you want to stop and rerun
+this program all right now whatever we
+
+01:28:09.469 --> 01:28:15.829
+type appears right in front of this
+label beautiful ENTER we are 20 now what
+
+01:28:15.829 --> 01:28:22.579
+if we type a floating-point number like
+20 point 1 we get an exception because
+
+01:28:22.579 --> 01:28:27.229
+this method can only parse white values
+if you want to get a floating-point
+
+01:28:27.229 --> 01:28:33.619
+number we need to call next float or
+next double what if you want to read our
+
+01:28:33.619 --> 01:28:39.530
+string we don't have next string we have
+next and next line let's look at the
+
+01:28:39.530 --> 01:28:43.039
+differences so first I'm going to call
+the next method here we have a
+
+01:28:43.039 --> 01:28:47.359
+compilation issue because this method
+returns a string I'm gonna change this
+
+01:28:47.359 --> 01:28:50.629
+to a string let me collapse this that's
+better
+
+01:28:50.629 --> 01:28:56.659
+we should also rename this variable so
+what was the shortcut Shift + f6 now
+
+01:28:56.659 --> 01:29:02.899
+let's train just a name enter beautiful
+and one last time we should also update
+
+01:29:02.899 --> 01:29:09.619
+the label name run the program so I'm
+gonna type my name here Marsh it says
+
+01:29:09.619 --> 01:29:13.309
+your Amash pretty under for one more
+time this time I'm gonna type my
+
+01:29:13.309 --> 01:29:19.550
+full-name maha Madani but we don't get
+the last name here's the reason these
+
+01:29:19.550 --> 01:29:24.289
+wars that we have here these are called
+tokens every time we call the next
+
+01:29:24.289 --> 01:29:29.389
+method it reads one token so here we
+have a space we have two tokens and we
+
+01:29:29.389 --> 01:29:33.499
+need to call the next method two times
+to get the full name the first time we
+
+01:29:33.499 --> 01:29:37.550
+call it it returns Marsh the second time
+we call it it returns Hamid ani then we
+
+01:29:37.550 --> 01:29:41.989
+need to combine this suit together this
+is not ideal so that's when we use the
+
+01:29:41.989 --> 01:29:46.609
+next line method with this method we get
+the in turn line that the user enters no
+
+01:29:46.609 --> 01:29:52.399
+matter how many spaces or tabs are there
+take a look so Marsh
+
+01:29:52.399 --> 01:29:59.149
+comma Donny and we get the full name now
+what if I type a few spaces before my
+
+01:29:59.149 --> 01:30:04.090
+name let's see what happens
+so those spaces also appear here and
+
+01:30:04.090 --> 01:30:08.200
+this looks a little bit odd this is
+where we use the trim method remember we
+
+01:30:08.200 --> 01:30:14.590
+trim we can get rid of all these white
+spaces before or after a string so this
+
+01:30:14.590 --> 01:30:18.340
+next line method returns a string that
+we are storing in this variable right
+
+01:30:18.340 --> 01:30:23.380
+now just before storing the result in
+this variable here we can use the dot
+
+01:30:23.380 --> 01:30:29.170
+operator to access the members of this
+string object so we call the trim method
+
+01:30:29.170 --> 01:30:33.820
+and then store the result in this
+variable once again we're chaining
+
+01:30:33.820 --> 01:30:42.190
+multiple methods here let's run the
+program so a few spaces Maharani and you
+
+01:30:42.190 --> 01:30:45.210
+get this beautiful output
+
+01:30:48.760 --> 01:30:52.910
+right now it's time for a project I want
+you to use what you have learned in a
+
+01:30:52.910 --> 01:30:57.469
+section and build a mortgage calculator
+like this so when you run this program
+
+01:30:57.469 --> 01:31:02.030
+we get a few questions the first
+question is the principal or the amount
+
+01:31:02.030 --> 01:31:07.610
+of loan we want to get let's say
+$100,000 the second question is the
+
+01:31:07.610 --> 01:31:13.520
+annual interest rate let's say three
+point nine two percent and the third
+
+01:31:13.520 --> 01:31:17.450
+question is period in years let's say
+you want to get a loan for thirty years
+
+01:31:17.450 --> 01:31:22.460
+so this program calculates our monthly
+payments and displays it as a currency
+
+01:31:22.460 --> 01:31:26.510
+this is a great exercise for you to
+practice all the materials you learn in
+
+01:31:26.510 --> 01:31:30.770
+this section now before you get started
+I want to give you a few hints here is a
+
+01:31:30.770 --> 01:31:35.360
+formula for calculating the mortgage or
+the monthly payments I found this page
+
+01:31:35.360 --> 01:31:40.430
+on wikiHow comm is called calculate
+mortgage payments so let's see how this
+
+01:31:40.430 --> 01:31:45.860
+works mortgage equals P or principal or
+the amount we're gonna loan multiplied
+
+01:31:45.860 --> 01:31:51.350
+by R which is our monthly interest rate
+this is very important so this number
+
+01:31:51.350 --> 01:31:56.360
+that we get here is our annual interest
+rate we need to divide this by 12 also
+
+01:31:56.360 --> 01:32:00.410
+take into account that this number is
+represented as a percent to calculate
+
+01:32:00.410 --> 01:32:04.880
+the actual interest rate you need to
+divide this number by 100 so in this
+
+01:32:04.880 --> 01:32:10.700
+example the interest rate is zero point
+zero three nine two so whatever the user
+
+01:32:10.700 --> 01:32:15.380
+enters divided by 100 and then divided
+by twelve to get to the monthly interest
+
+01:32:15.380 --> 01:32:19.850
+rate now we have this monthly interest
+rate we need to multiply this by this
+
+01:32:19.850 --> 01:32:24.890
+expression here we need to add 1 to this
+interest rate and raise it to the power
+
+01:32:24.890 --> 01:32:31.040
+of n where n is the number of payments
+so we need to multiply this number by 12
+
+01:32:31.040 --> 01:32:36.350
+or 12 months to calculate the number of
+payments now to raise this number to the
+
+01:32:36.350 --> 01:32:41.690
+power of n you need to use the power
+method of the math class so this math
+
+01:32:41.690 --> 01:32:46.280
+class has this power or power method
+that takes two arguments or two values a
+
+01:32:46.280 --> 01:32:51.530
+and B so go ahead and spend ten to
+fifteen minutes on this exercise when
+
+01:32:51.530 --> 01:32:55.270
+you're done come back see my solution
+
+01:32:58.950 --> 01:33:02.440
+all right let's see what I've done here
+and by the way don't worry if your coat
+
+01:33:02.440 --> 01:33:05.680
+is different from mine
+we all think and coat differently so
+
+01:33:05.680 --> 01:33:07.540
+it's perfectly fine if your code is
+different
+
+01:33:07.540 --> 01:33:10.840
+just look at my coat see what I've done
+here and see if there are ways you can
+
+01:33:10.840 --> 01:33:15.430
+improve your coat
+that's what matters okay so here in our
+
+01:33:15.430 --> 01:33:19.719
+main method first I've declared two
+final variables or constants
+
+01:33:19.719 --> 01:33:23.860
+the first one is months in year which
+I've set to 12 and the second one is
+
+01:33:23.860 --> 01:33:28.030
+percent which I've set to 100 the reason
+I declared this constant is that I
+
+01:33:28.030 --> 01:33:32.950
+didn't want to have magic numbers in
+this code so over here where we
+
+01:33:32.950 --> 01:33:37.540
+calculate the monthly interest we get
+the annual interest divided by percent
+
+01:33:37.540 --> 01:33:42.340
+and then months in here this code is
+very self-explanatory someone else
+
+01:33:42.340 --> 01:33:45.580
+reading this code we'll have no problem
+understanding what's going on here in
+
+01:33:45.580 --> 01:33:50.910
+contrast if you had a magic number here
+like divided by 12 and then for whatever
+
+01:33:50.910 --> 01:33:54.700
+someone else reading this code would
+wonder what is this for doing here what
+
+01:33:54.700 --> 01:33:58.930
+is 12 it's quite obvious to you that 12
+is the number of months in a year but
+
+01:33:58.930 --> 01:34:03.310
+trust me sometimes other people cannot
+see this straight away so as a best
+
+01:34:03.310 --> 01:34:08.710
+practice avoid magic numbers in your
+code always use constants or final
+
+01:34:08.710 --> 01:34:14.860
+variables to describe them
+so let's revert this back all right so
+
+01:34:14.860 --> 01:34:19.270
+after declaring this constant I've
+created this scanner object here we ask
+
+01:34:19.270 --> 01:34:23.500
+the first question
+principle and we read the answer as an
+
+01:34:23.500 --> 01:34:25.870
+integer
+I thought integer is a good datatype for
+
+01:34:25.870 --> 01:34:30.850
+storing the principle because short is
+not enough with short we can store a
+
+01:34:30.850 --> 01:34:36.040
+maximum of $32,000 that's not enough
+what if someone wants to find us
+
+01:34:36.040 --> 01:34:40.739
+$1,000,000 so int is good and it allows
+us to store a value up to two billion
+
+01:34:40.739 --> 01:34:45.969
+next we ask the second question annual
+interest rate we read this as a float
+
+01:34:45.969 --> 01:34:50.410
+here I could use double but the interest
+rate is a small number so float is
+
+01:34:50.410 --> 01:34:54.370
+sufficient for that we don't really need
+double so we get the annual interest and
+
+01:34:54.370 --> 01:34:59.440
+then based on that we calculate the
+monthly interest also see how I have
+
+01:34:59.440 --> 01:35:04.330
+named my variables all variables have a
+proper meaningful names there are no
+
+01:35:04.330 --> 01:35:08.350
+magic words here like MI as it short for
+monthly interest
+
+01:35:08.350 --> 01:35:14.350
+or m1 or m2 do not use magic names for
+your variables always use meaningful and
+
+01:35:14.350 --> 01:35:21.460
+descriptive names alright next we get
+the period we read this as a byte
+
+01:35:21.460 --> 01:35:25.570
+because the maximum number we want to
+support is 30 so one byte is sufficient
+
+01:35:25.570 --> 01:35:29.890
+to store the number 30 or anything
+smaller now based on the number of years
+
+01:35:29.890 --> 01:35:34.960
+we calculate the number of payments note
+the camel notation here I've capitalized
+
+01:35:34.960 --> 01:35:39.730
+the first letter of every word except
+the first word so we get the Earth's and
+
+01:35:39.730 --> 01:35:44.310
+x months in here
+again the code is very self-explanatory
+
+01:35:44.310 --> 01:35:49.690
+once we collect all this data then we
+calculate the mortgage so we get a
+
+01:35:49.690 --> 01:35:54.790
+principal multiplied by this expression
+and then divide it by this other
+
+01:35:54.790 --> 01:35:58.570
+expression let's have a quick look here
+now this looks a little bit complicated
+
+01:35:58.570 --> 01:36:02.620
+so if you're not download my source code
+look below this video I'm attached it
+
+01:36:02.620 --> 01:36:07.540
+for you to download and finally after we
+calculate the mortgage we use the number
+
+01:36:07.540 --> 01:36:14.140
+format class to format this value as a
+currency so we get a result store it in
+
+01:36:14.140 --> 01:36:19.540
+this string mortgage format it and print
+it over here now here we can also avoid
+
+01:36:19.540 --> 01:36:24.670
+declaring this variable and simply add
+this expression over here but it decided
+
+01:36:24.670 --> 01:36:28.480
+to do this to increase the readability
+of this code otherwise this line would
+
+01:36:28.480 --> 01:36:32.100
+be so long but that's just my personal
+preference you don't have to follow this
+
+01:36:32.100 --> 01:36:35.790
+alright so this was my implementation of
+the mortgage calculator
+
+01:36:35.790 --> 01:36:41.080
+however this program has a number of
+problems the first problem is input
+
+01:36:41.080 --> 01:36:49.960
+validation so if we run this and enter a
+non numeric value like XYZ our program
+
+01:36:49.960 --> 01:36:55.150
+crashes or as another example if we
+enter a negative value here our program
+
+01:36:55.150 --> 01:36:58.930
+is not gonna behave properly so that's
+where conditional statements come to the
+
+01:36:58.930 --> 01:37:02.620
+rescue in the next section we're going
+to talk about conditional statements you
+
+01:37:02.620 --> 01:37:06.460
+will learn how to use these statements
+to validate the values entered by the
+
+01:37:06.460 --> 01:37:10.600
+user so that brings us to the end of
+this section I hope you learn a lot and
+
+01:37:10.600 --> 01:37:13.500
+thank you for watching
+
+01:37:17.090 --> 01:37:21.210
+so in this section you'll learn all
+about variables and constants you learn
+
+01:37:21.210 --> 01:37:24.989
+about primitive and reference types you
+learn that primitive types store simple
+
+01:37:24.989 --> 01:37:29.159
+values but reference types hold
+references to complex objects that's why
+
+01:37:29.159 --> 01:37:33.540
+we call them reference types you also
+learn about casting and type conversion
+
+01:37:33.540 --> 01:37:37.710
+you learn about two types of casting
+implicit and explicit you learn how to
+
+01:37:37.710 --> 01:37:42.329
+work with numbers strings and arrays and
+finally you learned how to read input
+
+01:37:42.329 --> 01:37:45.960
+from the terminal I hope you learned a
+lot I've been enjoying the course so far
+
+01:37:45.960 --> 01:37:48.840
+in the next section we're going to look
+at conditional statements for
+
+01:37:48.840 --> 01:38:01.510
+controlling the flow of our programs so
+I'll see you in the next section
+
+01:38:01.510 --> 01:38:05.560
+hey Marcia I just want to make a quick
+announcement this course you've been
+
+01:38:05.560 --> 01:38:10.450
+watching is actually the beginning of my
+complete Java series in this course we
+
+01:38:10.450 --> 01:38:15.070
+only talk about the basics but in my
+complete series we go way beyond that so
+
+01:38:15.070 --> 01:38:18.730
+if you're serious about Java if you're
+looking for a job as a Java developer I
+
+01:38:18.730 --> 01:38:22.750
+highly encourage you to enroll in my
+complete Java series it's exactly the
+
+01:38:22.750 --> 01:38:28.090
+same structure the same quality but it
+has way more content plus you will get a
+
+01:38:28.090 --> 01:38:31.720
+certificate of completion that you can
+add to your resume so if you're
+
+01:38:31.720 --> 01:38:34.960
+interested I put the link down below you
+can get the course with a discount and
+
+01:38:34.960 --> 01:38:39.580
+if you're not happy for any reasons you
+can ask for a refund within the first 30
+
+01:38:39.580 --> 01:38:45.040
+days so I hope to see you in the course
+in this section we're going to look at
+
+01:38:45.040 --> 01:38:50.200
+control flow or controlling the flow of
+execution of our programs you're gonna
+
+01:38:50.200 --> 01:38:54.460
+start off by talking about comparison
+operators for comparing values then I'm
+
+01:38:54.460 --> 01:38:59.530
+gonna talk about logical operators like
+the logical and logical or and logical
+
+01:38:59.530 --> 01:39:04.239
+not we use these operators for
+implementing real world rules and then
+
+01:39:04.239 --> 01:39:07.930
+we're gonna talk about three different
+types of control flow statements we're
+
+01:39:07.930 --> 01:39:11.500
+going to talk about conditional
+statements for making decisions in our
+
+01:39:11.500 --> 01:39:16.030
+programs then we're going to talk about
+loops for executing code repeatedly and
+
+01:39:16.030 --> 01:39:20.080
+finally we're going to revisit our
+mortgage calculator and add error
+
+01:39:20.080 --> 01:39:24.070
+handling to it
+so if a user enters an invalid value we
+
+01:39:24.070 --> 01:39:34.930
+keep asking them to try again all right
+now let's jump in and get started we're
+
+01:39:34.930 --> 01:39:38.830
+gonna start this section by talking
+about comparison operators we use these
+
+01:39:38.830 --> 01:39:45.100
+operators to compare primitive values
+for example our x on y equal or not so
+
+01:39:45.100 --> 01:39:52.360
+I'm gonna declare two integers x and y
+now let's compare this to see if they're
+
+01:39:52.360 --> 01:39:56.170
+equal or not
+so first I'm gonna add this print line
+
+01:39:56.170 --> 01:40:02.770
+statement now to compare these variables
+we type x equals y so here we have two
+
+01:40:02.770 --> 01:40:06.760
+equal signs and this is the Equality
+operator don't confuse this with a
+
+01:40:06.760 --> 01:40:11.020
+single equal sign that we use for
+assignment that is the operator used
+
+01:40:11.020 --> 01:40:14.980
+over here okay so two equal signs
+repairs
+
+01:40:14.980 --> 01:40:20.620
+the Equality operator now when we run
+this program we get true because these
+
+01:40:20.620 --> 01:40:25.650
+values are equal this expression that we
+have here is called a boolean expression
+
+01:40:25.650 --> 01:40:30.670
+so earlier I told you that an expression
+is a piece of code that produces a value
+
+01:40:30.670 --> 01:40:35.230
+this piece of code produces a boolean
+value true or false that's why we refer
+
+01:40:35.230 --> 01:40:41.170
+to it as a boolean expression we also
+have the inequality operator so when we
+
+01:40:41.170 --> 01:40:46.120
+run this program we're gonna see false
+let's take a look we get false because
+
+01:40:46.120 --> 01:40:52.480
+these two variables are equal so the
+expression X is not equal to Y returns
+
+01:40:52.480 --> 01:41:00.280
+false we also have greater than greater
+than or equal to less than and less than
+
+01:41:00.280 --> 01:41:05.530
+or equal to so if I change Y to 2 this
+expression is gonna evaluate to true
+
+01:41:05.530 --> 01:41:11.320
+because X is less than or equal to Y
+take a look there you go
+
+01:41:11.320 --> 01:41:21.610
+next we're going to talk about logical
+operators in the last tutorial you learn
+
+01:41:21.610 --> 01:41:25.930
+that a boolean expression produces a
+boolean value now there are times we
+
+01:41:25.930 --> 01:41:29.980
+want to combine multiple boolean
+expressions let me show you so I'm going
+
+01:41:29.980 --> 01:41:36.460
+to declare an integer called temperature
+and set it to 22 next we declare a
+
+01:41:36.460 --> 01:41:41.710
+boolean variable is warm now we want to
+check to see if temperature is greater
+
+01:41:41.710 --> 01:41:47.410
+than 20 and less than 30 so we write a
+boolean expression like this temperature
+
+01:41:47.410 --> 01:41:53.320
+greater than 20 here we need to use the
+end operator so these two ampersands
+
+01:41:53.320 --> 01:41:56.350
+represent the logical and operator in
+Java
+
+01:41:56.350 --> 01:42:03.190
+after this we add our second condition
+temperature less than 30 now if both
+
+01:42:03.190 --> 01:42:06.880
+these conditions are true the result of
+this boolean expression is going to be
+
+01:42:06.880 --> 01:42:09.310
+true
+otherwise if at least one of these is
+
+01:42:09.310 --> 01:42:14.440
+false the result would be false let's
+take a look so I'm gonna print is warm
+
+01:42:14.440 --> 01:42:17.520
+on a terminal
+
+01:42:18.190 --> 01:42:25.960
+the result is true but if you change the
+temperature to let's say 12 the result
+
+01:42:25.960 --> 01:42:30.400
+is gonna be false and this is how this
+works Java will evaluate this expression
+
+01:42:30.400 --> 01:42:34.960
+from left to right first it looks at the
+first condition the first condition is
+
+01:42:34.960 --> 01:42:39.520
+false because temperature is not greater
+than 20 so because this expression is
+
+01:42:39.520 --> 01:42:45.310
+false it doesn't matter what we have
+after the and operator Java will ignore
+
+01:42:45.310 --> 01:42:49.000
+the other expressions because the and
+operator will return true if both
+
+01:42:49.000 --> 01:42:54.010
+conditions are true okay now let's look
+at another operator that is the or
+
+01:42:54.010 --> 01:42:59.350
+operator so I'm going to delete all this
+code and start with a new example let's
+
+01:42:59.350 --> 01:43:07.570
+declare a boolean has high income we set
+it to true and another boolean has good
+
+01:43:07.570 --> 01:43:12.219
+credit we set this to true as well so
+let's say we're building an application
+
+01:43:12.219 --> 01:43:16.960
+for processing loans we want to see if a
+new applicant is eligible for a loan or
+
+01:43:16.960 --> 01:43:21.090
+not
+so we declare another boolean is
+
+01:43:21.090 --> 01:43:25.570
+eligible and by the way look at the
+names I have used for these variables
+
+01:43:25.570 --> 01:43:30.940
+they're very meaningful and descriptive
+so here's the rule an applicant is
+
+01:43:30.940 --> 01:43:35.590
+eligible if they have high income or
+good credit if one of these conditions
+
+01:43:35.590 --> 01:43:43.540
+is true they are eligible so we write
+has high income or so these two vertical
+
+01:43:43.540 --> 01:43:49.679
+bars represent the or operator so if
+they have high income or good credit
+
+01:43:49.679 --> 01:43:55.510
+then they are eligible so with the or
+operator if at least one condition is
+
+01:43:55.510 --> 01:44:00.310
+true the result will be true in this
+example when Java evaluates this
+
+01:44:00.310 --> 01:44:05.110
+expression it starts from the left side
+this boolean variable is true so it
+
+01:44:05.110 --> 01:44:09.070
+doesn't matter what we have after Java
+will not evaluate the rest of this
+
+01:44:09.070 --> 01:44:15.670
+expression it simply returns true
+however if this variable was false Java
+
+01:44:15.670 --> 01:44:19.600
+would continue evaluating this
+expression hoping that the next boolean
+
+01:44:19.600 --> 01:44:24.100
+value or the next boolean expression is
+true so this is the or operator and
+
+01:44:24.100 --> 01:44:28.929
+finally we have the not operator that we
+use to reverse a value let me show you
+
+01:44:28.929 --> 01:44:31.130
+how that works
+so
+
+01:44:31.130 --> 01:44:37.570
+let's declare another boolean variable
+has criminal record we set this to false
+
+01:44:37.570 --> 01:44:42.199
+so here's the rule we want to implement
+in order for someone to be eligible for
+
+01:44:42.199 --> 01:44:47.120
+a loan they should either have high
+income or good credit and they should
+
+01:44:47.120 --> 01:44:52.639
+not have any criminal records so let's
+see how we can implement this rule we
+
+01:44:52.639 --> 01:44:56.300
+have implemented the first part they
+should either have high income or good
+
+01:44:56.300 --> 01:45:01.370
+credit now we want to make sure they
+don't have any criminal records so we
+
+01:45:01.370 --> 01:45:05.600
+need to combine the result of this
+expression with this boolean value using
+
+01:45:05.600 --> 01:45:11.929
+the and operator so first we wrap this
+expression in parentheses then we apply
+
+01:45:11.929 --> 01:45:17.750
+the end operator and here we add has
+criminal record now you want to make
+
+01:45:17.750 --> 01:45:22.639
+sure they don't have criminal record and
+this is where we use the not operator so
+
+01:45:22.639 --> 01:45:27.139
+the not operator will reverse the value
+of this boolean variable or expression
+
+01:45:27.139 --> 01:45:32.330
+in this case this variable is set to
+false so when we apply the not operator
+
+01:45:32.330 --> 01:45:37.850
+to it the result would be true so if the
+first condition is true and the second
+
+01:45:37.850 --> 01:45:43.310
+condition is true then that person is
+eligible for a new loan so as you can
+
+01:45:43.310 --> 01:45:47.710
+see these logical operators are very
+useful in implementing real word rules
+
+01:45:47.710 --> 01:45:57.590
+next we're going to talk about if
+statements in this tutorial we're going
+
+01:45:57.590 --> 01:46:01.820
+to look at if statements in Java if
+statements are extremely important
+
+01:46:01.820 --> 01:46:05.929
+because they allow us to build programs
+that can make decisions based on certain
+
+01:46:05.929 --> 01:46:11.360
+conditions here's an example in this
+file we have a bunch of conditions if
+
+01:46:11.360 --> 01:46:15.560
+temperature is greater than 30 perhaps
+you want to display two messages to the
+
+01:46:15.560 --> 01:46:21.080
+user it's a hot day drink plenty of
+water otherwise if it's between 20 and
+
+01:46:21.080 --> 01:46:26.120
+30 you want to print it's a nice day and
+otherwise we want to print it's a cold
+
+01:46:26.120 --> 01:46:31.580
+day so let's see how we can implement
+these rules in a Java program back to
+
+01:46:31.580 --> 01:46:38.780
+our main file we start by declaring a
+variable temperature we set it to 32 now
+
+01:46:38.780 --> 01:46:42.770
+we use an if statement followed by a
+pair of parentheses inside this
+
+01:46:42.770 --> 01:46:46.940
+parenthesis we type
+an expression or a boolean value so
+
+01:46:46.940 --> 01:46:53.690
+let's say temp is greater than 30 now if
+this condition is true the statement
+
+01:46:53.690 --> 01:47:00.250
+that we had after this if statement will
+be executed so let's print it's a hot
+
+01:47:00.250 --> 01:47:06.889
+day let's run the program we get this
+message because temperature is greater
+
+01:47:06.889 --> 01:47:11.239
+than 30 now what if you want to print
+another message like drink plenty of
+
+01:47:11.239 --> 01:47:17.210
+water here we should add curly braces to
+define a code block so if this condition
+
+01:47:17.210 --> 01:47:22.369
+is true all the code that we have inside
+of this block would be executed let's
+
+01:47:22.369 --> 01:47:29.449
+add another message here drink water
+okay so this was our first condition now
+
+01:47:29.449 --> 01:47:35.719
+let's add a second condition so after
+the right brace we type LS if once again
+
+01:47:35.719 --> 01:47:39.849
+we add our parentheses and inside these
+parentheses we type a boolean expression
+
+01:47:39.849 --> 01:47:47.329
+if 10 is greater than 20 and it's less
+than or equal to 30
+
+01:47:47.329 --> 01:47:54.500
+you want to print a different message
+like beautiful day now here I haven't
+
+01:47:54.500 --> 01:47:58.489
+added the braces because we have a
+single statement so braces are only
+
+01:47:58.489 --> 01:48:03.020
+required if we have multiple statements
+now this is a little bit controversial
+
+01:48:03.020 --> 01:48:06.380
+some people believe we should always add
+braces whether we have a single
+
+01:48:06.380 --> 01:48:10.429
+statement or not other people like
+myself believe this creates unnecessary
+
+01:48:10.429 --> 01:48:14.360
+noise in the code in this tutorial I'm
+gonna add the braces first and then
+
+01:48:14.360 --> 01:48:19.070
+remove them so you can see the
+difference so let's add a pair of curly
+
+01:48:19.070 --> 01:48:23.300
+braces here and finally our last
+condition so if none of these two
+
+01:48:23.300 --> 01:48:27.710
+conditions are true let me print a
+different message so here we simply type
+
+01:48:27.710 --> 01:48:35.630
+LS we don't have any more conditions so
+let's add a code block and print cold
+
+01:48:35.630 --> 01:48:41.840
+day now let me define a few terms here
+we have an if statement and this
+
+01:48:41.840 --> 01:48:47.809
+statement has three clauses or three
+sections here's the first Clause here's
+
+01:48:47.809 --> 01:48:53.179
+the second Clause and here's the third
+Clause pay attention to how a formatted
+
+01:48:53.179 --> 01:48:58.230
+this if statement so first we have the
+if Clause the else if
+
+01:48:58.230 --> 01:49:03.600
+and else clauses are placed after these
+right braces so we have some kind of
+
+01:49:03.600 --> 01:49:08.880
+hierarchy here here we have a parent
+followed by two children now let's get
+
+01:49:08.880 --> 01:49:12.750
+rid of these unnecessary braces and
+reformat our code to see the difference
+
+01:49:12.750 --> 01:49:19.610
+so I'm gonna remove the braces for the
+else clause and also one more time here
+
+01:49:19.610 --> 01:49:25.320
+that's better now we can simplify this
+boolean expression basically we don't
+
+01:49:25.320 --> 01:49:30.630
+need this piece of code here here's the
+reason if the first condition is not
+
+01:49:30.630 --> 01:49:34.890
+true what does it mean that means the
+temperature is less than or equal to 30
+
+01:49:34.890 --> 01:49:40.260
+so this expression here is unnecessary
+let's delete this and simplify our code
+
+01:49:40.260 --> 01:49:45.840
+that's better now look at how this code
+is formatted on the top we have if the
+
+01:49:45.840 --> 01:49:51.030
+else if Clause is a little bit indented
+but the else Clause is not indented it's
+
+01:49:51.030 --> 01:49:55.680
+at the same level as the if Clause and
+this looks a little bit ugly the code is
+
+01:49:55.680 --> 01:50:00.570
+not symmetrical so if you want to get
+rid of the curly braces a better way to
+
+01:50:00.570 --> 01:50:07.440
+format this code is like this so instead
+of adding the else if or else classes
+
+01:50:07.440 --> 01:50:13.320
+after curly braces we add them on a new
+line now all these clauses are at the
+
+01:50:13.320 --> 01:50:23.700
+same level the code is easier to read in
+this tutorial I'm gonna show you a very
+
+01:50:23.700 --> 01:50:28.680
+cool technique for simplifying if
+statements so let's start by declaring a
+
+01:50:28.680 --> 01:50:35.790
+variable called income and set it to
+120,000 now here we can use an
+
+01:50:35.790 --> 01:50:40.860
+underscore in between these three digits
+to make our code more readable now let's
+
+01:50:40.860 --> 01:50:46.350
+say we want to declare a boolean
+variable called has high income if the
+
+01:50:46.350 --> 01:50:50.820
+income is more than $100,000 you want to
+set this to true otherwise we want to
+
+01:50:50.820 --> 01:50:57.480
+set this to false so here we can write
+an if statement like this if income is
+
+01:50:57.480 --> 01:51:07.560
+greater than $100,000 we want to set has
+high income to true however we get a
+
+01:51:07.560 --> 01:51:11.130
+compilation error here
+let's take a look declaration not
+
+01:51:11.130 --> 01:51:14.489
+allowed here
+so we cannot declare a variable here we
+
+01:51:14.489 --> 01:51:20.400
+can only declare variables inside code
+blocks like this code block over here so
+
+01:51:20.400 --> 01:51:25.559
+to declare this variable we need to add
+curly braces to define a new code block
+
+01:51:25.559 --> 01:51:30.329
+now we have a different problem this
+variable that we have defined is scoped
+
+01:51:30.329 --> 01:51:34.769
+to this code block so it's only
+available here we cannot access it
+
+01:51:34.769 --> 01:51:42.959
+outside of this block let me show you so
+if we print has high income you can see
+
+01:51:42.959 --> 01:51:47.519
+we have a compilation error cannot
+resolve symbol has high income because
+
+01:51:47.519 --> 01:51:52.169
+this variable is not available outside
+of the block in which it's declared so
+
+01:51:52.169 --> 01:51:56.749
+to solve this problem we can declare
+this variable after setup this block
+
+01:51:56.749 --> 01:52:04.409
+boolean has high income and then we can
+simply set it to true in this block now
+
+01:52:04.409 --> 01:52:09.570
+we don't need these braces anymore so
+let's simplify the code we add an else
+
+01:52:09.570 --> 01:52:15.749
+clause otherwise we said has high income
+to false let's remove this print method
+
+01:52:15.749 --> 01:52:20.550
+we don't need it anymore so this is one
+way to implement this scenario but this
+
+01:52:20.550 --> 01:52:24.179
+code looks very amateurish a
+professional programmer doesn't write
+
+01:52:24.179 --> 01:52:29.729
+code like this let's improve it step by
+step one way to improve this is to give
+
+01:52:29.729 --> 01:52:34.739
+this boolean variable an initial value
+for example we can set it to false
+
+01:52:34.739 --> 01:52:40.070
+initially and then we implement this
+condition so if the income is more than
+
+01:52:40.070 --> 01:52:46.289
+$100,000 then we set this variable to
+true with this we no longer need is else
+
+01:52:46.289 --> 01:52:49.860
+Clause
+so that was one improvement but it's
+
+01:52:49.860 --> 01:52:54.689
+still not ideal in situations like this
+we can completely get rid of this if
+
+01:52:54.689 --> 01:53:01.139
+statement here let me show you instead
+of hard-coding false here we type our
+
+01:53:01.139 --> 01:53:07.469
+expression income is greater than
+$100,000 so here we have a boolean
+
+01:53:07.469 --> 01:53:12.989
+expression if this boolean expression
+evaluates to true this boolean variable
+
+01:53:12.989 --> 01:53:17.429
+is going to be true otherwise it's going
+to be false so this is the simplest the
+
+01:53:17.429 --> 01:53:22.679
+most elegant and the most professional
+way to implement this scenario now one
+
+01:53:22.679 --> 01:53:25.620
+more improvement before we finish this
+tutorial I
+
+01:53:25.620 --> 01:53:29.040
+personally prefer to wrap this
+expression in parentheses even though
+
+01:53:29.040 --> 01:53:33.030
+technically we don't need parentheses
+here but these parentheses make our code
+
+01:53:33.030 --> 01:53:38.160
+more clear more readable let me show you
+so I'm gonna wrap this inside these
+
+01:53:38.160 --> 01:53:42.180
+parentheses now it's very clear we're
+obviously on the right side of this
+
+01:53:42.180 --> 01:53:52.170
+assignment operator we have a boolean
+expression in this tutorial we're gonna
+
+01:53:52.170 --> 01:53:56.400
+look at the ternary operator in Java so
+we're gonna continue with the example
+
+01:53:56.400 --> 01:54:00.510
+from the last tutorial we had this
+income variable imagine this is the
+
+01:54:00.510 --> 01:54:03.780
+income or customers now depending on
+their income
+
+01:54:03.780 --> 01:54:07.140
+you want to put these customers in
+different classes if their income is
+
+01:54:07.140 --> 01:54:11.550
+more than $100,000 you want to put them
+in the first class otherwise we want to
+
+01:54:11.550 --> 01:54:16.770
+put them in the economy class so here's
+one way to implement the scenario we
+
+01:54:16.770 --> 01:54:22.350
+declare this string variable class name
+note that we cannot call this class
+
+01:54:22.350 --> 01:54:27.780
+because class is a reserved keyword so
+class name now we write our first
+
+01:54:27.780 --> 01:54:35.840
+condition if income is greater than
+$100,000 we said class name to first
+
+01:54:35.840 --> 01:54:41.600
+otherwise we set it to economy
+
+01:54:41.729 --> 01:54:45.840
+now as you learn in the last tutorial
+this code looks very amateurish a
+
+01:54:45.840 --> 01:54:49.619
+professional programmer doesn't write
+code like this so one way to simplify
+
+01:54:49.619 --> 01:54:55.499
+this is to give this variable an initial
+value so we assume they are in the
+
+01:54:55.499 --> 01:54:59.670
+economy class and then we check this
+condition if this condition is true we
+
+01:54:59.670 --> 01:55:04.679
+put them in the first class so with this
+we can get rid of this else clause that
+
+01:55:04.679 --> 01:55:08.909
+is better now in the last tutorial I
+showed you how to simplify this even
+
+01:55:08.909 --> 01:55:13.530
+further but the technique you learned
+there cannot be used here in other words
+
+01:55:13.530 --> 01:55:21.179
+we cannot add income greater than
+$100,000 here because here we have a
+
+01:55:21.179 --> 01:55:26.190
+boolean expression but on the left side
+we have declared a string variable so we
+
+01:55:26.190 --> 01:55:29.880
+want to set this to a different string
+depending on the result of this
+
+01:55:29.880 --> 01:55:35.159
+expression and this is where we use the
+ternary operator so we start with our
+
+01:55:35.159 --> 01:55:41.579
+condition then we type a question mark
+if this condition is true we add this
+
+01:55:41.579 --> 01:55:48.690
+value here otherwise we add the other
+value so this question mark and colon is
+
+01:55:48.690 --> 01:55:54.059
+the ternary operator in Java it has
+three pieces first we have a condition
+
+01:55:54.059 --> 01:55:58.679
+if this condition is true this value
+will be returned and assigned to our
+
+01:55:58.679 --> 01:56:04.229
+class named variable otherwise this
+other value will be returned now we can
+
+01:56:04.229 --> 01:56:10.019
+completely get rid of this if statement
+so put the ternary operator in your tool
+
+01:56:10.019 --> 01:56:19.800
+box it's very helpful next we're going
+to look at switch statements in Java in
+
+01:56:19.800 --> 01:56:24.090
+this tutorial we're going to look at
+switch statements in Java we use three
+
+01:56:24.090 --> 01:56:27.929
+statements to execute different parts of
+code depending on the value of an
+
+01:56:27.929 --> 01:56:32.099
+expression kind of similar to if
+statements let me show you so let's say
+
+01:56:32.099 --> 01:56:35.579
+we're gonna write a program and check
+the role of the current user and then
+
+01:56:35.579 --> 01:56:38.789
+we're gonna print different messages or
+give them different features depending
+
+01:56:38.789 --> 01:56:45.209
+on their row so let's declare a string
+variable called role and here we set
+
+01:56:45.209 --> 01:56:49.889
+this to admin now to check the role of
+the user we can write an if statement
+
+01:56:49.889 --> 01:56:55.500
+like this if role equals admin then
+perhaps
+
+01:56:55.500 --> 01:57:00.690
+we want to print you are an admin now
+you might be wondering why we have this
+
+01:57:00.690 --> 01:57:04.320
+condition here it's obvious that this
+condition is always true because we have
+
+01:57:04.320 --> 01:57:09.060
+set roll to admin but this is just for
+demonstration in a real program we are
+
+01:57:09.060 --> 01:57:13.530
+not gonna hard code this admin here so
+we're gonna read the role of the current
+
+01:57:13.530 --> 01:57:16.860
+user from somewhere else
+we don't know what it is at the time of
+
+01:57:16.860 --> 01:57:20.220
+writing code okay so here we have one
+condition
+
+01:57:20.220 --> 01:57:27.210
+let's write another condition else if
+role equals moderator perhaps we want to
+
+01:57:27.210 --> 01:57:34.470
+display a different message so you are a
+moderator and finally if the role is
+
+01:57:34.470 --> 01:57:40.320
+none of these values you want to print
+you are a guest so this is one way to
+
+01:57:40.320 --> 01:57:44.640
+implement this scenario using an if
+statement we can also implement this
+
+01:57:44.640 --> 01:57:48.900
+using a switch statement and sometimes
+that looks a little bit cleaner let me
+
+01:57:48.900 --> 01:57:55.110
+show you so we start with a switch
+statement then we add parentheses and
+
+01:57:55.110 --> 01:58:00.090
+inside this parenthesis we add our
+variable in this case row next we define
+
+01:58:00.090 --> 01:58:06.570
+a block of code and in this block we add
+one or more case clauses so we have a
+
+01:58:06.570 --> 01:58:11.610
+case for an admin we add a colon here
+now what do we want to do here if the
+
+01:58:11.610 --> 01:58:17.070
+role is admin you want to print you are
+an admin so I'm gonna copy this line
+
+01:58:17.070 --> 01:58:22.140
+from here and then paste it over here
+now after this line we need to add a
+
+01:58:22.140 --> 01:58:27.870
+break statement to jump out of this
+switch block okay then we add another
+
+01:58:27.870 --> 01:58:34.410
+case Clause so case moderator once again
+you got a colon and here we're gonna
+
+01:58:34.410 --> 01:58:40.700
+print this other message so we paste it
+here and then we're gonna break
+
+01:58:40.700 --> 01:58:45.410
+now optionally we can have a default
+clause here so if none of these previous
+
+01:58:45.410 --> 01:58:49.580
+cases apply the code that we write in
+this section will be executed so here we
+
+01:58:49.580 --> 01:58:54.590
+want to print you are a guest
+now here we don't need to use a break
+
+01:58:54.590 --> 01:58:58.700
+statement because we're at the end of
+the switch block so will automatically
+
+01:58:58.700 --> 01:59:03.860
+jump out of this block in contrast if we
+didn't use this break statement here
+
+01:59:03.860 --> 01:59:08.450
+Java will continue executing these other
+lines here so if the role is admin first
+
+01:59:08.450 --> 01:59:12.440
+it will execute this line and then it
+will jump to this case block it will
+
+01:59:12.440 --> 01:59:16.520
+execute this other line and then after
+it executes this break statement it will
+
+01:59:16.520 --> 01:59:21.940
+jump out of this switch block okay so
+this is how we use a switch statement
+
+01:59:21.940 --> 01:59:28.190
+now compare this with wave statement
+some people prefer to use if statements
+
+01:59:28.190 --> 01:59:32.690
+others prefer to use a switch statement
+now one more thing before we finish this
+
+01:59:32.690 --> 01:59:37.190
+tutorial here we're comparing the value
+of role with strings but we could also
+
+01:59:37.190 --> 01:59:42.800
+use integers other than the long type so
+if roll was a byte short or an integer
+
+01:59:42.800 --> 01:59:50.270
+our cases would look like this case one
+case two and so on now here we have a
+
+01:59:50.270 --> 01:59:55.130
+compilation error because roll is a
+string let's change this to an integer
+
+01:59:55.130 --> 02:00:01.460
+and we can initialize this to one so as
+you can see with sweet statements we can
+
+02:00:01.460 --> 02:00:06.880
+execute different code depending on the
+value of an expression
+
+02:00:10.250 --> 02:00:14.490
+all right now it's time for an exercise
+this exercise I'm gonna give you is a
+
+02:00:14.490 --> 02:00:18.900
+popular interview question so I want you
+to write a program that behaves like
+
+02:00:18.900 --> 02:00:25.080
+this here we should enter a number if
+this number is divisible by five we get
+
+02:00:25.080 --> 02:00:32.370
+this so if you run the program again and
+enter ten once again we get fit now if
+
+02:00:32.370 --> 02:00:37.950
+this number is divisible by 3 we get
+buzz if this number is divisible by both
+
+02:00:37.950 --> 02:00:45.270
+five and three like fifteen or thirty or
+whatever we get fizzbuzz and if this
+
+02:00:45.270 --> 02:00:51.810
+number is not divisible by five or three
+like two we get the same number printed
+
+02:00:51.810 --> 02:00:55.740
+on the terminal so go ahead and spend
+five to ten minutes on this exercise
+
+02:00:55.740 --> 02:00:59.180
+you'll see my solution next
+
+02:01:01.190 --> 02:01:05.610
+all right to read the number first we
+need to use the scanner object so
+
+02:01:05.610 --> 02:01:12.240
+scanner we import this and instantiate
+it and as you know here we need to pass
+
+02:01:12.240 --> 02:01:19.740
+system that in to read data from the
+terminal now we print a message so we're
+
+02:01:19.740 --> 02:01:23.670
+gonna use the print method instead of
+print line here we add a label like
+
+02:01:23.670 --> 02:01:32.190
+number and then we call scanner the next
+int to read a number we store it in this
+
+02:01:32.190 --> 02:01:37.200
+variable number okay so the first part
+is done now we need to check to see if
+
+02:01:37.200 --> 02:01:41.640
+this number is divisible by five or not
+so we can write an if statement like
+
+02:01:41.640 --> 02:01:47.310
+this if number here we use the modulus
+operator which returns the remainder of
+
+02:01:47.310 --> 02:01:53.310
+a division so we divide this by five and
+if the remainder equals zero that means
+
+02:01:53.310 --> 02:02:01.670
+this number is divisible by 5 so we
+print fizz now
+
+02:02:01.849 --> 02:02:10.409
+otherwise if this number is divisible by
+3 we print buzz we need another
+
+02:02:10.409 --> 02:02:18.199
+condition if this number is divisible by
+5 and 3 so here we use the and operator
+
+02:02:18.199 --> 02:02:25.099
+number divisible by 3 equals 0 in this
+case we want to print fizz buzz
+
+02:02:25.099 --> 02:02:30.989
+otherwise you want to print the same
+number like this now this is not the
+
+02:02:30.989 --> 02:02:35.130
+right solution as I will show you in a
+second this program has a book but it's
+
+02:02:35.130 --> 02:02:38.789
+a very common solution that I see
+amongst my students so let's run this
+
+02:02:38.789 --> 02:02:45.820
+program and see what is wrong here
+all right here we enter five we get fizz
+
+02:02:45.820 --> 02:02:52.900
+utiful what if you enter ten ten is also
+divisible by 5 so we get fits so far so
+
+02:02:52.900 --> 02:03:00.880
+good what about a number that is
+divisible by 3 we get buzz good what if
+
+02:03:00.880 --> 02:03:07.869
+we enter a number that is divisible by
+both 5 &amp; 3 like 15 we get physican why
+
+02:03:07.869 --> 02:03:13.570
+is that here's the reason with this
+implementation if we enter 15 this first
+
+02:03:13.570 --> 02:03:19.270
+condition will evaluate to true so we
+get fizz these other else clauses will
+
+02:03:19.270 --> 02:03:25.030
+be ignored and that is why this line
+will not be executed so in situations
+
+02:03:25.030 --> 02:03:30.070
+like this you should have the most
+specific conditions on the top and the
+
+02:03:30.070 --> 02:03:35.380
+most generic ones on the bottom in this
+case we want to move this condition to
+
+02:03:35.380 --> 02:03:44.619
+the top so if the number is divisible by
+5 &amp; 3 we're gonna print fizzbuzz so this
+
+02:03:44.619 --> 02:03:50.400
+is very specific otherwise if the number
+is only divisible by 5 we print fizz
+
+02:03:50.400 --> 02:03:56.500
+else if it's divisible by 3 we print
+buzz and finally if none of his
+
+02:03:56.500 --> 02:04:01.210
+conditions is true then we print the
+same number now let's run the program
+
+02:04:01.210 --> 02:04:07.119
+one more time so we enter 15 and we get
+fizzbuzz beautiful so here's one way to
+
+02:04:07.119 --> 02:04:12.070
+solve this problem now I've seen some
+people argue that we have repeated this
+
+02:04:12.070 --> 02:04:18.070
+expression twice number is divisible by
+5 we have that here on line 12 as well
+
+02:04:18.070 --> 02:04:22.960
+as line 14 in programming we have this
+concept called dry which is short for
+
+02:04:22.960 --> 02:04:27.820
+don't repeat yourself so some people
+argue that here we have repeated this
+
+02:04:27.820 --> 02:04:31.840
+expression and this is not a good
+solution here is another way let me show
+
+02:04:31.840 --> 02:04:37.360
+you so we're gonna get rid of this
+second condition here instead we're
+
+02:04:37.360 --> 02:04:43.449
+gonna add a code block over here so if
+the number is divisible by 5 first we
+
+02:04:43.449 --> 02:04:48.699
+check to see if the number is also
+divisible by 3 if that's the case we
+
+02:04:48.699 --> 02:04:54.589
+print fizzbuzz
+otherwise we print just fizz
+
+02:04:54.589 --> 02:04:59.179
+like this okay now we no longer need
+these two lines because we already
+
+02:04:59.179 --> 02:05:03.679
+implemented this concept here so first
+we check to see if the number is
+
+02:05:03.679 --> 02:05:08.839
+divisible by five if not we check to see
+if it's divisible by three and otherwise
+
+02:05:08.839 --> 02:05:12.769
+so here is another way to solve this
+problem but in my opinion this approach
+
+02:05:12.769 --> 02:05:17.689
+is kind of amateurish and ugly because
+these nested if-else statements are
+
+02:05:17.689 --> 02:05:22.669
+considered a bad practice now this is
+not terribly bad but the more you nest
+
+02:05:22.669 --> 02:05:27.050
+these L statements the more confusing
+your code is going to be to other people
+
+02:05:27.050 --> 02:05:30.619
+so I personally prefer the previous
+solution even though we had a bit of
+
+02:05:30.619 --> 02:05:34.489
+repetition in the code the more you
+program the more you build software the
+
+02:05:34.489 --> 02:05:39.050
+more you realize that there is no way to
+build ideal software programming and
+
+02:05:39.050 --> 02:05:43.579
+problem solving is all about trade-offs
+every solution has certain strengths and
+
+02:05:43.579 --> 02:05:47.959
+certain weaknesses this solution doesn't
+have any repetition or duplication in
+
+02:05:47.959 --> 02:05:52.309
+the code but it has a nested structure
+and these nested structures make our
+
+02:05:52.309 --> 02:05:56.510
+code hard to read and understand the
+previous solution had a bit of
+
+02:05:56.510 --> 02:06:01.099
+repetition but it had a flat structure
+there is no nesting here and this code
+
+02:06:01.099 --> 02:06:10.999
+is cleaner and easier to read there are
+times that we want to repeat one or more
+
+02:06:10.999 --> 02:06:16.789
+statements for example let's say we have
+this hello world message here let's say
+
+02:06:16.789 --> 02:06:20.359
+we want to print this five times on the
+terminal we don't want to repeat this
+
+02:06:20.359 --> 02:06:25.699
+code like this this looks very ugly
+that's where we use loops in Java we
+
+02:06:25.699 --> 02:06:28.760
+have a few different types of loops the
+first one that I'm going to talk about
+
+02:06:28.760 --> 02:06:33.469
+in this tutorial is for loops so let's
+see how we can use a for loop here I'm
+
+02:06:33.469 --> 02:06:38.659
+going to delete all this code you start
+by typing the for keyword followed by
+
+02:06:38.659 --> 02:06:43.879
+parentheses and inside these parentheses
+we need to do three things first we need
+
+02:06:43.879 --> 02:06:49.300
+to declare a loop or counter variable so
+let's declare a variable called I and
+
+02:06:49.300 --> 02:06:55.399
+initialize it to 0 quit often use
+variable names like I J and K for loop
+
+02:06:55.399 --> 02:07:00.919
+counters next we add a semicolon to
+terminate the first statement then we
+
+02:07:00.919 --> 02:07:05.239
+write a boolean expression that
+determines how many times this loop is
+
+02:07:05.239 --> 02:07:11.239
+gonna get executed so I
+than five as long as I is less than five
+
+02:07:11.239 --> 02:07:17.390
+this loop will be executed once again we
+add a semicolon and finally we increment
+
+02:07:17.390 --> 02:07:24.350
+I by one like this so this is the basic
+structure for a for loop now here we can
+
+02:07:24.350 --> 02:07:29.380
+repeat one or more statements using this
+for loop so we can add our hello world
+
+02:07:29.380 --> 02:07:34.670
+message here like here we have a single
+statement so we don't need braces but if
+
+02:07:34.670 --> 02:07:39.050
+you have multiple statements that we
+want to repeat we need to define a code
+
+02:07:39.050 --> 02:07:44.630
+block here now I'm gonna remove this
+because you don't really need them so
+
+02:07:44.630 --> 02:07:49.820
+let's run this code and see what we get
+you get hello world printed five times
+
+02:07:49.820 --> 02:07:54.620
+on the terminal beautiful now let me
+explain how this code gets executed when
+
+02:07:54.620 --> 02:07:59.900
+Java sees this for loop first it will
+execute this statement so here we are
+
+02:07:59.900 --> 02:08:05.239
+initializing I to zero then Java
+evaluates this condition is this
+
+02:08:05.239 --> 02:08:09.680
+condition true obviously it is because
+zero is less than five so the control
+
+02:08:09.680 --> 02:08:14.540
+moves to line seven this line gets
+executed now at the end of this
+
+02:08:14.540 --> 02:08:18.350
+iteration or at the end of this loop the
+control moves here
+
+02:08:18.350 --> 02:08:23.719
+so I is incremented by one now we are at
+the beginning of the second iteration
+
+02:08:23.719 --> 02:08:29.090
+once again this condition is evaluated
+is one less than five obviously it is so
+
+02:08:29.090 --> 02:08:35.510
+once again the body of this loop gets
+executed now fast forward at the end of
+
+02:08:35.510 --> 02:08:41.000
+the fifth iteration I will become five
+five is not less than five so the loop
+
+02:08:41.000 --> 02:08:46.130
+condition will be false and control
+moves outside of this for loop now
+
+02:08:46.130 --> 02:08:49.130
+here's one thing you need to remember if
+you want to execute something five times
+
+02:08:49.130 --> 02:08:54.410
+you can initialize your loop counter or
+loop variable to zero and use the less
+
+02:08:54.410 --> 02:08:59.600
+than operator here another way is to
+initialize this to one and then use the
+
+02:08:59.600 --> 02:09:04.580
+less than or equal to operator here now
+to make this more interesting let's
+
+02:09:04.580 --> 02:09:10.510
+print I over here so here we add a space
+and then concatenate this string with I
+
+02:09:10.510 --> 02:09:17.330
+take a look so we get hello ward one two
+three four five in contrast if we
+
+02:09:17.330 --> 02:09:22.659
+initialize I to zero and use the less
+than operator
+
+02:09:22.659 --> 02:09:27.650
+we will get hello word zero one two
+three four we can also print these
+
+02:09:27.650 --> 02:09:33.710
+numbers in reverse order so we
+initialize I to five and execute this
+
+02:09:33.710 --> 02:09:40.550
+loop as long as I is greater than zero
+but here instead of incrementing I we
+
+02:09:40.550 --> 02:09:46.400
+decrement it now we get hello world five
+four three two one
+
+02:09:46.400 --> 02:09:57.290
+so this is all about for loops next
+we're gonna look at while loops in this
+
+02:09:57.290 --> 02:10:01.250
+tutorial we're gonna talk about while
+loops in Java while loops are very
+
+02:10:01.250 --> 02:10:04.849
+similar to for loops in terms of their
+functionality but they're different in
+
+02:10:04.849 --> 02:10:08.599
+terms of syntax let me show you so we're
+gonna continue with the example from the
+
+02:10:08.599 --> 02:10:13.849
+last tutorial I'm gonna rewrite this
+code using a while loop so first we
+
+02:10:13.849 --> 02:10:18.199
+declare a loop variable and I initialize
+it to zero
+
+02:10:18.199 --> 02:10:23.679
+next we type while and here in
+parentheses we type our loop condition
+
+02:10:23.679 --> 02:10:30.110
+while I is greater than zero then we're
+gonna execute the code inside this block
+
+02:10:30.110 --> 02:10:35.900
+so I'm gonna copy this from here paste
+it in this block and finally we need to
+
+02:10:35.900 --> 02:10:43.219
+decrement I like this so at the end of
+each iteration we decrement I just like
+
+02:10:43.219 --> 02:10:47.690
+our for loops so as you can see we can
+achieve the same thing using a for loop
+
+02:10:47.690 --> 02:10:51.770
+or a while loop
+however the implementation using the for
+
+02:10:51.770 --> 02:10:57.170
+loop is a little bit lighter and cleaner
+so in situations where you know ahead of
+
+02:10:57.170 --> 02:11:02.119
+time how many times you want to execute
+one or more statements it's better to
+
+02:11:02.119 --> 02:11:06.110
+use a for loop while loops are better in
+situations where we don't know exactly
+
+02:11:06.110 --> 02:11:10.190
+how many times you want to repeat
+something for example let's say we're
+
+02:11:10.190 --> 02:11:14.119
+going to write a program and ask the
+user to continuously enter something
+
+02:11:14.119 --> 02:11:18.079
+until they type quit the moment they
+type quit we're gonna terminate the
+
+02:11:18.079 --> 02:11:21.889
+program in that situation we don't know
+how many times the user is going to
+
+02:11:21.889 --> 02:11:25.760
+enter something so let's write that
+program using a while loop
+
+02:11:25.760 --> 02:11:29.469
+I'm gonna delete everything from here
+
+02:11:29.660 --> 02:11:33.410
+all right we're gonna start with our
+while loop now what is our loop
+
+02:11:33.410 --> 02:11:37.850
+condition here we don't have a counter
+variable in this example instead we want
+
+02:11:37.850 --> 02:11:43.690
+to check to see if the user entered quit
+or not so here we can declare a string
+
+02:11:43.690 --> 02:11:49.460
+called input and initialize it to an
+empty string then we can write a while
+
+02:11:49.460 --> 02:11:56.240
+loop like this while input does not
+equal to quit now this code is not gonna
+
+02:11:56.240 --> 02:12:00.950
+work because input is a string which is
+a reference type and we cannot use
+
+02:12:00.950 --> 02:12:04.970
+comparison operators between reference
+types because these operators will
+
+02:12:04.970 --> 02:12:09.350
+compare the address or a string objects
+not their value so if you have two
+
+02:12:09.350 --> 02:12:13.460
+strings quit and quit but stored in
+different memory locations to have
+
+02:12:13.460 --> 02:12:18.020
+different addresses so we can use the
+inequality operator to compare their
+
+02:12:18.020 --> 02:12:24.710
+value instead we need to use the equals
+method of string objects so we want to
+
+02:12:24.710 --> 02:12:29.630
+check to see if the input equals quit
+now here we need to apply the not
+
+02:12:29.630 --> 02:12:34.850
+operator so as long as the input does
+not equal quit we're gonna continuously
+
+02:12:34.850 --> 02:12:42.470
+ask the user to enter something so here
+we can print a label like input and then
+
+02:12:42.470 --> 02:12:46.910
+we can use a scanner object to read
+something from the terminal so let's
+
+02:12:46.910 --> 02:12:54.800
+create a scanner object and instantiate
+it using system dot in I didn't call
+
+02:12:54.800 --> 02:13:00.140
+scanner that next this will return a
+string so we can store it in this input
+
+02:13:00.140 --> 02:13:05.600
+variable now with this implementation in
+every iteration we're going to create a
+
+02:13:05.600 --> 02:13:10.940
+new scanner object so if the user enters
+10 numbers we're gonna create 10 scanner
+
+02:13:10.940 --> 02:13:15.530
+objects in memory this is unnecessary
+and it's actually a bad practice because
+
+02:13:15.530 --> 02:13:19.430
+it's going to pollute our memory so it's
+better to create the scanner object
+
+02:13:19.430 --> 02:13:26.390
+outside of a while loop and then simply
+use it here also here we are assuming
+
+02:13:26.390 --> 02:13:30.260
+that the user is typing everything in
+lowercase so if they type quit in
+
+02:13:30.260 --> 02:13:34.610
+uppercase or any combinations of
+lowercase and uppercase characters this
+
+02:13:34.610 --> 02:13:40.850
+logic is not gonna work the way we want
+so over here right after reading
+
+02:13:40.850 --> 02:13:43.530
+something from the terminal we're gonna
+call the
+
+02:13:43.530 --> 02:13:48.989
+to lowercase method of string objects to
+convert it to lowercase now to make this
+
+02:13:48.989 --> 02:13:54.270
+program more interesting let's echo back
+whatever the user enters so we simply
+
+02:13:54.270 --> 02:14:00.230
+print that on the terminal now let's run
+this and see what happens
+
+02:14:00.670 --> 02:14:06.280
+so I'm going to enter if your numbers
+like 1 2 &amp; 3 whatever we type gets a
+
+02:14:06.280 --> 02:14:12.610
+code back but the moment we type quit
+our program terminates so while loops
+
+02:14:12.610 --> 02:14:16.390
+are useful in situations where we don't
+know ahead of time how many times we
+
+02:14:16.390 --> 02:14:26.440
+want to repeat something in Java we have
+another type of loop called a do-while
+
+02:14:26.440 --> 02:14:31.390
+loop it's very similar to a while loop
+but it gets executed at least once let
+
+02:14:31.390 --> 02:14:34.720
+me show you what I mean so I'm gonna
+rewrite the same code using a do-while
+
+02:14:34.720 --> 02:14:41.350
+loop we start with a do keyword then we
+create a code block at the end of this
+
+02:14:41.350 --> 02:14:49.570
+code block we type while followed by our
+loop condition so not input dot equals
+
+02:14:49.570 --> 02:14:55.270
+quit and then we terminate this using a
+semicolon now inside the body of this
+
+02:14:55.270 --> 02:14:59.850
+loop we'll simply copy all these lines
+we have here
+
+02:15:01.679 --> 02:15:06.820
+now compared these two types of loops
+with while loops we check the condition
+
+02:15:06.820 --> 02:15:11.499
+first so if the condition is false the
+first time this loop will never get
+
+02:15:11.499 --> 02:15:17.920
+executed in contrast with do-while loops
+we check the condition last so do-while
+
+02:15:17.920 --> 02:15:23.229
+loops always get executed at least once
+even if the condition is false that is
+
+02:15:23.229 --> 02:15:27.639
+the only difference the reality most of
+the time we use while loops do-while
+
+02:15:27.639 --> 02:15:31.300
+loops are rarely used but there are
+certain cases for that so just be aware
+
+02:15:31.300 --> 02:15:36.119
+of them but most of the time prefer to
+use wire loops
+
+02:15:39.690 --> 02:15:44.260
+we're gonna continue with the example
+from the last tutorial this program we
+
+02:15:44.260 --> 02:15:50.560
+have written has a tiny problem let me
+show you so I'm gonna run this enter a
+
+02:15:50.560 --> 02:15:53.800
+couple numbers these numbers get echo
+back beautiful
+
+02:15:53.800 --> 02:15:59.590
+if we type quit the program terminates
+but the word quit also gets echoed back
+
+02:15:59.590 --> 02:16:03.750
+this is a bit weird so let's look at a
+couple ideas for solving this problem
+
+02:16:03.750 --> 02:16:09.000
+back to our code one way to solve this
+problem is to check the input before
+
+02:16:09.000 --> 02:16:15.280
+printing it so here we can type an if
+statement if the input does not equal
+
+02:16:15.280 --> 02:16:24.010
+quit then we're print it so not equal
+input dot equals quit if this condition
+
+02:16:24.010 --> 02:16:31.650
+is true then we're going to print the
+input let's take a look so one to quit
+
+02:16:31.650 --> 02:16:35.889
+beautiful we solved the problem there is
+another way to solve this problem as
+
+02:16:35.889 --> 02:16:41.110
+well let me show you we can reverse this
+condition so if the user types quit you
+
+02:16:41.110 --> 02:16:45.280
+can immediately jump out of the loop
+using the break statement so I'm gonna
+
+02:16:45.280 --> 02:16:51.160
+remove the nut operator if the user
+types quit we're gonna break out of the
+
+02:16:51.160 --> 02:16:55.990
+loop otherwise we're gonna continue
+execution and print this input on a
+
+02:16:55.990 --> 02:17:00.250
+terminal so when Java sees the break
+statement it will ignore everything else
+
+02:17:00.250 --> 02:17:05.000
+after and it will terminate the loop
+let's run the program
+
+02:17:05.000 --> 02:17:10.580
+once again we enter a couple numbers
+followed by quit beautiful so this is
+
+02:17:10.580 --> 02:17:14.810
+the break statement we also have the
+continuous statement that moves control
+
+02:17:14.810 --> 02:17:19.520
+to the beginning of a loop let me show
+you so let's imagine if the user types
+
+02:17:19.520 --> 02:17:23.960
+pass we don't want to echo that but also
+we don't want to terminate the loop you
+
+02:17:23.960 --> 02:17:28.881
+want to ask the user to try one more
+time so after we read the input we can
+
+02:17:28.881 --> 02:17:35.270
+check to see if input equals pass this
+is where we use the continuous statement
+
+02:17:35.270 --> 02:17:40.551
+when Java sees this it would move
+control to the beginning of the loop so
+
+02:17:40.551 --> 02:17:44.660
+all these other statements are gonna get
+ignored and what the user types is not
+
+02:17:44.660 --> 02:17:48.610
+gonna get printed on the terminal let's
+run the program and see this in action
+
+02:17:48.610 --> 02:17:55.760
+so we type 1 2 pass it doesn't get
+echoed back one more time and finally
+
+02:17:55.760 --> 02:18:02.150
+quit so to recap the break statement
+terminates a loop and the continue
+
+02:18:02.150 --> 02:18:06.080
+statement moves control to the beginning
+of a loop now one last thing before
+
+02:18:06.080 --> 02:18:10.131
+finish this tutorial in this
+implementation we don't really need this
+
+02:18:10.131 --> 02:18:15.200
+loop condition because the moment user
+types quit this break statement is gonna
+
+02:18:15.200 --> 02:18:21.080
+kick in and terminate the loop so we can
+simplify this code by using a true as
+
+02:18:21.080 --> 02:18:26.210
+our loop condition so this is always
+true and this loop is gonna get executed
+
+02:18:26.210 --> 02:18:31.310
+forever until the user types quit this
+is a very common technique that you see
+
+02:18:31.310 --> 02:18:35.540
+amongst professional programmers just
+remember if you're using this technique
+
+02:18:35.540 --> 02:18:39.260
+make sure to have a break statement
+otherwise you will end up with an
+
+02:18:39.260 --> 02:18:43.790
+infinite loop that executes forever it
+never terminates and that can be very
+
+02:18:43.790 --> 02:18:48.171
+dangerous in terms of memory consumption
+so if you're using while true make sure
+
+02:18:48.171 --> 02:18:51.700
+you have a break statement in your loop
+
+02:18:55.211 --> 02:19:00.501
+the last type of loop we want to look at
+is the for each loop in Java we use for
+
+02:19:00.501 --> 02:19:05.001
+each loops to iterate over arrays or
+collections let me show you so I'm going
+
+02:19:05.001 --> 02:19:10.730
+to start by declaring a string array
+called fruit and we initialize this with
+
+02:19:10.730 --> 02:19:19.251
+three items let's say Apple mango and
+orange now let's say we want to iterate
+
+02:19:19.251 --> 02:19:23.541
+over this array and print each item on a
+terminal we can use any of the loops you
+
+02:19:23.541 --> 02:19:28.161
+learn about earlier like a for loop or a
+while loop but we can also use the for
+
+02:19:28.161 --> 02:19:32.121
+each loop which is a bit easier let me
+show you first I'm going to use the for
+
+02:19:32.121 --> 02:19:37.131
+loop to iterate over this array so we
+type for here we declare our loop
+
+02:19:37.131 --> 02:19:42.740
+variable or loop counter into I we set
+it to zero as long as I is less than
+
+02:19:42.740 --> 02:19:47.900
+fruits that length we're going to
+increment I by one after each iteration
+
+02:19:47.900 --> 02:19:54.860
+and here we simply print fruits of I
+let's run the program and see what we
+
+02:19:54.860 --> 02:20:00.681
+get so we get each item on a new line
+beautiful now there is another way to
+
+02:20:00.681 --> 02:20:06.440
+write the same code using the for each
+loop here we type for in parentheses
+
+02:20:06.440 --> 02:20:10.820
+with declare and loop variable but the
+type of this variable should be based on
+
+02:20:10.820 --> 02:20:15.381
+the type of items in our array so here
+we have a string array and that means
+
+02:20:15.381 --> 02:20:20.951
+every item in this array is a string so
+here we should declare a string variable
+
+02:20:20.951 --> 02:20:27.610
+we call it fruit here we type a colon
+and then the name of our array fruits
+
+02:20:27.610 --> 02:20:34.371
+now in each iteration fruit will hold
+the value of one item in this array so
+
+02:20:34.371 --> 02:20:38.690
+here we don't have to declare a numeric
+counter we don't have to write a boolean
+
+02:20:38.690 --> 02:20:43.041
+expression like this we don't have to
+increment our counter it's much easier
+
+02:20:43.041 --> 02:20:50.121
+to iterate over an array now if we print
+fruit we get the exact same result as
+
+02:20:50.121 --> 02:20:54.411
+before take a look
+so the first three items are from our
+
+02:20:54.411 --> 02:20:58.570
+for loop and here's the result our for
+each loop
+
+02:20:58.570 --> 02:21:02.170
+so this is the for each loop however
+this for each loop has a couple of
+
+02:21:02.170 --> 02:21:07.150
+limitations one limitation is that it's
+always forward only so we cannot iterate
+
+02:21:07.150 --> 02:21:11.830
+over this array from the end to the
+beginning in contrast we can easily do
+
+02:21:11.830 --> 02:21:17.740
+this with a for loop so here we can
+initialize I to fruits that length then
+
+02:21:17.740 --> 02:21:23.350
+we change this operator to greater than
+and replace this value with zero so as
+
+02:21:23.350 --> 02:21:27.730
+long as I is greater than zero we're
+going to decrement I the second
+
+02:21:27.730 --> 02:21:31.750
+limitation of the for each loop is that
+here we don't have access to the index
+
+02:21:31.750 --> 02:21:37.210
+of each item all we have is this loop
+variable which holds the value of each
+
+02:21:37.210 --> 02:21:43.300
+item in this array in contrast in our
+for loops we can access both the index
+
+02:21:43.300 --> 02:21:48.430
+and the actual item so I represents the
+index of each item and fruits of I
+
+02:21:48.430 --> 02:21:53.530
+returns the item at the given index so
+if you need the index then you'll have
+
+02:21:53.530 --> 02:21:58.740
+to use the for loop otherwise it's much
+easier to use the for each loop
+
+02:22:02.460 --> 02:22:06.851
+all right now let's get back to our
+mortgage calculator and implement some
+
+02:22:06.851 --> 02:22:10.690
+basic error handling
+so here I've changed this question by
+
+02:22:10.690 --> 02:22:14.801
+adding this label that identifies the
+range of values we can enter so the
+
+02:22:14.801 --> 02:22:19.540
+minimum amount of loan we can get is
+$1,000 and maximum is 1 million dollars
+
+02:22:19.540 --> 02:22:25.721
+so if I enter 1 here I get this message
+enter a number between one thousand and
+
+02:22:25.721 --> 02:22:30.160
+one million and now we are asked this
+question one more time if I keep
+
+02:22:30.160 --> 02:22:35.801
+entering invalid values I get asked the
+same question now let's enter a valid
+
+02:22:35.801 --> 02:22:41.950
+value like 1 million dollars next we'll
+have to enter the annual interest rate
+
+02:22:41.950 --> 02:22:46.480
+now here we need to enter a value that
+is greater than 0 and less than or equal
+
+02:22:46.480 --> 02:22:51.971
+to 30 so if I enter 0 we get this
+message enter a value greater than 0 and
+
+02:22:51.971 --> 02:22:56.891
+less than or equal to 30
+once again we're asked this question one
+
+02:22:56.891 --> 02:23:03.341
+more time so let's enter a valid value
+like 3.9 to here we need to enter a
+
+02:23:03.341 --> 02:23:09.101
+value between 1 and 30 so if you enter 0
+we get an error message and we're asked
+
+02:23:09.101 --> 02:23:14.200
+the same question so let's enter 30 and
+finally we get the result here's our
+
+02:23:14.200 --> 02:23:19.421
+mortgage or monthly payments so go ahead
+and spend five to ten minutes on
+
+02:23:19.421 --> 02:23:23.891
+extending this mortgage calculator by
+adding error-handling to it you'll see
+
+02:23:23.891 --> 02:23:26.671
+my solution X
+
+02:23:30.310 --> 02:23:35.239
+all right let me show you how I'm gonna
+solve this problem step by step so for
+
+02:23:35.239 --> 02:23:39.560
+each question we want to validate the
+value that the user enters if the value
+
+02:23:39.560 --> 02:23:43.460
+is invalid you want to keep asking the
+same question so this is where we can
+
+02:23:43.460 --> 02:23:48.979
+use an infinite loop let me show you so
+here's our first question principal I'm
+
+02:23:48.979 --> 02:23:55.650
+gonna wrap these two lines inside an
+infinite loop while true
+
+02:23:55.650 --> 02:24:00.330
+so we're gonna keep asking the same
+question until the user enters a valid
+
+02:24:00.330 --> 02:24:04.950
+value so here after we read the
+principle we can write an if statement
+
+02:24:04.950 --> 02:24:12.420
+like this if principle is greater than
+or equal to 1000 and it is less than or
+
+02:24:12.420 --> 02:24:18.150
+equal to 1 million and here we can use
+an underscore to separate these digits
+
+02:24:18.150 --> 02:24:22.561
+to make our code more readable so if the
+user enters a valid value then we can
+
+02:24:22.561 --> 02:24:26.880
+break out of this infinite loop
+otherwise we're gonna print an error
+
+02:24:26.880 --> 02:24:38.010
+message so enter a value between 1001
+million like this ok now if you look on
+
+02:24:38.010 --> 02:24:43.080
+the right side here you can see this red
+bar this indicates an error and here in
+
+02:24:43.080 --> 02:24:47.190
+this preview window you can see exactly
+where we have an error it's down below
+
+02:24:47.190 --> 02:24:52.521
+on line 30 where we calculate the
+mortgage so if you click on this red bar
+
+02:24:52.521 --> 02:24:57.660
+we jump over here principal is
+highlighted in red so here we have a
+
+02:24:57.660 --> 02:25:02.160
+compilation error cannot resolve symbol
+principle here is the reason because
+
+02:25:02.160 --> 02:25:07.410
+we've wrapped these few lines inside
+this while loop and earlier I told you
+
+02:25:07.410 --> 02:25:11.610
+that whenever you declare a variable
+that variable scope to the Block in
+
+02:25:11.610 --> 02:25:15.840
+which it's defined so this is where we
+have declared the principal variable and
+
+02:25:15.840 --> 02:25:20.970
+it's scoped to this block it's not
+available outside of this block that's
+
+02:25:20.970 --> 02:25:24.960
+why we get this compilation error so to
+solve this problem we need to declare
+
+02:25:24.960 --> 02:25:30.240
+this outside of this while loop we can
+do it right here after radicular our
+
+02:25:30.240 --> 02:25:36.570
+constants so let's say int principle and
+we can initialize it to 0 now we remove
+
+02:25:36.570 --> 02:25:42.271
+the declaration from here and the error
+is gone now we need to repeat the same
+
+02:25:42.271 --> 02:25:47.521
+pattern with other questions so real
+quick here's our second question where
+
+02:25:47.521 --> 02:25:54.230
+we read the annual interest once again
+we add an infinite loop
+
+02:25:55.450 --> 02:26:00.400
+now the moment we read the annual
+interests invalidate the data so if
+
+02:26:00.400 --> 02:26:06.189
+annual interest is greater than or equal
+to let's say one and it is less than or
+
+02:26:06.189 --> 02:26:11.320
+equal to 30 then we're gonna break out
+of this infinite loop
+
+02:26:11.320 --> 02:26:16.600
+now here we should also calculate the
+monthly interest so the proper way to do
+
+02:26:16.600 --> 02:26:22.330
+this is like this if the user enters a
+valid value we add a code block here
+
+02:26:22.330 --> 02:26:29.460
+first we calculate the monthly interest
+and then break out of the loop otherwise
+
+02:26:29.460 --> 02:26:40.360
+we print an error message enter a value
+between 1 and 30 okay now if you look to
+
+02:26:40.360 --> 02:26:44.530
+the right side again we have two
+compilation errors monthly interest is
+
+02:26:44.530 --> 02:26:50.920
+not resolved because we have declared it
+inside of this block so let's move the
+
+02:26:50.920 --> 02:26:57.670
+declaration to the top here we remove
+the float keyword and declare monthly
+
+02:26:57.670 --> 02:27:02.870
+interest over here
+that's better and finally for the last
+
+02:27:02.870 --> 02:27:09.880
+question one more time we're to wrap it
+in this infinite loop
+
+02:27:11.910 --> 02:27:16.840
+this is where we read the number of
+years and right after this line we need
+
+02:27:16.840 --> 02:27:23.140
+to do our data validation so if yours is
+greater than or equal to one and it's
+
+02:27:23.140 --> 02:27:29.830
+less than or equal to 30 here we add a
+code block this is where we calculate
+
+02:27:29.830 --> 02:27:36.271
+the number of payments and then we break
+actually I forgot to type an S here
+
+02:27:36.271 --> 02:27:40.650
+otherwise if the user enters an invalid
+value will simply print an error message
+
+02:27:40.650 --> 02:27:47.350
+enter a value between 1 and 30 now here
+once again we have a compilation error
+
+02:27:47.350 --> 02:27:52.390
+because number of payments cannot be
+resolved so we remove the declaration
+
+02:27:52.390 --> 02:28:01.150
+from here and we'll be to the top right
+here number of payments so this is how
+
+02:28:01.150 --> 02:28:05.740
+we add data validation to this program
+the problem is that this code the code
+
+02:28:05.740 --> 02:28:10.780
+inside the main method is now getting a
+little bit too long and this hurt the
+
+02:28:10.780 --> 02:28:14.771
+maintainability of our program someone
+else reading this code they have to look
+
+02:28:14.771 --> 02:28:18.730
+at all these statements to figure out
+what's going on this is where we need to
+
+02:28:18.730 --> 02:28:23.650
+break this code down into smaller easier
+to read and easier to understand chunks
+
+02:28:23.650 --> 02:28:27.720
+and that's what I'm gonna show you next
+
+02:28:28.561 --> 02:28:32.680
+so in this section you'll learn how to
+control the flow of execution of your
+
+02:28:32.680 --> 02:28:37.480
+programs we started off by talking about
+the comparison operators for comparing
+
+02:28:37.480 --> 02:28:42.670
+primitive values then we talked about
+the logical operators like and or and
+
+02:28:42.670 --> 02:28:47.380
+not I showed you how we can use these
+operators for implementing real word
+
+02:28:47.380 --> 02:28:52.061
+rules and then we talked about three
+types of control flow statements you
+
+02:28:52.061 --> 02:28:56.980
+learn about conditional statements like
+if and switch for making decisions in
+
+02:28:56.980 --> 02:29:02.050
+our programs then you learn about loops
+for executing code repeatedly we looked
+
+02:29:02.050 --> 02:29:07.210
+at four types of loops for loops while
+loops do-while loops and for each loops
+
+02:29:07.210 --> 02:29:11.860
+and finally we looked at the break and
+continue statements for breaking or
+
+02:29:11.860 --> 02:29:15.880
+jumping to the beginning of a loop I
+hope you learned a lot and been enjoying
+
+02:29:15.880 --> 02:29:26.480
+the course so far
+
+02:29:26.739 --> 02:29:32.300
+as Martin Fowler said any fool can write
+code that a computer can understand good
+
+02:29:32.300 --> 02:29:37.010
+programmers write code that humans can
+understand I can't agree more if you
+
+02:29:37.010 --> 02:29:40.729
+have seen any of my courses you probably
+know that I've put a lot of emphasis on
+
+02:29:40.729 --> 02:29:45.050
+writing clean code so I have dedicated
+this entire section on clean coding
+
+02:29:45.050 --> 02:29:49.069
+we're going to continue extending our
+mortgage calculator and add new features
+
+02:29:49.069 --> 02:29:53.180
+to it along the way you will see our
+code starts to get messy and hard to
+
+02:29:53.180 --> 02:29:57.020
+maintain so I will show you a few
+techniques for changing the structure of
+
+02:29:57.020 --> 02:30:01.850
+the code and make it clean and beautiful
+are you ready let's jump in and get
+
+02:30:01.850 --> 02:30:03.909
+started
+
+02:30:04.090 --> 02:30:09.140
+hey guys maj here i want to congratulate
+you on your determination for learning I
+
+02:30:09.140 --> 02:30:12.710
+would really appreciate it if you
+support me by liking and sharing this
+
+02:30:12.710 --> 02:30:17.210
+video also subscribe to my channel and
+enable notifications so next time I
+
+02:30:17.210 --> 02:30:20.779
+upload a video you get notified now if
+you want to learn more I would encourage
+
+02:30:20.779 --> 02:30:25.489
+you to enroll in my ultimate Java series
+as I told you earlier this YouTube
+
+02:30:25.489 --> 02:30:29.119
+tutorial is the first two hours of this
+series if you're serious about learning
+
+02:30:29.119 --> 02:30:33.319
+Java and want to become a professional
+job of developer I highly encourage you
+
+02:30:33.319 --> 02:30:37.159
+to enroll in this series in case you're
+interested I put the link down below in
+
+02:30:37.159 --> 02:30:49.530
+the description box thank you on have a
+fantastic day
+
