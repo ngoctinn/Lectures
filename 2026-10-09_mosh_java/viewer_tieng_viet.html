@@ -279,20 +279,73 @@
     ::-webkit-scrollbar-thumb { background: var(--panel-border); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 
+    /* Switch mode buttons */
+    .player-mode-switch {
+      display: flex;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 3px;
+      gap: 4px;
+    }
+    .mode-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }
+    .mode-btn:hover {
+      color: var(--text);
+    }
+    .mode-btn.active {
+      background: var(--primary);
+      color: #0f172a;
+    }
+    .yt-container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .yt-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     @media (max-width: 900px) {
       .main-container { grid-template-columns: 1fr; grid-template-rows: 40vh 1fr; }
     }
   </style>
 </head>
 <body>
+
   <header>
     <div class="logo-area">
       <span class="badge">Lecture to Notes</span>
       <h1 class="course-title">Java Full Course for Beginners</h1>
       <span class="meta-tags">• Giảng viên: Mosh Hamedani • Thời lượng: 2h 30m</span>
     </div>
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Tìm kiếm chương bài học hoặc từ khóa...">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <div class="player-mode-switch">
+        <button class="mode-btn active" id="btnModeYt" onclick="setPlayerMode('yt')">
+          ▶️ YouTube Trực tuyến
+        </button>
+        <button class="mode-btn" id="btnModeLocal" onclick="setPlayerMode('local')">
+          💾 Video Cục bộ (Offline)
+        </button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm chương bài học hoặc từ khóa...">
+      </div>
     </div>
   </header>
 
@@ -300,9 +353,14 @@
     <!-- Left column: Video player -->
     <div class="video-section">
       <div class="video-wrapper">
-        <video id="mainPlayer" controls preload="metadata" poster="slides/frame_0001.jpg">
+        <!-- YouTube Player -->
+        <div id="ytContainer" class="yt-container">
+          <div id="ytPlayer"></div>
+        </div>
+        <!-- Local Video Player -->
+        <video id="mainPlayer" controls preload="metadata" style="display: none;">
           <source src="video.mp4" type="video/mp4">
-          Trình duyệt của bạn không hỗ trợ thẻ video.
+          Trình duyệt của bạn không hỗ trợ thẻ video cục bộ.
         </video>
       </div>
       <div class="video-bar">
@@ -312,7 +370,7 @@
           <strong id="currentChapterName">01. Giới thiệu khóa học</strong>
         </div>
         <div style="font-size: 0.8rem; color: var(--text-muted);">
-          <span>Nhấp vào thẻ chương để tua video</span>
+          <span id="playerStatusHint">⚡ Bấm vào bất kỳ thẻ bài học nào bên phải để tua video tự động</span>
         </div>
       </div>
     </div>
@@ -334,15 +392,83 @@
     <img id="modalImg" src="">
   </div>
 
+  <!-- YouTube IFrame API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+
   <script>
     const chapters = [{"id": 1, "start": 0, "end": 106, "start_str": "00:00", "end_str": "01:46", "title": "Giới thiệu khóa học", "title_en": "Introduction", "desc": "Giới thiệu tổng quan về ngôn ngữ lập trình Java, lộ trình học tập từ cơ bản đến nâng cao cho người mới bắt đầu.", "frames": ["frame_0002.jpg", "frame_0004.jpg"]}, {"id": 2, "start": 106, "end": 239, "start_str": "01:46", "end_str": "03:59", "title": "Cài đặt Java & Môi trường", "title_en": "Installing Java", "desc": "Hướng dẫn tải và cài đặt JDK (Java Development Kit) và IDE IntelliJ IDEA để bắt đầu lập trình.", "frames": ["frame_0005.jpg", "frame_0006.jpg", "frame_0007.jpg", "frame_0008.jpg"]}, {"id": 3, "start": 239, "end": 521, "start_str": "03:59", "end_str": "08:41", "title": "Cấu trúc một chương trình Java", "title_en": "Anatomy of a Java Program", "desc": "Tìm hiểu về Class, Function/Method, hàm main, quy tắc đặt tên PascalCase và camelCase.", "frames": ["frame_0009.jpg", "frame_0011.jpg", "frame_0018.jpg"]}, {"id": 4, "start": 521, "end": 959, "start_str": "08:41", "end_str": "15:59", "title": "Chương trình Java đầu tiên", "title_en": "Your First Java Program", "desc": "Viết và chạy chương trình Hello World, sử dụng lệnh System.out.println() và biên dịch bằng javac.", "frames": ["frame_0019.jpg", "frame_0020.jpg", "frame_0023.jpg", "frame_0024.jpg"]}, {"id": 5, "start": 959, "end": 989, "start_str": "15:59", "end_str": "16:29", "title": "Tài liệu tóm tắt (Cheat Sheet)", "title_en": "Cheat Sheet", "desc": "Các tài liệu ghi nhớ nhanh cú pháp cốt lõi của Java dành cho lập trình viên.", "frames": ["frame_0033.jpg"]}, {"id": 6, "start": 989, "end": 1374, "start_str": "16:29", "end_str": "22:54", "title": "Cơ chế thực thi của Java (JVM & Bytecode)", "title_en": "How Java Code Gets Executed", "desc": "Mã nguồn .java được biên dịch thành Bytecode .class, sau đó máy ảo Java (JVM) dịch thành Machine Code (WORA).", "frames": ["frame_0034.jpg", "frame_0036.jpg", "frame_0038.jpg", "frame_0040.jpg"]}, {"id": 7, "start": 1374, "end": 1522, "start_str": "22:54", "end_str": "25:22", "title": "Cấu trúc khóa học", "title_en": "Course Structure", "desc": "Lộ trình các chủ đề tiếp theo: Kiểu dữ liệu, luồng điều khiển, dự án thực tế và viết Clean Code.", "frames": ["frame_0047.jpg", "frame_0048.jpg", "frame_0049.jpg", "frame_0050.jpg"]}, {"id": 8, "start": 1522, "end": 1557, "start_str": "25:22", "end_str": "25:57", "title": "Tổng quan về Kiểu dữ liệu (Types)", "title_en": "Types", "desc": "Giới thiệu sự phân chia giữa kiểu nguyên thủy (Primitive Types) và kiểu tham chiếu (Reference Types).", "frames": ["frame_0052.jpg"]}, {"id": 9, "start": 1557, "end": 1747, "start_str": "25:57", "end_str": "29:07", "title": "Biến và Khởi tạo biến (Variables)", "title_en": "Variables", "desc": "Cách khai báo biến, gán giá trị và quy tắc đặt tên biến có ý nghĩa trong Java.", "frames": ["frame_0054.jpg", "frame_0058.jpg", "frame_0059.jpg"]}, {"id": 10, "start": 1747, "end": 2067, "start_str": "29:07", "end_str": "34:27", "title": "8 Kiểu dữ liệu nguyên thủy (Primitive Types)", "title_en": "Primitive Types", "desc": "Chi tiết về byte, short, int, long (hậu tố L), float (hậu tố F), double, char và boolean.", "frames": ["frame_0061.jpg", "frame_0069.jpg"]}, {"id": 11, "start": 2067, "end": 2355, "start_str": "34:27", "end_str": "39:15", "title": "Kiểu dữ liệu tham chiếu (Reference Types)", "title_en": "Reference Types", "desc": "Làm việc với Object, từ khóa new, lớp Date và cơ chế cấp phát bộ nhớ trên Heap.", "frames": ["frame_0070.jpg", "frame_0072.jpg", "frame_0079.jpg"]}, {"id": 12, "start": 2355, "end": 2619, "start_str": "39:15", "end_str": "43:39", "title": "So sánh Primitive vs Reference Types", "title_en": "Primitive Types vs Reference Types", "desc": "Sự khác biệt vùng nhớ: Primitive lưu trực tiếp trên Stack (copy giá trị), Reference lưu địa chỉ trỏ tới Heap.", "frames": ["frame_0080.jpg", "frame_0081.jpg", "frame_0082.jpg", "frame_0084.jpg"]}, {"id": 13, "start": 2619, "end": 3042, "start_str": "43:39", "end_str": "50:42", "title": "Chuỗi ký tự (Strings)", "title_en": "Strings", "desc": "Tính bất biến (immutability) của String, các hàm hữu ích: length(), replace(), toLowerCase(), indexOf().", "frames": ["frame_0090.jpg", "frame_0093.jpg", "frame_0096.jpg", "frame_0098.jpg"]}, {"id": 14, "start": 3042, "end": 3202, "start_str": "50:42", "end_str": "53:22", "title": "Ký tự thoát (Escape Sequences)", "title_en": "Escape Sequences", "desc": "Sử dụng dấu gạch chéo ngược: \\n (xuống dòng), \\t (tab), \\\" (ngoặc kép), \\\\ (dấu gạch chéo).", "frames": ["frame_0105.jpg", "frame_0110.jpg"]}, {"id": 15, "start": 3202, "end": 3527, "start_str": "53:22", "end_str": "58:47", "title": "Mảng (Arrays)", "title_en": "Arrays", "desc": "Khai báo mảng 1 chiều, kích thước cố định, sử dụng Arrays.toString() và Arrays.sort().", "frames": ["frame_0111.jpg", "frame_0112.jpg", "frame_0113.jpg", "frame_0114.jpg"]}, {"id": 16, "start": 3527, "end": 3683, "start_str": "58:47", "end_str": "1:01:23", "title": "Mảng đa chiều (Multi-Dimensional Arrays)", "title_en": "Multi-Dimensional Arrays", "desc": "Khởi tạo ma trận 2D, 3D và hiển thị bằng Arrays.deepToString().", "frames": ["frame_0120.jpg", "frame_0121.jpg"]}, {"id": 17, "start": 3683, "end": 3795, "start_str": "1:01:23", "end_str": "1:03:15", "title": "Hằng số (Constants)", "title_en": "Constants", "desc": "Sử dụng từ khóa final để cố định giá trị biến, quy ước đặt tên VIẾT_HOA.", "frames": ["frame_0125.jpg", "frame_0126.jpg", "frame_0127.jpg"]}, {"id": 18, "start": 3795, "end": 4038, "start_str": "1:03:15", "end_str": "1:07:18", "title": "Biểu thức số học (Arithmetic Expressions)", "title_en": "Arithmetic Expressions", "desc": "Phép cộng, trừ, nhân, chia, chia lấy dư (%), toán tử tăng giảm ++x và x++.", "frames": ["frame_0128.jpg", "frame_0133.jpg", "frame_0146.jpg"]}, {"id": 19, "start": 4038, "end": 4120, "start_str": "1:07:18", "end_str": "1:08:40", "title": "Thứ tự ưu tiên toán tử (Order of Operations)", "title_en": "Order of Operations", "desc": "Quy tắc PEMDAS: Dấu ngoặc () ưu tiên cao nhất, đến nhân/chia (*, /, %), sau cùng là cộng/trừ (+, -).", "frames": []}, {"id": 20, "start": 4120, "end": 4508, "start_str": "1:08:40", "end_str": "1:15:08", "title": "Ép kiểu (Casting & Type Conversion)", "title_en": "Casting", "desc": "Ép kiểu ngầm định (Implicit) và ép kiểu tường minh (Explicit), chuyển chuỗi sang số Integer.parseInt().", "frames": ["frame_0152.jpg"]}, {"id": 21, "start": 4508, "end": 4790, "start_str": "1:15:08", "end_str": "1:19:50", "title": "Lớp toán học (The Math Class)", "title_en": "The Math Class", "desc": "Các hàm tiện ích: Math.round(), Math.ceil(), Math.floor(), Math.max(), Math.random().", "frames": ["frame_0153.jpg", "frame_0154.jpg"]}, {"id": 22, "start": 4790, "end": 5140, "start_str": "1:19:50", "end_str": "1:25:40", "title": "Định dạng số và tiền tệ (Formatting Numbers)", "title_en": "Formatting Numbers", "desc": "Sử dụng NumberFormat để định dạng tiền tệ ($) và phần trăm (%) theo Locale chuẩn.", "frames": ["frame_0161.jpg", "frame_0162.jpg", "frame_0166.jpg", "frame_0167.jpg"]}, {"id": 23, "start": 5140, "end": 5445, "start_str": "1:25:40", "end_str": "1:30:45", "title": "Nhập dữ liệu từ bàn phím (Reading Input)", "title_en": "Reading Input", "desc": "Sử dụng lớp Scanner đọc dữ liệu từ System.in: scanner.next(), scanner.nextLine(), scanner.nextInt().", "frames": ["frame_0173.jpg", "frame_0174.jpg", "frame_0175.jpg", "frame_0177.jpg"]}, {"id": 24, "start": 5445, "end": 5575, "start_str": "1:30:45", "end_str": "1:32:55", "title": "Dự án: Máy tính trả góp thế chấp (Mô tả)", "title_en": "Project: Mortgage Calculator", "desc": "Đề bài ứng dụng Mortgage Calculator: Nhập số tiền vay, lãi suất hàng năm, thời hạn vay.", "frames": ["frame_0183.jpg", "frame_0184.jpg", "frame_0185.jpg", "frame_0186.jpg"]}, {"id": 25, "start": 5575, "end": 5834, "start_str": "1:32:55", "end_str": "1:37:14", "title": "Dự án: Giải thuật Mortgage Calculator (v1)", "title_en": "Solution: Mortgage Calculator", "desc": "Áp dụng công thức tài chính tính toán tiền trả góp hàng tháng và hiển thị định dạng tiền tệ.", "frames": ["frame_0187.jpg", "frame_0188.jpg", "frame_0191.jpg", "frame_0192.jpg"]}, {"id": 26, "start": 5834, "end": 5923, "start_str": "1:37:14", "end_str": "1:38:43", "title": "Tóm tắt chương Kiểu dữ liệu", "title_en": "Types Summary", "desc": "Ôn tập toàn bộ kiến thức về biến, kiểu dữ liệu, mảng, toán tử và ép kiểu trong Java.", "frames": ["frame_0196.jpg", "frame_0197.jpg", "frame_0198.jpg"]}, {"id": 27, "start": 5923, "end": 5970, "start_str": "1:38:43", "end_str": "1:39:30", "title": "Tổng quan về Điều khiển luồng (Control Flow)", "title_en": "Control Flow", "desc": "Giới thiệu các cấu trúc ra quyết định và lặp lại trong lập trình.", "frames": ["frame_0199.jpg", "frame_0201.jpg"]}, {"id": 28, "start": 5970, "end": 6076, "start_str": "1:39:30", "end_str": "1:41:16", "title": "Toán tử so sánh (Comparison Operators)", "title_en": "Comparison Operators", "desc": "Các toán tử điều kiện: ==, !=, >, >=, <, <= trả về giá trị boolean.", "frames": ["frame_0201.jpg", "frame_0203.jpg"]}, {"id": 29, "start": 6076, "end": 6352, "start_str": "1:41:16", "end_str": "1:45:52", "title": "Toán tử logic (Logical Operators)", "title_en": "Logical Operators", "desc": "Toán tử AND (&&), OR (||), NOT (!) và cơ chế ngắt mạch tính toán (Short-circuit Evaluation).", "frames": ["frame_0208.jpg", "frame_0209.jpg", "frame_0210.jpg", "frame_0211.jpg"]}, {"id": 30, "start": 6352, "end": 6618, "start_str": "1:45:52", "end_str": "1:50:18", "title": "Câu lệnh rẽ nhánh (If Statements)", "title_en": "If Statements", "desc": "Cấu trúc if, else if, else để điều khiển các luồng thực thi điều kiện khác nhau.", "frames": ["frame_0213.jpg", "frame_0215.jpg", "frame_0219.jpg"]}, {"id": 31, "start": 6618, "end": 6827, "start_str": "1:50:18", "end_str": "1:53:47", "title": "Đơn giản hóa câu lệnh If", "title_en": "Simplifying If Statements", "desc": "Kỹ thuật viết code ngắn gọn, loại bỏ các biến boolean trung gian thừa thãi.", "frames": ["frame_0224.jpg", "frame_0225.jpg"]}, {"id": 32, "start": 6827, "end": 6976, "start_str": "1:53:47", "end_str": "1:56:16", "title": "Toán tử ba ngôi (Ternary Operator)", "title_en": "The Ternary Operator", "desc": "Cú pháp rút gọn biểu thức điều kiện: condition ? valueIfTrue : valueIfFalse.", "frames": ["frame_0230.jpg", "frame_0233.jpg"]}, {"id": 33, "start": 6976, "end": 7207, "start_str": "1:56:16", "end_str": "2:00:07", "title": "Câu lệnh Switch (Switch Statements)", "title_en": "Switch Statements", "desc": "Rẽ nhánh nhiều trường hợp rời rạc với case, break và default.", "frames": ["frame_0236.jpg", "frame_0237.jpg", "frame_0238.jpg", "frame_0239.jpg"]}, {"id": 34, "start": 7207, "end": 7565, "start_str": "2:00:07", "end_str": "2:06:05", "title": "Bài tập phỏng vấn: FizzBuzz", "title_en": "Exercise: FizzBuzz", "desc": "Giải bài toán FizzBuzz kinh điển: chia hết cho 5 ra Fizz, cho 3 ra Buzz, cho cả hai ra FizzBuzz.", "frames": ["frame_0244.jpg", "frame_0245.jpg", "frame_0246.jpg", "frame_0247.jpg"]}, {"id": 35, "start": 7565, "end": 7793, "start_str": "2:06:05", "end_str": "2:09:53", "title": "Vòng lặp For (For Loops)", "title_en": "For Loops", "desc": "Cú pháp vòng lặp for khi biết trước số lần lặp, biến đếm i.", "frames": ["frame_0260.jpg"]}, {"id": 36, "start": 7793, "end": 8059, "start_str": "2:09:53", "end_str": "2:14:19", "title": "Vòng lặp While (While Loops)", "title_en": "While Loops", "desc": "Vòng lặp while thực thi khi điều kiện còn đúng, xử lý nhập lệnh 'quit' từ người dùng.", "frames": ["frame_0261.jpg", "frame_0263.jpg", "frame_0266.jpg", "frame_0267.jpg"]}, {"id": 37, "start": 8059, "end": 8136, "start_str": "2:14:19", "end_str": "2:15:36", "title": "Vòng lặp Do...While", "title_en": "Do...While Loops", "desc": "Cấu trúc vòng lặp luôn thực hiện ít nhất 1 lần trước khi kiểm tra điều kiện.", "frames": ["frame_0270.jpg", "frame_0271.jpg", "frame_0277.jpg"]}, {"id": 38, "start": 8136, "end": 8332, "start_str": "2:15:36", "end_str": "2:18:52", "title": "Lệnh Break và Continue", "title_en": "Break and Continue", "desc": "break để thoát vòng lặp ngay lập tức, continue để bỏ qua lần lặp hiện tại sang lần tiếp theo.", "frames": []}, {"id": 39, "start": 8332, "end": 8519, "start_str": "2:18:52", "end_str": "2:21:59", "title": "Vòng lặp For-Each", "title_en": "For-Each Loop", "desc": "Cách duyệt nhanh các phần tử trong mảng hoặc danh sách cực kỳ trực quan và sạch sẽ.", "frames": ["frame_0284.jpg"]}, {"id": 40, "start": 8519, "end": 8607, "start_str": "2:21:59", "end_str": "2:23:27", "title": "Dự án: Mortgage Calculator (v2 - Yêu cầu)", "title_en": "Project: Mortgage Calculator (v2)", "desc": "Nâng cấp dự án: Bổ sung vòng lặp kiểm tra tính hợp lệ của dữ liệu nhập (Input Validation).", "frames": ["frame_0286.jpg", "frame_0287.jpg"]}, {"id": 41, "start": 8607, "end": 8908, "start_str": "2:23:27", "end_str": "2:28:28", "title": "Dự án: Giải pháp Mortgage Calculator (v2)", "title_en": "Solution: Mortgage Calculator (v2)", "desc": "Hoàn thiện mã nguồn với vòng lặp while(true) và thông báo lỗi nếu nhập ngoài khoảng cho phép.", "frames": ["frame_0288.jpg", "frame_0289.jpg", "frame_0290.jpg", "frame_0291.jpg"]}, {"id": 42, "start": 8908, "end": 8965, "start_str": "2:28:28", "end_str": "2:29:25", "title": "Tóm tắt chương Điều khiển luồng", "title_en": "Control Flow Summary", "desc": "Tổng kết kiến thức về điều kiện logic, rẽ nhánh và các loại vòng lặp trong Java.", "frames": ["frame_0299.jpg"]}, {"id": 43, "start": 8965, "end": 9048, "start_str": "2:29:25", "end_str": "2:30:48", "title": "Nguyên tắc viết code sạch (Clean Coding)", "title_en": "Clean Coding", "desc": "Quy tắc đặt tên biến rõ nghĩa, tránh magic numbers, giữ hàm ngắn gọn và định dạng code chuẩn.", "frames": ["frame_0300.jpg", "frame_0301.jpg", "frame_0302.jpg"]}];
-    const player = document.getElementById('mainPlayer');
+    let currentMode = 'yt'; // 'yt' or 'local'
+    let ytPlayer = null;
+    let ytReady = false;
+
+    const localPlayer = document.getElementById('mainPlayer');
+    const ytContainer = document.getElementById('ytContainer');
     const timeDisplay = document.getElementById('timeDisplay');
     const currentChapterName = document.getElementById('currentChapterName');
     const listContainer = document.getElementById('curriculumList');
     const searchInput = document.getElementById('searchInput');
     const imageModal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImg');
+    const btnModeYt = document.getElementById('btnModeYt');
+    const btnModeLocal = document.getElementById('btnModeLocal');
+    const playerStatusHint = document.getElementById('playerStatusHint');
+
+    // YouTube API Ready Callback
+    window.onYouTubeIframeAPIReady = function() {
+      ytPlayer = new YT.Player('ytPlayer', {
+        height: '100%',
+        width: '100%',
+        videoId: 'eIrMbAQSU34',
+        playerVars: {
+          'playsinline': 1,
+          'rel': 0,
+          'modestbranding': 1
+        },
+        events: {
+          'onReady': () => {
+            ytReady = true;
+          }
+        }
+      });
+    };
+
+    function setPlayerMode(mode) {
+      currentMode = mode;
+      if (mode === 'yt') {
+        btnModeYt.classList.add('active');
+        btnModeLocal.classList.remove('active');
+        ytContainer.style.display = 'block';
+        localPlayer.style.display = 'none';
+        localPlayer.pause();
+        playerStatusHint.textContent = '⚡ Đang phát trực tuyến từ YouTube (Full HD 1080p)';
+      } else {
+        btnModeLocal.classList.add('active');
+        btnModeYt.classList.remove('active');
+        ytContainer.style.display = 'none';
+        localPlayer.style.display = 'block';
+        if (ytReady && ytPlayer && ytPlayer.pauseVideo) {
+          ytPlayer.pauseVideo();
+        }
+        playerStatusHint.textContent = '💾 Đang phát từ file video.mp4 cục bộ';
+      }
+    }
+
+    function seekToTime(seconds) {
+      if (currentMode === 'yt') {
+        if (ytReady && ytPlayer && ytPlayer.seekTo) {
+          ytPlayer.seekTo(seconds, true);
+          ytPlayer.playVideo();
+        }
+      } else {
+        localPlayer.currentTime = seconds;
+        localPlayer.play().catch(e => {
+          console.warn('Local play failed, switching to YouTube', e);
+          alert('Không tìm thấy file video.mp4 cục bộ hoặc trình duyệt không hỗ trợ. Tự động chuyển sang YouTube!');
+          setPlayerMode('yt');
+          seekToTime(seconds);
+        });
+      }
+    }
 
     function formatTime(sec) {
       const m = Math.floor(sec / 60);
@@ -362,7 +488,11 @@
         let slidesHtml = '';
         if (c.frames && c.frames.length > 0) {
           slidesHtml = '<div class="slide-gallery">' +
-            c.frames.map(f => `<div class="slide-thumb" onclick="event.stopPropagation(); openImage('slides/${f}')"><img src="slides/${f}" alt="Slide" loading="lazy"></div>`).join('') +
+            c.frames.map(f => `
+              <div class="slide-thumb" onclick="event.stopPropagation(); openImage('slides/${f}')">
+                <img src="slides/${f}" alt="Slide" loading="lazy" onerror="this.onerror=null; this.src='https://img.youtube.com/vi/eIrMbAQSU34/mqdefault.jpg'">
+              </div>
+            `).join('') +
             '</div>';
         }
 
@@ -377,8 +507,7 @@
         `;
 
         card.addEventListener('click', () => {
-          player.currentTime = c.start;
-          player.play();
+          seekToTime(c.start);
         });
 
         listContainer.appendChild(card);
@@ -393,11 +522,8 @@
     // Initial render
     renderChapters(chapters);
 
-    // Sync playback with chapter highlighting
-    player.addEventListener('timeupdate', () => {
-      const curr = player.currentTime;
+    function updateActiveChapter(curr) {
       timeDisplay.textContent = formatTime(curr);
-
       const active = chapters.find(c => curr >= c.start && curr <= c.end);
       if (active) {
         currentChapterName.textContent = (active.id < 10 ? '0' + active.id : active.id) + '. ' + active.title;
@@ -406,6 +532,31 @@
         if (activeCard) {
           activeCard.classList.add('active');
         }
+      }
+    }
+
+    // Periodic sync for YouTube Player
+    setInterval(() => {
+      if (currentMode === 'yt' && ytReady && ytPlayer && ytPlayer.getCurrentTime) {
+        try {
+          const curr = ytPlayer.getCurrentTime();
+          if (curr !== undefined) {
+            updateActiveChapter(curr);
+          }
+        } catch (err) {}
+      }
+    }, 600);
+
+    // Sync for Local Player
+    localPlayer.addEventListener('timeupdate', () => {
+      if (currentMode === 'local') {
+        updateActiveChapter(localPlayer.currentTime);
+      }
+    });
+
+    localPlayer.addEventListener('error', () => {
+      if (currentMode === 'local') {
+        playerStatusHint.textContent = '⚠️ File video.mp4 cục bộ không khả dụng. Khuyên dùng chế độ YouTube.';
       }
     });
 

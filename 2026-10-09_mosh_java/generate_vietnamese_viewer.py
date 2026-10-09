@@ -354,20 +354,73 @@ html_template = f"""<!DOCTYPE html>
     ::-webkit-scrollbar-thumb {{ background: var(--panel-border); border-radius: 3px; }}
     ::-webkit-scrollbar-thumb:hover {{ background: var(--text-muted); }}
 
+    /* Switch mode buttons */
+    .player-mode-switch {{
+      display: flex;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 3px;
+      gap: 4px;
+    }}
+    .mode-btn {{
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 0.35rem 0.75rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.2s;
+    }}
+    .mode-btn:hover {{
+      color: var(--text);
+    }}
+    .mode-btn.active {{
+      background: var(--primary);
+      color: #0f172a;
+    }}
+    .yt-container {{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }}
+    .yt-container iframe {{
+      width: 100%;
+      height: 100%;
+      border: none;
+    }}
+
     @media (max-width: 900px) {{
       .main-container {{ grid-template-columns: 1fr; grid-template-rows: 40vh 1fr; }}
     }}
   </style>
 </head>
 <body>
+
   <header>
     <div class="logo-area">
       <span class="badge">Lecture to Notes</span>
       <h1 class="course-title">Java Full Course for Beginners</h1>
       <span class="meta-tags">• Giảng viên: Mosh Hamedani • Thời lượng: 2h 30m</span>
     </div>
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Tìm kiếm chương bài học hoặc từ khóa...">
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <div class="player-mode-switch">
+        <button class="mode-btn active" id="btnModeYt" onclick="setPlayerMode('yt')">
+          ▶️ YouTube Trực tuyến
+        </button>
+        <button class="mode-btn" id="btnModeLocal" onclick="setPlayerMode('local')">
+          💾 Video Cục bộ (Offline)
+        </button>
+      </div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm chương bài học hoặc từ khóa...">
+      </div>
     </div>
   </header>
 
@@ -375,9 +428,14 @@ html_template = f"""<!DOCTYPE html>
     <!-- Left column: Video player -->
     <div class="video-section">
       <div class="video-wrapper">
-        <video id="mainPlayer" controls preload="metadata" poster="slides/frame_0001.jpg">
+        <!-- YouTube Player -->
+        <div id="ytContainer" class="yt-container">
+          <div id="ytPlayer"></div>
+        </div>
+        <!-- Local Video Player -->
+        <video id="mainPlayer" controls preload="metadata" style="display: none;">
           <source src="video.mp4" type="video/mp4">
-          Trình duyệt của bạn không hỗ trợ thẻ video.
+          Trình duyệt của bạn không hỗ trợ thẻ video cục bộ.
         </video>
       </div>
       <div class="video-bar">
@@ -387,7 +445,7 @@ html_template = f"""<!DOCTYPE html>
           <strong id="currentChapterName">01. Giới thiệu khóa học</strong>
         </div>
         <div style="font-size: 0.8rem; color: var(--text-muted);">
-          <span>Nhấp vào thẻ chương để tua video</span>
+          <span id="playerStatusHint">⚡ Bấm vào bất kỳ thẻ bài học nào bên phải để tua video tự động</span>
         </div>
       </div>
     </div>
@@ -409,15 +467,83 @@ html_template = f"""<!DOCTYPE html>
     <img id="modalImg" src="">
   </div>
 
+  <!-- YouTube IFrame API -->
+  <script src="https://www.youtube.com/iframe_api"></script>
+
   <script>
     const chapters = {chapters_json_str};
-    const player = document.getElementById('mainPlayer');
+    let currentMode = 'yt'; // 'yt' or 'local'
+    let ytPlayer = null;
+    let ytReady = false;
+
+    const localPlayer = document.getElementById('mainPlayer');
+    const ytContainer = document.getElementById('ytContainer');
     const timeDisplay = document.getElementById('timeDisplay');
     const currentChapterName = document.getElementById('currentChapterName');
     const listContainer = document.getElementById('curriculumList');
     const searchInput = document.getElementById('searchInput');
     const imageModal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImg');
+    const btnModeYt = document.getElementById('btnModeYt');
+    const btnModeLocal = document.getElementById('btnModeLocal');
+    const playerStatusHint = document.getElementById('playerStatusHint');
+
+    // YouTube API Ready Callback
+    window.onYouTubeIframeAPIReady = function() {{
+      ytPlayer = new YT.Player('ytPlayer', {{
+        height: '100%',
+        width: '100%',
+        videoId: 'eIrMbAQSU34',
+        playerVars: {{
+          'playsinline': 1,
+          'rel': 0,
+          'modestbranding': 1
+        }},
+        events: {{
+          'onReady': () => {{
+            ytReady = true;
+          }}
+        }}
+      }});
+    }};
+
+    function setPlayerMode(mode) {{
+      currentMode = mode;
+      if (mode === 'yt') {{
+        btnModeYt.classList.add('active');
+        btnModeLocal.classList.remove('active');
+        ytContainer.style.display = 'block';
+        localPlayer.style.display = 'none';
+        localPlayer.pause();
+        playerStatusHint.textContent = '⚡ Đang phát trực tuyến từ YouTube (Full HD 1080p)';
+      }} else {{
+        btnModeLocal.classList.add('active');
+        btnModeYt.classList.remove('active');
+        ytContainer.style.display = 'none';
+        localPlayer.style.display = 'block';
+        if (ytReady && ytPlayer && ytPlayer.pauseVideo) {{
+          ytPlayer.pauseVideo();
+        }}
+        playerStatusHint.textContent = '💾 Đang phát từ file video.mp4 cục bộ';
+      }}
+    }}
+
+    function seekToTime(seconds) {{
+      if (currentMode === 'yt') {{
+        if (ytReady && ytPlayer && ytPlayer.seekTo) {{
+          ytPlayer.seekTo(seconds, true);
+          ytPlayer.playVideo();
+        }}
+      }} else {{
+        localPlayer.currentTime = seconds;
+        localPlayer.play().catch(e => {{
+          console.warn('Local play failed, switching to YouTube', e);
+          alert('Không tìm thấy file video.mp4 cục bộ hoặc trình duyệt không hỗ trợ. Tự động chuyển sang YouTube!');
+          setPlayerMode('yt');
+          seekToTime(seconds);
+        }});
+      }}
+    }}
 
     function formatTime(sec) {{
       const m = Math.floor(sec / 60);
@@ -437,7 +563,11 @@ html_template = f"""<!DOCTYPE html>
         let slidesHtml = '';
         if (c.frames && c.frames.length > 0) {{
           slidesHtml = '<div class="slide-gallery">' +
-            c.frames.map(f => `<div class="slide-thumb" onclick="event.stopPropagation(); openImage('slides/${{f}}')"><img src="slides/${{f}}" alt="Slide" loading="lazy"></div>`).join('') +
+            c.frames.map(f => `
+              <div class="slide-thumb" onclick="event.stopPropagation(); openImage('slides/${{f}}')">
+                <img src="slides/${{f}}" alt="Slide" loading="lazy" onerror="this.onerror=null; this.src='https://img.youtube.com/vi/eIrMbAQSU34/mqdefault.jpg'">
+              </div>
+            `).join('') +
             '</div>';
         }}
 
@@ -452,8 +582,7 @@ html_template = f"""<!DOCTYPE html>
         `;
 
         card.addEventListener('click', () => {{
-          player.currentTime = c.start;
-          player.play();
+          seekToTime(c.start);
         }});
 
         listContainer.appendChild(card);
@@ -468,11 +597,8 @@ html_template = f"""<!DOCTYPE html>
     // Initial render
     renderChapters(chapters);
 
-    // Sync playback with chapter highlighting
-    player.addEventListener('timeupdate', () => {{
-      const curr = player.currentTime;
+    function updateActiveChapter(curr) {{
       timeDisplay.textContent = formatTime(curr);
-
       const active = chapters.find(c => curr >= c.start && curr <= c.end);
       if (active) {{
         currentChapterName.textContent = (active.id < 10 ? '0' + active.id : active.id) + '. ' + active.title;
@@ -481,6 +607,31 @@ html_template = f"""<!DOCTYPE html>
         if (activeCard) {{
           activeCard.classList.add('active');
         }}
+      }}
+    }}
+
+    // Periodic sync for YouTube Player
+    setInterval(() => {{
+      if (currentMode === 'yt' && ytReady && ytPlayer && ytPlayer.getCurrentTime) {{
+        try {{
+          const curr = ytPlayer.getCurrentTime();
+          if (curr !== undefined) {{
+            updateActiveChapter(curr);
+          }}
+        }} catch (err) {{}}
+      }}
+    }}, 600);
+
+    // Sync for Local Player
+    localPlayer.addEventListener('timeupdate', () => {{
+      if (currentMode === 'local') {{
+        updateActiveChapter(localPlayer.currentTime);
+      }}
+    }});
+
+    localPlayer.addEventListener('error', () => {{
+      if (currentMode === 'local') {{
+        playerStatusHint.textContent = '⚠️ File video.mp4 cục bộ không khả dụng. Khuyên dùng chế độ YouTube.';
       }}
     }});
 
