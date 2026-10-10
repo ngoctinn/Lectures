@@ -21,9 +21,12 @@ Thư mục này lưu trữ các bài giảng kỹ thuật, khóa học lập tr�
 * **[Quy trình kỹ sư Agentic năm 2026](file:///home/ngoctin/Lectures/yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026/yt-extract_2026-10-09_the-agentic-engineer-workflow-you-need-in-2026.md):**
   * Nguồn: IndyDevDan | Thời lượng: 18:24
   * Trọng tâm: Git Worktree, Context Window Drift, Claude Code Terminal setup và mô hình kỹ sư điều phối AI Agent.
-* **[Giải đề TOEIC Reading Part 5](file:///home/ngoctin/Lectures/yt-extract_2026-10-09_max-%C4%91i%E1%BB%83m-reading-part-5-video-1/yt-extract_2026-10-09_max-%C4%91i%E1%BB%83m-reading-part-5-video-1.md):**
-  * Nguồn: Ms Thanh Toeic | Thời lượng: 01:08:14
-  * Trọng tâm: Giải chi tiết 15 câu (101 - 115) với 4 chuyên đề ngữ pháp, phân tích cặn kẽ 4 đáp án A-B-C-D và họ từ mở rộng.
+* **[Kho tài liệu luyện thi TOEIC](file:///home/ngoctin/Lectures/toeic/README.md):**
+  * Phân loại theo 3 nguồn: **Ms Thắm** (Xây nền), **Anh Lê** (Luyện đề & Mẹo), **Ms Thanh** (Bóc bẫy & Từ vựng chuyên sâu).
+  * Gồm các bài giải đề ETS chi tiết tại [Anh Lê TOEIC](file:///home/ngoctin/Lectures/toeic/anh-le) và [Ms Thanh TOEIC](file:///home/ngoctin/Lectures/toeic/ms-thanh).
+* **[Reading English with Eric - Peter Pan](file:///home/ngoctin/Lectures/Reading%20English%20with%20Eric/00_overview.md):**
+  * Nguồn: Reading English with Eric | Thời lượng: 02:48:05 (3 tập chuyên sâu)
+  * Trọng tâm: Bóc tách từng chữ tác phẩm Peter Pan của J.M. Barrie, phân tích ngữ pháp cổ điển, từ vựng theo ngữ cảnh, kỹ thuật Shadowing và 41 khung hình trích xuất ghi chú viết tay trên trang sách.
 
 ---
 
