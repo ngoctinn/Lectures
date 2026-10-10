@@ -369,7 +369,7 @@ no tickets left         =  sold out             (hết vé)
 
 ## Đánh đổi & Rủi ro
 
-### Điểm mù nghe hiểu phản xạ
+### Điểm mù phản xạ
 
 * **Bắt từ máy móc ở câu phân loại cao:** Mặc dù mẹo loại trừ bẫy lặp từ hoạt động hiệu quả ở các câu đầu Part 2 (80-90%), việc áp dụng rập khuôn ở 10 câu cuối đề sẽ dẫn đến việc loại bỏ nhầm đáp án đúng (như trường hợp từ `seats` lặp lại trong `assigned seats` ở Câu 29). Thí sinh cần kết hợp phân tích ngữ cảnh thay vì chỉ nghe bắt từ đơn lẻ.
 * **Ảo tưởng câu trả lời trực tiếp:** Tâm lý mong đợi câu trả lời hiển nhiên (hỏi Who phải nghe ra tên người, hỏi Why phải nghe ra Because) khiến thí sinh mất cảnh giác trước các câu trả lời gián tiếp hoặc câu hỏi ngược lại (`Is it working again?` cho câu hỏi sửa ổ cắm điện).
