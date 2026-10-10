@@ -73,7 +73,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ## Bóc tách chi tiết
 
-### Câu 101
+### [[04:57](https://youtu.be/xw--klidlFw?t=297s)] Câu 101
 
 ![Câu 101](screenshots/001_04m57s.png)
 
@@ -94,7 +94,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 102
+### [[11:22](https://youtu.be/xw--klidlFw?t=682s)] Câu 102
 
 ![Câu 102](screenshots/002_11m22s.png)
 
@@ -115,7 +115,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 103
+### [[20:33](https://youtu.be/xw--klidlFw?t=1233s)] Câu 103
 
 ![Câu 103](screenshots/003_20m33s.png)
 
@@ -136,7 +136,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 104
+### [[23:05](https://youtu.be/xw--klidlFw?t=1385s)] Câu 104
 
 ![Câu 104](screenshots/004_23m05s.png)
 
@@ -153,7 +153,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 105
+### [[24:57](https://youtu.be/xw--klidlFw?t=1497s)] Câu 105
 
 ![Câu 105](screenshots/005_24m57s.png)
 
@@ -174,7 +174,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 106
+### [[27:07](https://youtu.be/xw--klidlFw?t=1627s)] Câu 106
 
 ![Câu 106](screenshots/006_27m07s.png)
 
@@ -195,7 +195,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 107
+### [[30:10](https://youtu.be/xw--klidlFw?t=1810s)] Câu 107
 
 ![Câu 107](screenshots/007_30m10s.png)
 
@@ -216,7 +216,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 108
+### [[37:07](https://youtu.be/xw--klidlFw?t=2227s)] Câu 108
 
 ![Câu 108](screenshots/008_37m07s.png)
 
@@ -237,7 +237,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 109
+### [[44:23](https://youtu.be/xw--klidlFw?t=2663s)] Câu 109
 
 ![Câu 109](screenshots/009_44m23s.png)
 
@@ -258,7 +258,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 110
+### [[48:34](https://youtu.be/xw--klidlFw?t=2914s)] Câu 110
 
 ![Câu 110](screenshots/010_48m34s.png)
 
@@ -275,7 +275,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 111
+### [[50:42](https://youtu.be/xw--klidlFw?t=3042s)] Câu 111
 
 ![Câu 111](screenshots/011_50m42s.png)
 
@@ -296,7 +296,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 112
+### [[54:22](https://youtu.be/xw--klidlFw?t=3262s)] Câu 112
 
 ![Câu 112](screenshots/012_54m22s.png)
 
@@ -317,7 +317,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 113
+### [[01:00:27](https://youtu.be/xw--klidlFw?t=3627s)] Câu 113
 
 ![Câu 113](screenshots/013_1h00m27s.png)
 
@@ -338,7 +338,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 114
+### [[01:11:45](https://youtu.be/xw--klidlFw?t=4305s)] Câu 114
 
 ![Câu 114](screenshots/014_1h11m45s.png)
 
@@ -357,7 +357,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 115
+### [[01:15:37](https://youtu.be/xw--klidlFw?t=4537s)] Câu 115
 
 ![Câu 115](screenshots/015_1h15m37s.png)
 
@@ -378,7 +378,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 116
+### [[01:16:31](https://youtu.be/xw--klidlFw?t=4591s)] Câu 116
 
 ![Câu 116](screenshots/016_1h16m31s.png)
 
@@ -399,7 +399,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 117
+### [[01:22:52](https://youtu.be/xw--klidlFw?t=4972s)] Câu 117
 
 ![Câu 117](screenshots/017_1h22m52s.png)
 
@@ -420,7 +420,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 118
+### [[01:24:23](https://youtu.be/xw--klidlFw?t=5063s)] Câu 118
 
 ![Câu 118](screenshots/018_1h24m23s.png)
 
@@ -441,7 +441,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 119
+### [[01:30:33](https://youtu.be/xw--klidlFw?t=5433s)] Câu 119
 
 ![Câu 119](screenshots/019_1h30m33s.png)
 
@@ -462,7 +462,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 120
+### [[01:31:55](https://youtu.be/xw--klidlFw?t=5515s)] Câu 120
 
 ![Câu 120](screenshots/020_1h31m55s.png)
 
@@ -483,7 +483,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 121
+### [[01:36:54](https://youtu.be/xw--klidlFw?t=5814s)] Câu 121
 
 ![Câu 121](screenshots/021_1h36m54s.png)
 
@@ -504,7 +504,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 122
+### [[01:42:20](https://youtu.be/xw--klidlFw?t=6140s)] Câu 122
 
 ![Câu 122](screenshots/022_1h42m20s.png)
 
@@ -525,7 +525,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 123
+### [[01:46:17](https://youtu.be/xw--klidlFw?t=6377s)] Câu 123
 
 ![Câu 123](screenshots/023_1h46m17s.png)
 
@@ -546,7 +546,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 124
+### [[01:50:04](https://youtu.be/xw--klidlFw?t=6604s)] Câu 124
 
 ![Câu 124](screenshots/024_1h50m04s.png)
 
@@ -567,7 +567,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 125
+### [[01:54:08](https://youtu.be/xw--klidlFw?t=6848s)] Câu 125
 
 ![Câu 125](screenshots/025_1h54m08s.png)
 
@@ -588,7 +588,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 126
+### [[01:58:48](https://youtu.be/xw--klidlFw?t=7128s)] Câu 126
 
 ![Câu 126](screenshots/026_1h58m48s.png)
 
@@ -609,7 +609,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 127
+### [[02:01:52](https://youtu.be/xw--klidlFw?t=7312s)] Câu 127
 
 ![Câu 127](screenshots/027_2h01m52s.png)
 
@@ -626,7 +626,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 128
+### [[02:05:12](https://youtu.be/xw--klidlFw?t=7512s)] Câu 128
 
 ![Câu 128](screenshots/028_2h05m12s.png)
 
@@ -647,7 +647,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 129
+### [[02:08:04](https://youtu.be/xw--klidlFw?t=7684s)] Câu 129
 
 ![Câu 129](screenshots/029_2h08m04s.png)
 
@@ -668,7 +668,7 @@ Các câu hỏi thuần từ vựng trong đề thi 2025 không kiểm tra từ 
 
 ---
 
-### Câu 130
+### [[02:15:01](https://youtu.be/xw--klidlFw?t=8101s)] Câu 130
 
 ![Câu 130](screenshots/030_2h15m01s.png)
 

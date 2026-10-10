@@ -62,7 +62,7 @@ Netflix triển khai trí tuệ nhân tạo vào hệ sinh thái Java theo tư d
 
 ## Bóc tách chi tiết
 
-### Phân luồng kiến trúc
+### [[06:25](https://youtu.be/ucJTPda_zx0?t=385s)] Phân luồng kiến trúc
 
 Hệ thống truyền phát nội dung phục vụ hàng trăm triệu người dùng trên toàn cầu với tính chất đa vùng (multi-region) và khả năng chịu lỗi cao.
 
@@ -80,7 +80,7 @@ Kiến trúc nghiệp vụ gồm hai phân vùng rõ rệt:
    * Máy chủ phân phối nội dung đặt phân tán tại hạ tầng các nhà mạng đối tác.
    * Phần mềm điều khiển, lập lịch dòng phát và giám sát dung lượng đường truyền được viết hoàn toàn bằng Java và Spring Boot.
 
-### Con đường chuẩn hóa
+### [[11:20](https://youtu.be/ucJTPda_zx0?t=680s)] Con đường chuẩn hóa
 
 Netflix trả lời bài toán lựa chọn công nghệ giữa Java, Rust, C++ và Python:
 
@@ -95,7 +95,7 @@ Netflix trả lời bài toán lựa chọn công nghệ giữa Java, Rust, C++ 
 
 * Khái niệm "Lộ trình lát đá" định hình cách tiếp cận cho 3.000 - 4.000 dịch vụ nội bộ. Khi nhóm kỹ sư tạo mới một dự án theo chuẩn này, toàn bộ thành phần liên kết hệ sinh thái Netflix (đăng ký định tuyến Eureka, phân tán vết Mantis/Atlas, xác thực danh tính) được kích hoạt tự động.
 
-### Phương pháp kiểm thử
+### [[17:30](https://youtu.be/ucJTPda_zx0?t=1050s)] Phương pháp kiểm thử
 
 Cách tiếp cận kiểm thử tích hợp liên tầng tại Netflix loại bỏ việc sử dụng các chú thích kiểm thử cục bộ:
 
@@ -104,7 +104,7 @@ Cách tiếp cận kiểm thử tích hợp liên tầng tại Netflix loại b�
 * Hạn chế của các chú thích phân lớp hẹp (`@WebMvcTest`, `@DataJpaTest`): Chỉ cô lập kiểm tra được một tầng duy nhất trong khi yêu cầu kiểm thử thực tế đòi hỏi kiểm tra xuyên suốt từ tầng nhận dữ liệu GraphQL xuống tận tầng lưu trữ dữ liệu cho từng thành phần nghiệp vụ riêng lẻ.
 * Giải pháp tối ưu: Sử dụng `@SpringBootTest` kết hợp cấu hình thành phần tối giản thông qua thuộc tính `classes = {...}` để nạp đúng các bean cần thiết, hạn chế khởi động toàn bộ ngữ cảnh giúp bài kiểm thử chạy xong trong khoảng 1 giây.
 
-### Tự động nâng cấp
+### [[20:20](https://youtu.be/ucJTPda_zx0?t=1220s)] Tự động nâng cấp
 
 Việc nâng cấp định kỳ các khung làm việc mã nguồn mở là bắt buộc để ngăn chặn nợ kỹ thuật tồn đọng.
 
@@ -124,7 +124,7 @@ Việc nâng cấp định kỳ các khung làm việc mã nguồn mở là bắ
      * Xây dựng động cơ quy trình chia nhỏ bài toán: mỗi bước chuyển đổi mã là một câu lệnh chỉ thị riêng biệt gửi tới một tác tử độc lập.
      * Cơ chế điểm kiểm tra trạng thái (Checkpointing): nếu tiến trình nâng cấp gặp sự cố hoặc bài kiểm thử thất bại, toàn bộ lịch sử ngữ cảnh trao đổi của tác tử cùng trạng thái mã nguồn Git được lưu vết để kỹ sư nền tảng trực tiếp thanh tra.
 
-### Đồ thị phân tán
+### [[29:10](https://youtu.be/ucJTPda_zx0?t=1750s)] Đồ thị phân tán
 
 DGS Framework do Netflix xây dựng và mở mã nguồn từ năm 2020 hiện đã hợp nhất sâu với hệ sinh thái Spring for GraphQL.
 
@@ -133,7 +133,7 @@ DGS Framework do Netflix xây dựng và mở mã nguồn từ năm 2020 hiện 
 * Bản chất của GraphQL là làm việc xoay quanh lược đồ dữ liệu tĩnh (schema) thay vì phương thức gọi từ xa. Mô hình liên kết cho phép chia nhỏ một đồ thị dữ liệu khổng lồ cho từng nhóm dịch vụ đảm trách độc lập.
 * Khung kiểm thử của DGS cho phép giả lập truy vấn GraphQL trực tiếp thông qua `DgsQueryExecutor` với tốc độ phản hồi cực nhanh mà không cần khởi tạo giao diện mạng servlet.
 
-### Chuyển đổi bộ gom
+### [[32:50](https://youtu.be/ucJTPda_zx0?t=1970s)] Chuyển đổi bộ gom
 
 Động lực chuyển dịch sang Generational ZGC xuất phát từ quy mô máy chủ có dung lượng bộ nhớ lớn tại Netflix.
 
@@ -148,13 +148,13 @@ DGS Framework do Netflix xây dựng và mở mã nguồn từ năm 2020 hiện 
   * Biểu đồ phía dưới (Tỷ lệ lỗi giao tiếp IPC - vạch tím): Các lỗi quá hạn giữa các dịch vụ suy giảm đột ngột và duy trì ở mức tối thiểu.
 * **Hệ quả vận hành:** Ít lỗi phía máy khách đồng nghĩa với việc triệt tiêu các đợt phát lại yêu cầu gây bão lưu lượng, giảm độ trễ tổng thể và cho phép máy chủ hoạt động ổn định ở ngưỡng chiếm dụng CPU cao hơn trước.
 
-### Khắc phục ghim luồng
+### [[37:25](https://youtu.be/ucJTPda_zx0?t=2245s)] Khắc phục ghim luồng
 
 Luồng ảo đem lại lợi thế lớn cho các tác vụ nghẽn vào-ra (I/O bound), nhưng đòi hỏi khắc phục hai cạm bẫy thực thi:
 
 * **Sự cố ghim luồng trên JDK 21:** Khi luồng ảo chạy qua một khối hoặc phương thức sử dụng từ khóa `synchronized`, luồng ảo bị ghim chặt vào luồng mang của hệ điều hành. Nếu xảy ra nghẽn I/O tại thời điểm này, luồng mang bị giữ cứng, dẫn tới tắc nghẽn toàn bộ nhóm luồng máy chủ và gây treo tiến trình (Deadlock). Netflix buộc phải hoãn áp dụng rộng rãi trên JDK 21 cho đến khi JDK 25 chính thức gỡ bỏ hiện tượng này trong máy ảo.
 
-### Lan truyền ngữ cảnh
+### [[39:35](https://youtu.be/ucJTPda_zx0?t=2375s)] Lan truyền ngữ cảnh
 
 Các khung làm việc kinh điển trong hệ sinh thái Java (Spring Security, Micrometer Tracing) lưu trữ thông tin nhận diện người dùng và định danh vết truy vết trong biến cục bộ luồng (`ThreadLocal`).
 
@@ -193,7 +193,7 @@ try (var scope = StructuredTaskScope.open(joiner, configuration -> {
 }
 ```
 
-### Quy trình tác tử
+### [[44:50](https://youtu.be/ucJTPda_zx0?t=2690s)] Quy trình tác tử
 
 Chiến lược triển khai mô hình ngôn ngữ lớn vào các dịch vụ phần mềm doanh nghiệp được phân loại theo dải điều khiển:
 
@@ -209,14 +209,14 @@ Chiến lược triển khai mô hình ngôn ngữ lớn vào các dịch vụ p
   * Thu thập dữ liệu thời gian khởi tạo của từng Spring Bean lưu trữ trong cơ sở dữ liệu.
   * Quy trình tác tử kích hoạt việc phân tích dữ liệu trắc đồ, tự động tìm kiếm kho mã nguồn của thư viện gây nghẽn, phân tích đoạn mã thực thi chặn (blocking) trong hàm khởi tạo, và xuất bản khuyến nghị tối ưu hóa trực tiếp cho đội ngũ phát triển.
 
-### So sánh ngôn ngữ
+### [[49:35](https://youtu.be/ucJTPda_zx0?t=2975s)] So sánh ngôn ngữ
 
 ![So sánh Java và Python trong ứng dụng trí tuệ](screenshots/013_49m35s_java-vs-python-for-genai.png)
 
 * Hai năm trước, Python chiếm ưu thế nhờ tốc độ ra đời của các thư viện tích hợp. Tuy nhiên, ở thời điểm hiện tại, hệ sinh thái Java với Spring AI và LangChain4j đã đuổi kịp hoàn toàn về mặt tính năng.
 * Khi bài toán chỉ xoay quanh việc ứng dụng mô hình (không phải huấn luyện mô hình nền tảng), JVM đem lại lợi thế vượt trội về hiệu năng vận hành tải cao, tính an toàn kiểu dữ liệu, và khả năng tận dụng triệt để năng lực sẵn có của lực lượng kỹ sư Java.
 
-### Hỏi đáp kỹ thuật
+### [[50:00](https://youtu.be/ucJTPda_zx0?t=3000s)] Hỏi đáp kỹ thuật
 
 * **Cấu hình ZGC cho tác vụ xử lý hàng loạt:** ZGC được chọn làm mặc định vì phù hợp với đa số dịch vụ trực tuyến. Tuy nhiên, các tác vụ tính toán nặng không nhạy cảm với độ trễ tạm dừng vẫn được nhóm vận hành tinh chỉnh và kiểm tra hiệu năng riêng biệt để tối ưu chu kỳ CPU.
 * **Lý do dùng tác tử AI thay cho luật OpenRewrite:** Việc viết luật OpenRewrite để bao quát toàn bộ các trường hợp đặc biệt (corner cases) rất tốn kém thời gian kỹ sư. Tác tử AI thể hiện độ linh hoạt vượt trội trong việc xử lý các ngữ cảnh biến đổi phức tạp với chi phí thiết lập thấp hơn nhiều.

@@ -55,7 +55,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ## Bóc tách chi tiết
 
-### Câu 101
+### [[07:20](https://youtu.be/2zuDwiSgPug?t=440s)] Câu 101
 
 ![Câu 101](screenshots/001_07m20s.png)
 
@@ -74,7 +74,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 102
+### [[11:55](https://youtu.be/2zuDwiSgPug?t=715s)] Câu 102
 
 ![Câu 102](screenshots/002_11m55s.png)
 
@@ -91,7 +91,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 103
+### [[19:05](https://youtu.be/2zuDwiSgPug?t=1145s)] Câu 103
 
 ![Câu 103](screenshots/003_19m05s.png)
 
@@ -110,7 +110,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 104
+### [[26:15](https://youtu.be/2zuDwiSgPug?t=1575s)] Câu 104
 
 ![Câu 104](screenshots/004_26m15s.png)
 
@@ -129,7 +129,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 105
+### [[33:35](https://youtu.be/2zuDwiSgPug?t=2015s)] Câu 105
 
 ![Câu 105](screenshots/005_33m35s.png)
 
@@ -146,7 +146,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 106
+### [[41:15](https://youtu.be/2zuDwiSgPug?t=2475s)] Câu 106
 
 ![Câu 106](screenshots/006_41m15s.png)
 
@@ -163,7 +163,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 107
+### [[47:50](https://youtu.be/2zuDwiSgPug?t=2870s)] Câu 107
 
 ![Câu 107](screenshots/007_47m50s.png)
 
@@ -181,7 +181,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 108
+### [[54:20](https://youtu.be/2zuDwiSgPug?t=3260s)] Câu 108
 
 ![Câu 108](screenshots/008_54m20s.png)
 
@@ -199,7 +199,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 109
+### [[59:45](https://youtu.be/2zuDwiSgPug?t=3585s)] Câu 109
 
 ![Câu 109](screenshots/009_59m45s.png)
 
@@ -217,7 +217,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 110
+### [[01:06:10](https://youtu.be/2zuDwiSgPug?t=3970s)] Câu 110
 
 ![Câu 110](screenshots/010_1h06m10s.png)
 
@@ -235,7 +235,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 111
+### [[01:12:15](https://youtu.be/2zuDwiSgPug?t=4335s)] Câu 111
 
 ![Câu 111](screenshots/011_1h12m15s.png)
 
@@ -252,7 +252,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 112
+### [[01:21:10](https://youtu.be/2zuDwiSgPug?t=4870s)] Câu 112
 
 ![Câu 112](screenshots/012_1h21m10s.png)
 
@@ -271,7 +271,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 113
+### [[01:29:40](https://youtu.be/2zuDwiSgPug?t=5380s)] Câu 113
 
 ![Câu 113](screenshots/013_1h29m40s.png)
 
@@ -289,7 +289,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 114
+### [[01:38:05](https://youtu.be/2zuDwiSgPug?t=5885s)] Câu 114
 
 ![Câu 114](screenshots/014_1h38m05s.png)
 
@@ -306,7 +306,7 @@ Phần thi Đọc TOEIC gồm 100 câu trong 75 phút, trong đó tổng thời 
 
 ---
 
-### Câu 115
+### [[01:43:00](https://youtu.be/2zuDwiSgPug?t=6180s)] Câu 115
 
 ![Câu 115](screenshots/015_1h43m00s.png)
 
