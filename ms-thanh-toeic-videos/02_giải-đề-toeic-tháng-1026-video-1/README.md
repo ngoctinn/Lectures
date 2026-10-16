@@ -6,16 +6,7 @@
 * **Thời lượng:** 1:35:21
 * **Video gốc:** [https://www.youtube.com/watch?v=QdBR37h5HGs](https://www.youtube.com/watch?v=QdBR37h5HGs)
 
-### Cách bắt đầu học bài này với AI Assistant
-Gửi một trong các câu lệnh/prompt sau trực tiếp vào khung chat (đã gắn sẵn đầy đủ cờ lệnh chuẩn):
-
-1. **Biên soạn siêu chi tiết kèm ảnh (Khuyên dùng):**
-> "Tạo ghi chú cho Bài 02 trong khóa Ms Thanh Toeic - Videos: https://www.youtube.com/watch?v=QdBR37h5HGs --detail deep"
-
-2. **Chỉ ghi chép lý thuyết (Không chụp ảnh):**
-> "Tạo ghi chú cho Bài 02 trong khóa Ms Thanh Toeic - Videos: https://www.youtube.com/watch?v=QdBR37h5HGs --detail deep --transcript-only"
-
-3. **Tóm lược nhanh:**
-> "Tóm tắt nhanh Bài 02 trong khóa Ms Thanh Toeic - Videos: https://www.youtube.com/watch?v=QdBR37h5HGs --detail brief"
-
-*(Lệnh CLI tham khảo cho terminal ngoài nếu cần: `ytbknot "https://www.youtube.com/watch?v=QdBR37h5HGs" --detail deep`)*
+### Trạng thái
+- **Trạng thái:** Đã hoàn thành (100% tài liệu siêu chi tiết)
+- **Tài liệu học tập:** [giải-đề-toeic-tháng-1026-video-1.md](giải-đề-toeic-tháng-1026-video-1.md)
+- **Kiểm định:** Hoàn toàn đạt chuẩn ytbknot (15/15 câu hỏi có ảnh chụp WebP và link timestamp bấm được).

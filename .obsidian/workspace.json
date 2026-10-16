@@ -11,14 +11,10 @@
             "id": "8c4954b5f53e5abc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "computer-science/cs50x-lecture-0-scratch/cs50x-lecture-0-scratch.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "cs50x-lecture-0-scratch"
+              "title": "New tab"
             }
           }
         ]
